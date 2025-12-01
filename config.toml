@@ -22,7 +22,7 @@ pagination.pagerSize = 5
 
   # set theme to full screen width
   fullWidthTheme = true
-
+  
   # center theme with default width
   centerTheme = true
 

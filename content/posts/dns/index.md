@@ -2,7 +2,10 @@
 title = "DNS"
 date = "2019-03-11"
 description = "Sample article showcasing basic styling and formatting for HTML elements."
+weight = 1
 +++
+
+DNS (Domais Name System) é um sistema hierárquico. Entre outras palavras, é um serviço (`porta 53`) que traduz nomes de domínio para endereços de IP e vice-versa. Esses tais __nomes de domínio__ podem referir-se comumente a endereços de websites (URLs).
 
 Em **segurança da informação**, *resolução reversa* (ou *reverse DNS lookup*) é o processo de **descobrir o nome de domínio associado a um endereço IP** — o contrário da resolução DNS comum, que traduz domínio → IP.
 
@@ -40,7 +43,16 @@ Em termos simples:
 Se quiser, posso explicar como essa resolução é feita tecnicamente (com registros PTR) ou mostrar exemplos práticos.
 
 
-![Terminal Theme Preview](https://images.ctfassets.net/t6n243uipzy1/24liULRiJIvyTmU6GLBzJc/7e7b33154976dedaa93d022ac9b41b13/reverse_dns_lookup.png)
+![Terminal Theme Preview](https://images.ctfassets.net/t6n243uipzy1/24127.0.0.1	localhost
+127.0.1.1	LUCLAPTOP
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+liULRiJIvyTmU6GLBzJc/7e7b33154976dedaa93d022ac9b41b13/reverse_dns_lookup.png)
 
 Localizar um domínio a partir de um IP — por meio da **resolução reversa (reverse DNS)** — traz várias vantagens importantes para profissionais de **segurança da informação**. As principais são:
 
