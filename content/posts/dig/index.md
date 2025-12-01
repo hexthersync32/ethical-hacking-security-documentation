@@ -1,7 +1,8 @@
 +++
 title = "dig"
 date = "2019-03-11"
-description = "Sample article showcasing basic styling and formatting for HTML elements."
+description = "DNS lookup utility."
+weight = 2
 +++
 
 O utilitário de texto `dig` extrai informações de DNS.
