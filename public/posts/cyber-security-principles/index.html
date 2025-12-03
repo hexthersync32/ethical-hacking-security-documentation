@@ -140,32 +140,63 @@
   
 
   <div class="post-content"><div>
-        <p>A segurança da informação é uma área dentro da Informática e Ciência da Computação que diz respeito à <strong>proteção de dados</strong>. Sumariamente, trata-se de um conjunto de técnicas que garante que uma mensagem seja encaminhada de maneira integral partindo de um <strong>emissor</strong> até alcançar um <strong>receptor</strong>.</p>
-<p>Para que isso seja possível nos tempos atuais, essa proteção deverá obedecer alguns princípios, também chamados de &ldquo;pilares&rdquo;, representados na imagem logo abaixo:</p>
+        <p>Information security is the set of practices, processes, and controls designed to protect data from unauthorized access, misuse, improper disclosure, alteration, destruction, or unavailability.</p>
+<p>In short, it ensures that a message is forwarded from a <strong>sender</strong> to a <strong>receiver</strong> without any interception or modification along the way.</p>
+<p>Another terms may also be used, such as:</p>
+<ul>
+<li>
+<p>Digital Security;</p>
+</li>
+<li>
+<p>Data Security;</p>
+</li>
+<li>
+<p>Cybersecurity.</p>
+</li>
+</ul>
+<p>For this to be possible in the current times, this protection must comply with certain principles, also called “pillars”, represented in the image below:</p>
 <p><img src="https://www.infosectrain.com/wp-content/uploads/2023/08/Principles-of-Information-Security.png" alt="Alt text" title="Optional title"></p>
 <h2 id="1-confidentiality">1. Confidentiality<a href="#1-confidentiality" class="hanchor" ariaLabel="Anchor">#</a> </h2>
-<p>Este princípio garante que, com uma mensagem partindo de um emissor X, ela deverá ser recebida somente por um repector Y. Também garante as restrições necessárias de quem deverá ter acesso a essas informações sigilosas.</p>
+<p>This principle ensures that a message sent from sender X should only be received by recipient Y. It also ensures the necessary restrictions on who should have access to this confidential information.</p>
 <blockquote>
-<p>Example:
-Um dos primeiros exemplos de algoritmos criptográficos utilizados para cifrar mensagens foi a Cifra de César, utilizada na época dos romanos para que uma mensagem não pudesse ser violada no caminho para o destino final.</p>
+<p><strong>Example</strong>: The password used to access a banking application should only be shared between the account holder and the entity that holds their banking information. Other than that, access to this type of information should be considered completely restricted.</p>
 </blockquote>
 <blockquote>
-<p>Example:
-A senha de acesso utilizada para acessar um aplicativo bancário deverá compartilhada somente entre o responsável pela conta e a entidade detentora de suas informações bancárias. Fora isso, o acesso a este tipo de informação deverá ser considerado completamente restrito.</p>
-</blockquote>
-<blockquote>
-<p>Example:
-Se um usuário encontra-se numa situação em que credenciais de acesso de uma determinada plataforma forem expostas, considera-se que o pilar da Confidencialidade foi afetado.</p>
+<p><strong>Consequence</strong>: If an attack on the internal customer registration system allows passwords to be exposed, this confidential information will be exposed to people who should not have it.</p>
 </blockquote>
 <h2 id="2-integrity">2. Integrity<a href="#2-integrity" class="hanchor" ariaLabel="Anchor">#</a> </h2>
-<p>Este princípio garante que a informação enviada deverá chegar ao receptor de modo completo. Basicamente, é quando uma mensagem não seja alterada partindo de um emissor, travegando por um canal e chegando até um receptor.</p>
+<p>This principle ensures that the information sent will reach the receiver in its entirety. Basically, it is when a message is not altered from the sender, traveling through a channel, and reaching the receiver.</p>
+<blockquote>
+<p><strong>Example:</strong> An attacker alters the amounts on an invoice within the company’s financial management system.</p>
+</blockquote>
+<blockquote>
+<p><strong>Consequence:</strong> The data no longer reflects reality, compromising decisions and official records.</p>
+</blockquote>
 <h2 id="3-availability">3. Availability<a href="#3-availability" class="hanchor" ariaLabel="Anchor">#</a> </h2>
-<p>Este princípio visa garantir que as informações encontrem-se disponíveis para o usuário, independentemente do momento ou situação na qual este vier a precisar.</p>
+<p>This principle aims to ensure that information is available to users, regardless of when or where they need it.</p>
+<blockquote>
+<p><strong>Example:</strong> A ransomware attack encrypts all files on a server, preventing access to corporate systems.</p>
+</blockquote>
+<blockquote>
+<p><strong>Consequence:</strong> Users and services become unavailable, interrupting critical operations.</p>
+</blockquote>
 <h1 id="new-principles">New Principles:<a href="#new-principles" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <h2 id="4-authentication">4. Authentication<a href="#4-authentication" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <p>Verifies the identity of users or devices to ensure they are who they claim to be, often using passwords, two-factor authentication, or biometrics.</p>
+<blockquote>
+<p><strong>Example:</strong> A malicious user forges another employee’s credentials and accesses the system while impersonating them.</p>
+</blockquote>
+<blockquote>
+<p><strong>Consequence:</strong> The system believes the false identity is legitimate, enabling unauthorized actions.</p>
+</blockquote>
 <h2 id="5-non-repudiation">5. Non-repudiation<a href="#5-non-repudiation" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <p>Provides proof that a user or system cannot deny having sent a message or performed an action, which is crucial for transactions and legal accountability.</p>
+<blockquote>
+<p><strong>Example</strong>: A customer performs an online transaction but later claims they never did it, and the system lacks proper records (such as logs or a digital signature) to verify the action.</p>
+</blockquote>
+<blockquote>
+<p><strong>Consequence</strong>: It becomes impossible to prove who carried out the operation, opening the door to fraud or disputes.</p>
+</blockquote>
 
       </div></div>
 

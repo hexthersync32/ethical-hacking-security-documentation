@@ -6,32 +6,45 @@ description = " "
 weight = 1
 +++
 
-A segurança da informação é uma área dentro da Informática e Ciência da Computação que diz respeito à **proteção de dados**. Sumariamente, trata-se de um conjunto de técnicas que garante que uma mensagem seja encaminhada de maneira integral partindo de um **emissor** até alcançar um **receptor**.
+Information security is the set of practices, processes, and controls designed to protect data from unauthorized access, misuse, improper disclosure, alteration, destruction, or unavailability. 
 
-Para que isso seja possível nos tempos atuais, essa proteção deverá obedecer alguns princípios, também chamados de "pilares", representados na imagem logo abaixo:
+In short, it ensures that a message is forwarded from a **sender** to a **receiver** without any interception or modification along the way.
+
+Another terms may also be used, such as:
+
+- Digital Security;
+
+- Data Security;
+
+- Cybersecurity.
+
+For this to be possible in the current times, this protection must comply with certain principles, also called “pillars”, represented in the image below:
 
 ![Alt text](https://www.infosectrain.com/wp-content/uploads/2023/08/Principles-of-Information-Security.png "Optional title")
 
 ## 1. Confidentiality
 
-Este princípio garante que, com uma mensagem partindo de um emissor X, ela deverá ser recebida somente por um repector Y. Também garante as restrições necessárias de quem deverá ter acesso a essas informações sigilosas. 
+This principle ensures that a message sent from sender X should only be received by recipient Y. It also ensures the necessary restrictions on who should have access to this confidential information.
 
-> Example:
-Um dos primeiros exemplos de algoritmos criptográficos utilizados para cifrar mensagens foi a Cifra de César, utilizada na época dos romanos para que uma mensagem não pudesse ser violada no caminho para o destino final.
+> **Example**: The password used to access a banking application should only be shared between the account holder and the entity that holds their banking information. Other than that, access to this type of information should be considered completely restricted.
 
-> Example:
-A senha de acesso utilizada para acessar um aplicativo bancário deverá compartilhada somente entre o responsável pela conta e a entidade detentora de suas informações bancárias. Fora isso, o acesso a este tipo de informação deverá ser considerado completamente restrito.
-
-> Example:
-Se um usuário encontra-se numa situação em que credenciais de acesso de uma determinada plataforma forem expostas, considera-se que o pilar da Confidencialidade foi afetado.
+> **Consequence**: If an attack on the internal customer registration system allows passwords to be exposed, this confidential information will be exposed to people who should not have it.
 
 ## 2. Integrity
 
-Este princípio garante que a informação enviada deverá chegar ao receptor de modo completo. Basicamente, é quando uma mensagem não seja alterada partindo de um emissor, travegando por um canal e chegando até um receptor.
+This principle ensures that the information sent will reach the receiver in its entirety. Basically, it is when a message is not altered from the sender, traveling through a channel, and reaching the receiver.
+
+> **Example:** An attacker alters the amounts on an invoice within the company’s financial management system.
+
+> **Consequence:** The data no longer reflects reality, compromising decisions and official records.
 
 ## 3. Availability
 
-Este princípio visa garantir que as informações encontrem-se disponíveis para o usuário, independentemente do momento ou situação na qual este vier a precisar. 
+This principle aims to ensure that information is available to users, regardless of when or where they need it. 
+
+> **Example:** A ransomware attack encrypts all files on a server, preventing access to corporate systems.
+
+> **Consequence:** Users and services become unavailable, interrupting critical operations.
 
 # New Principles:
 
@@ -39,17 +52,14 @@ Este princípio visa garantir que as informações encontrem-se disponíveis par
 
 Verifies the identity of users or devices to ensure they are who they claim to be, often using passwords, two-factor authentication, or biometrics.
 
+> **Example:** A malicious user forges another employee’s credentials and accesses the system while impersonating them.
+
+> **Consequence:** The system believes the false identity is legitimate, enabling unauthorized actions.
+
 ## 5. Non-repudiation
 
 Provides proof that a user or system cannot deny having sent a message or performed an action, which is crucial for transactions and legal accountability. 
 
-<!--
-> Fusce pharetra suscipit orci nec tempor. Quisque vitae sem sit amet sem mollis consequat. Sed at imperdiet lorem. Vestibulum pharetra faucibus odio, ac feugiat tellus sollicitudin at. Pellentesque varius tristique mi imperdiet dapibus. Duis orci odio, sodales lacinia venenatis sit amet, feugiat et diam.
+> **Example**: A customer performs an online transaction but later claims they never did it, and the system lacks proper records (such as logs or a digital signature) to verify the action.
 
-Sed a leo id risus venenatis vulputate non quis nulla. Aenean nisl quam, lacinia pulvinar orci sit amet, eleifend eleifend dui. Nulla tempor ligula leo, eu vehicula quam condimentum a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla gravida tristique nunc sed semper. Morbi nec felis odio.
-
-- Sed efficitur, lacus ac scelerisque pellentesque, lectus risus dignissim nisl, fermentum semper lectus diam eget lacus.
-- Aenean facilisis ut ipsum condimentum ultrices.
-- Nunc ornare purus enim, id eleifend mauris vestibulum volutpat.
-- Fusce sed metus vulputate, lobortis purus et, finibus purus. Suspendisse quis posuere lorem. Vivamus vulputate nec risus in pulvinar.
--->
+> **Consequence**: It becomes impossible to prove who carried out the operation, opening the door to fraud or disputes.
