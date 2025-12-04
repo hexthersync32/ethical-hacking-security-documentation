@@ -2,16 +2,16 @@
 <html lang="en">
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   
-    <title>nmap :: Hexthersync32 | Cybersecurity Docs</title>
+    <title>curl :: Hexthersync32 | Cybersecurity Docs</title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Network exploration tool and security / port scanner." />
+<meta name="description" content="URL transfer and website or server requests" />
 <meta name="keywords" content="" />
 
   <meta name="robots" content="noodp" />
 
-<link rel="canonical" href="http://localhost:1313/posts/nmap/" />
+<link rel="canonical" href="http://localhost:1313/posts/curl/" />
 
 
 
@@ -72,9 +72,9 @@
 
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="nmap">
-<meta property="og:description" content="Network exploration tool and security / port scanner." />
-<meta property="og:url" content="http://localhost:1313/posts/nmap/" />
+<meta property="og:title" content="curl">
+<meta property="og:description" content="URL transfer and website or server requests" />
+<meta property="og:url" content="http://localhost:1313/posts/curl/" />
 <meta property="og:site_name" content="Hexthersync32 | Cybersecurity Docs" />
 
   <meta property="og:image" content="http://localhost:1313/og-image.png">
@@ -129,9 +129,9 @@
     
 <article class="post">
   <h1 class="post-title">
-    <a href="http://localhost:1313/posts/nmap/">nmap</a>
+    <a href="http://localhost:1313/posts/curl/">curl</a>
   </h1>
-  <div class="post-meta"><time class="post-date">2019-01-25</time><span class="post-author">#linux</span></div>
+  <div class="post-meta"><time class="post-date">2019-01-25</time><span class="post-author">#cyber-security #principles #information #security</span></div>
 
   
   
@@ -140,32 +140,18 @@
   
 
   <div class="post-content"><div>
-        <h2 id="most-commom-uses">Most commom uses<a href="#most-commom-uses" class="hanchor" ariaLabel="Anchor">#</a> </h2>
-<p>Para averiguar todos os dispositivos disponíveis numa rede:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    nmap -sn 192.168.0.0/24
-</span></span></code></pre></div><p>List all DNS script for Nmap:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    ls -al /usr/share/nmap/scripts/
-</span></span></code></pre></div><p>List DNS script for Nmap:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    ls -al /usr/share/nmap/scripts/ | grep -e <span style="color:#e6db74">&#34;dns-&#34;</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>broadcast-dns-service-discovery.nse
-</span></span><span style="display:flex;"><span>dns-blacklist.nse
-</span></span><span style="display:flex;"><span>dns-brute.nse
-</span></span><span style="display:flex;"><span>dns-cache-snoop.nse
-</span></span><span style="display:flex;"><span>dns-check-zone.nse
-</span></span><span style="display:flex;"><span>dns-client-subnet-scan.nse
-</span></span><span style="display:flex;"><span>dns-fuzz.nse
-</span></span><span style="display:flex;"><span>dns-ip6-arpa-scan.nse
-</span></span><span style="display:flex;"><span>dns-nsec3-enum.nse
-</span></span><span style="display:flex;"><span>dns-nsec-enum.nse
-</span></span><span style="display:flex;"><span>dns-nsid.nse
-</span></span><span style="display:flex;"><span>dns-random-srcport.nse
-</span></span><span style="display:flex;"><span>dns-random-txid.nse
-</span></span><span style="display:flex;"><span>dns-recursion.nse
-</span></span><span style="display:flex;"><span>dns-service-discovery.nse
-</span></span><span style="display:flex;"><span>dns-srv-enum.nse
-</span></span><span style="display:flex;"><span>dns-update.nse
-</span></span><span style="display:flex;"><span>dns-zeustracker.nse
-</span></span><span style="display:flex;"><span>dns-zone-transfer.nse
+        <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    curl google.com -I
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>HTTP/1.1 <span style="color:#ae81ff">301</span> Moved Permanently
+</span></span><span style="display:flex;"><span>Location: http://www.google.com/
+</span></span><span style="display:flex;"><span>Content-Type: text/html; charset<span style="color:#f92672">=</span>UTF-8
+</span></span><span style="display:flex;"><span>Content-Security-Policy-Report-Only: object-src <span style="color:#e6db74">&#39;none&#39;</span>;base-uri <span style="color:#e6db74">&#39;self&#39;</span>;script-src <span style="color:#e6db74">&#39;nonce-qYdV_FPHpEBv6vYwKNQrVA&#39;</span> <span style="color:#e6db74">&#39;strict-dynamic&#39;</span> <span style="color:#e6db74">&#39;report-sample&#39;</span> <span style="color:#e6db74">&#39;unsafe-eval&#39;</span> <span style="color:#e6db74">&#39;unsafe-inline&#39;</span> https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp
+</span></span><span style="display:flex;"><span>Date: Thu, <span style="color:#ae81ff">04</span> Dec <span style="color:#ae81ff">2025</span> 12:45:59 GMT
+</span></span><span style="display:flex;"><span>Expires: Sat, <span style="color:#ae81ff">03</span> Jan <span style="color:#ae81ff">2026</span> 12:45:59 GMT
+</span></span><span style="display:flex;"><span>Cache-Control: public, max-age<span style="color:#f92672">=</span><span style="color:#ae81ff">2592000</span>
+</span></span><span style="display:flex;"><span>Server: gws
+</span></span><span style="display:flex;"><span>Content-Length: <span style="color:#ae81ff">219</span>
+</span></span><span style="display:flex;"><span>X-XSS-Protection: <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>X-Frame-Options: SAMEORIGIN
 </span></span></code></pre></div>
       </div></div>
 
