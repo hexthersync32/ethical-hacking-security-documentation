@@ -1,9 +1,11 @@
 +++
 title = "DNS"
 date = "2017-09-29"
-description = "Sample article showcasing basic styling and formatting for HTML elements."
-weight = 3
+description = "Protocolo de tradução de nomes de domínio para endereços de IP."
+weight = 4
 +++
+
+# Definition
 
 DNS (Domais Name System) é um sistema hierárquico. Entre outras palavras, é um serviço (`porta 53`) que traduz nomes de domínio para endereços de IP e vice-versa. Esses tais __nomes de domínio__ podem referir-se comumente a endereços de websites (URLs).
 

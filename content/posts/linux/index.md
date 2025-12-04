@@ -3,8 +3,8 @@ title = "GNU/Linux"
 date = "2019-01-25"
 author = "#linux #gnu #operating-system"
 cover = "img/Tux.png"
-description = "The most powerful operating system used to ethical hackers."
-weight = 4
+description = "The most powerful operating system used by ethical hackers."
+weight = 5
 +++
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum metus. Aenean rutrum ligula sodales ex auctor, sed tempus dui mollis. Curabitur ipsum dui, aliquet nec commodo at, tristique eget ante. **Donec quis dolor nec nunc mollis interdum vel in purus**. Sed vitae leo scelerisque, sollicitudin elit sed, congue ante. In augue nisl, vestibulum commodo est a, tristique porttitor est. Proin laoreet iaculis ornare. Nullam ut neque quam.
