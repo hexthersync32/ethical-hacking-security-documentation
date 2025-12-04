@@ -1,6 +1,6 @@
 +++
 title = "DNS"
-date = "2019-03-11"
+date = "2017-09-29"
 description = "Sample article showcasing basic styling and formatting for HTML elements."
 weight = 3
 +++

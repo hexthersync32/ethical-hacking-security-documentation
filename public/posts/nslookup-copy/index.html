@@ -2,16 +2,16 @@
 <html lang="en">
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   
-    <title>nmap :: Hexthersync32 | Cybersecurity Docs</title>
+    <title>nslookup :: Hexthersync32 | Cybersecurity Docs</title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Network exploration tool and security / port scanner." />
+<meta name="description" content="Query Internet name servers interactively." />
 <meta name="keywords" content="" />
 
   <meta name="robots" content="noodp" />
 
-<link rel="canonical" href="http://localhost:1313/posts/nmap/" />
+<link rel="canonical" href="http://localhost:1313/posts/nslookup-copy/" />
 
 
 
@@ -72,9 +72,9 @@
 
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="nmap">
-<meta property="og:description" content="Network exploration tool and security / port scanner." />
-<meta property="og:url" content="http://localhost:1313/posts/nmap/" />
+<meta property="og:title" content="nslookup">
+<meta property="og:description" content="Query Internet name servers interactively." />
+<meta property="og:url" content="http://localhost:1313/posts/nslookup-copy/" />
 <meta property="og:site_name" content="Hexthersync32 | Cybersecurity Docs" />
 
   <meta property="og:image" content="http://localhost:1313/og-image.png">
@@ -83,7 +83,7 @@
 <meta property="og:image:height" content="627">
 
 
-  <meta property="article:published_time" content="2019-01-25 00:00:00 &#43;0000 UTC" />
+  <meta property="article:published_time" content="2019-03-11 00:00:00 &#43;0000 UTC" />
 
 
 
@@ -129,9 +129,9 @@
     
 <article class="post">
   <h1 class="post-title">
-    <a href="http://localhost:1313/posts/nmap/">nmap</a>
+    <a href="http://localhost:1313/posts/nslookup-copy/">nslookup</a>
   </h1>
-  <div class="post-meta"><time class="post-date">2019-01-25</time><span class="post-author">#linux</span></div>
+  <div class="post-meta"><time class="post-date">2019-03-11</time></div>
 
   
   
@@ -140,9 +140,25 @@
   
 
   <div class="post-content"><div>
-        <h2 id="most-commom-uses">Most commom uses<a href="#most-commom-uses" class="hanchor" ariaLabel="Anchor">#</a> </h2>
-<p>Para averiguar todos os dispositivos disponíveis numa rede:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>    nmap -sn 192.168.0.0/24
+        <p>O utilitário de texto <code>nslookup</code>, nativo em todos os sistemas operacionais, é utilizados para consulta de zona reversa de DNS.</p>
+<p>Ao realizar a pesquisa da zona reversa da plataforma GitHub, utiliza-se o comando da seguinte forma:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nslookup www.gupy.io
+</span></span></code></pre></div><p>O resultado da pesquisa será:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Server:		127.0.0.53
+</span></span><span style="display:flex;"><span>Address:	127.0.0.53#53
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Non-authoritative answer:
+</span></span><span style="display:flex;"><span>www.gupy.io	canonical name <span style="color:#f92672">=</span> 3299491.group41.sites.hubspot.net.
+</span></span><span style="display:flex;"><span>3299491.group41.sites.hubspot.net	canonical name <span style="color:#f92672">=</span> group41.sites.hscoscdn40.net.
+</span></span><span style="display:flex;"><span>Name:	group41.sites.hscoscdn40.net
+</span></span><span style="display:flex;"><span>Address: 199.60.103.228
+</span></span><span style="display:flex;"><span>Name:	group41.sites.hscoscdn40.net
+</span></span><span style="display:flex;"><span>Address: 199.60.103.28
+</span></span><span style="display:flex;"><span>;; communications error to 127.0.0.53#53: timed out
+</span></span><span style="display:flex;"><span>Name:	group41.sites.hscoscdn40.net
+</span></span><span style="display:flex;"><span>Address: 2606:2c40::c73c:671c
+</span></span><span style="display:flex;"><span>Name:	group41.sites.hscoscdn40.net
+</span></span><span style="display:flex;"><span>Address: 2606:2c40::c73c:67e4
 </span></span></code></pre></div>
       </div></div>
 
