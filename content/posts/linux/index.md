@@ -2,18 +2,25 @@
 title = "GNU/Linux"
 date = "2019-01-25"
 author = "#linux #gnu #operating-system"
-cover = "img/Tux.png"
+cover = "https://upload.wikimedia.org/wikipedia/commons/2/22/Heckert_GNU_white.svg"
 description = "The most powerful operating system used by ethical hackers."
-weight = 6
+weight = 7
 +++
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum metus. Aenean rutrum ligula sodales ex auctor, sed tempus dui mollis. Curabitur ipsum dui, aliquet nec commodo at, tristique eget ante. **Donec quis dolor nec nunc mollis interdum vel in purus**. Sed vitae leo scelerisque, sollicitudin elit sed, congue ante. In augue nisl, vestibulum commodo est a, tristique porttitor est. Proin laoreet iaculis ornare. Nullam ut neque quam.
+Explicando de uma maneira mais ilustrativa e didática, um sistema operacional funciona como um carro. Cada uma de seus fragmentos, como rodas, volante, pistão e embreagem, permite que o autmóvel de mova ou realize manobras. No entanto, este mesmo carro não terá qualquer utilidade se não houver a presença de um motor instalado, já que é a peça fundamental de seu funcionamento.
 
-> Fusce pharetra suscipit orci nec tempor. Quisque vitae sem sit amet sem mollis consequat. Sed at imperdiet lorem. Vestibulum pharetra faucibus odio, ac feugiat tellus sollicitudin at. Pellentesque varius tristique mi imperdiet dapibus. Duis orci odio, sodales lacinia venenatis sit amet, feugiat et diam.
+Consideramos que um sistema operacional é comparado a um carro, logo o equivalente a um motor seria o `kernel`, núcleo de qualquer sistema operacional presente no mercado. É por meio dele que existe a possibilidade de realização das seguintes tarefas em um computador:
 
-Sed a leo id risus venenatis vulputate non quis nulla. Aenean nisl quam, lacinia pulvinar orci sit amet, eleifend eleifend dui. Nulla tempor ligula leo, eu vehicula quam condimentum a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla gravida tristique nunc sed semper. Morbi nec felis odio.
+- Entrar em contato com o hardware;
 
-- Sed efficitur, lacus ac scelerisque pellentesque, lectus risus dignissim nisl, fermentum semper lectus diam eget lacus.
-- Nunc ornare purus enim, id eleifend mauris vestibulum volutpat.
-- Aenean facilisis ut ipsum condimentum ultrices.
-- Fusce sed metus vulputate, lobortis purus et, finibus purus. Suspendisse quis posuere lorem. Vivamus vulputate nec risus in pulvinar.
+- Gerir o armazenamento de memória;
+
+- Ordenar os processos;
+
+- Controlar a segurança;
+
+- Carregar os drivers necessários da memória;
+
+- Controlar os componentes de rede.
+
+{{< figure src="https://i.redd.it/debian-12-xfce-first-xfce-customization-how-did-i-do-v0-kuc9lvrkjafb1.png?width=2560&format=png&auto=webp&s=464f0efe433aab3e383a3f835ad74848ba8ac9cb" alt="Terminal Theme Preview" position="center" caption="Debian Xfce" captionPosition="center" >}}
