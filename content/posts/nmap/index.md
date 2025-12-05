@@ -4,7 +4,7 @@ date = "2019-01-25"
 author = "#linux"
 #cover = "img/Tux.png"
 description = "Network exploration tool and security / port scanner."
-weight = 6
+weight = 7
 +++
 
 ## Most commom uses
