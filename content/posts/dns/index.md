@@ -274,3 +274,26 @@ X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
 Press <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd> to end the session.
 
 Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
+
+##
+
+# FAQ
+## 1. Do ponto de vista técnico, DNS é realmente obrigatório para o tráfego de rede?
+
+## 2. Por que a maioria dos sistemas operacionais necessitam da configuração de dois endereços de DNS (primário e secundário)?
+
+## 3. Um máquina pode operar somente com um endereço de DNS?
+
+## 4. Um máquina pode operar com nenhum endereço de DNS?
+
+## 5. No caso de um computador pessoal, é possível configurá-lo para utilizar mais de dois endereços de DNS?
+
+## 6. E no caso de servidores (sejam estes físicos ou virtuais)?
+
+## 7. Um determinado computador está operando com um endereço de DNS 8.8.8.8 para acessar determinada plataforma. Em um determinado momento, um técnico de segurança da informação alterou o DNS para 10.70.32.90 e não foi possível mais acessar esta plataforma. Por que isto ocorre?
+
+## 8. O DNS é responsável por definir todas as rotas que uma máquina poderá ter acesso?
+
+## 9. Qual tecnologia ou protocolo é responsável por atribuir dinaminacamente um endereço de DNS para um computador?
+
+## 10. O que é uma zona DNS?
