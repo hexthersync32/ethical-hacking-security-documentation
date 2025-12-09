@@ -275,8 +275,6 @@ Press <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd> to end the session.
 
 Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
 
-##
-
 # FAQ
 ## 1. Do ponto de vista técnico, DNS é realmente obrigatório para o tráfego de rede?
 
@@ -297,3 +295,14 @@ Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and ot
 ## 9. Qual tecnologia ou protocolo é responsável por atribuir dinaminacamente um endereço de DNS para um computador?
 
 ## 10. O que é uma zona DNS?
+
+## 11. O que é uma zona reversa?
+
+## 12. O que é um sistema hierárquico?
+
+## 13. O que significa a expressão "resolver DNS"?
+
+## 14. O que é um servidor DNS?
+
+## 15. Servidor DNS é uma máquina física propriamente dita? Um roteador? O que é?
+
