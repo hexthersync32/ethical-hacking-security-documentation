@@ -3,8 +3,12 @@ title = "HTTP"
 date = "2019-01-25"
 author = "#cyber-security #principles #information #security"
 description = "Hypertext transfer protocol."
-weight = 6
+weight = 7
 +++
+
+# TCP/IP Layer: `Application`
+
+# Port: `80`
 
 O HTTP (Hypertext Transfer Protocol) é um protocolo que define como as requisições e respostas entre clientes (como navegadores) e servidores web devem ser estruturadas. Ele é uma linguagem de comunicação, uma especificação de formato, uma convenção.
 
