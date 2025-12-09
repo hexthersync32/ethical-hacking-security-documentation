@@ -140,7 +140,8 @@
   
 
   <div class="post-content"><div>
-        <h1 id="1-introduction">1. Introduction<a href="#1-introduction" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+        <p><img src="http://scanme.nmap.org/images/sitelogo.png" alt="Terminal Theme Preview"></p>
+<h1 id="1-introduction">1. Introduction<a href="#1-introduction" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <p>Um dos principais utilitários do arsenal de ferramentas para pentest.</p>
 <ul>
 <li>
@@ -277,6 +278,29 @@
 </span></span><span style="display:flex;"><span>dns-update.nse
 </span></span><span style="display:flex;"><span>dns-zeustracker.nse
 </span></span><span style="display:flex;"><span>dns-zone-transfer.nse
+</span></span></code></pre></div><h3 id="selecionar-porta-específica">Selecionar porta específica<a href="#selecionar-porta-específica" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nmap -p <span style="color:#ae81ff">80</span> scanme.nmap.org -v
+</span></span></code></pre></div><p>Resultado:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Starting Nmap 7.80 <span style="color:#f92672">(</span> https://nmap.org <span style="color:#f92672">)</span> at 2025-12-09 08:59 -03
+</span></span><span style="display:flex;"><span>Initiating Ping Scan at 08:59
+</span></span><span style="display:flex;"><span>Scanning scanme.nmap.org <span style="color:#f92672">(</span>45.33.32.156<span style="color:#f92672">)</span> <span style="color:#f92672">[</span><span style="color:#ae81ff">4</span> ports<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>Completed Ping Scan at 08:59, 0.01s elapsed <span style="color:#f92672">(</span><span style="color:#ae81ff">1</span> total hosts<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Initiating Parallel DNS resolution of <span style="color:#ae81ff">1</span> host. at 08:59
+</span></span><span style="display:flex;"><span>Completed Parallel DNS resolution of <span style="color:#ae81ff">1</span> host. at 08:59, 0.00s elapsed
+</span></span><span style="display:flex;"><span>Initiating SYN Stealth Scan at 08:59
+</span></span><span style="display:flex;"><span>Scanning scanme.nmap.org <span style="color:#f92672">(</span>45.33.32.156<span style="color:#f92672">)</span> <span style="color:#f92672">[</span><span style="color:#ae81ff">1</span> port<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>Discovered open port 80/tcp on 45.33.32.156
+</span></span><span style="display:flex;"><span>Completed SYN Stealth Scan at 08:59, 0.01s elapsed <span style="color:#f92672">(</span><span style="color:#ae81ff">1</span> total ports<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Nmap scan report <span style="color:#66d9ef">for</span> scanme.nmap.org <span style="color:#f92672">(</span>45.33.32.156<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Host is up <span style="color:#f92672">(</span>0.00068s latency<span style="color:#f92672">)</span>.
+</span></span><span style="display:flex;"><span>Other addresses <span style="color:#66d9ef">for</span> scanme.nmap.org <span style="color:#f92672">(</span>not scanned<span style="color:#f92672">)</span>: 2600:3c01::f03c:91ff:fe18:bb2f
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>PORT   STATE SERVICE
+</span></span><span style="display:flex;"><span>80/tcp open  http
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Read data files from: /usr/bin/../share/nmap
+</span></span><span style="display:flex;"><span>Nmap <span style="color:#66d9ef">done</span>: <span style="color:#ae81ff">1</span> IP address <span style="color:#f92672">(</span><span style="color:#ae81ff">1</span> host up<span style="color:#f92672">)</span> scanned in 0.11 seconds
+</span></span><span style="display:flex;"><span>           Raw packets sent: <span style="color:#ae81ff">5</span> <span style="color:#f92672">(</span>196B<span style="color:#f92672">)</span> | Rcvd: <span style="color:#ae81ff">2</span> <span style="color:#f92672">(</span>88B<span style="color:#f92672">)</span>
 </span></span></code></pre></div>
       </div></div>
 
