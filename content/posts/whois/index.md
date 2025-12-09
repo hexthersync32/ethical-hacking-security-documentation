@@ -2,7 +2,7 @@
 title = "whois"
 date = "2019-01-25"
 description = "Client for the `whois` directory service."
-weight = 16
+weight = 18
 +++
 
 # Definition

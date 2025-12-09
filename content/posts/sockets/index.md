@@ -1,9 +1,9 @@
 +++
-title = "HTTP"
+title = "Sockets"
 date = "2019-01-25"
 author = "#cyber-security #principles #information #security"
 description = "Hypertext transfer protocol."
-weight = 8
+weight = 15
 +++
 
 # TCP/IP Layer: `Application`

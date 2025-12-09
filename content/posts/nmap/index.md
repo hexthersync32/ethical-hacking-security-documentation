@@ -4,8 +4,10 @@ date = "2019-01-25"
 author = "#linux"
 #cover = "img/Tux.png"
 description = "Network exploration tool and security / port scanner."
-weight = 9
+weight = 10
 +++
+
+![Terminal Theme Preview](http://scanme.nmap.org/images/sitelogo.png)
 
 # 1. Introduction
 
@@ -176,4 +178,33 @@ dns-srv-enum.nse
 dns-update.nse
 dns-zeustracker.nse
 dns-zone-transfer.nse
+```
+
+### Selecionar porta específica
+```bash
+nmap -p 80 scanme.nmap.org -v
+```
+
+Resultado:
+```bash
+Starting Nmap 7.80 ( https://nmap.org ) at 2025-12-09 08:59 -03
+Initiating Ping Scan at 08:59
+Scanning scanme.nmap.org (45.33.32.156) [4 ports]
+Completed Ping Scan at 08:59, 0.01s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 08:59
+Completed Parallel DNS resolution of 1 host. at 08:59, 0.00s elapsed
+Initiating SYN Stealth Scan at 08:59
+Scanning scanme.nmap.org (45.33.32.156) [1 port]
+Discovered open port 80/tcp on 45.33.32.156
+Completed SYN Stealth Scan at 08:59, 0.01s elapsed (1 total ports)
+Nmap scan report for scanme.nmap.org (45.33.32.156)
+Host is up (0.00068s latency).
+Other addresses for scanme.nmap.org (not scanned): 2600:3c01::f03c:91ff:fe18:bb2f
+
+PORT   STATE SERVICE
+80/tcp open  http
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.11 seconds
+           Raw packets sent: 5 (196B) | Rcvd: 2 (88B)
 ```

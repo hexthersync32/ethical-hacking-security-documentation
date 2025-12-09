@@ -39,3 +39,7 @@ A máscara de CIDR (Classless Inter-Domain Routing), também conhecida como nota
 Em resumo, a máscara de CIDR desempenha um papel fundamental na
 gestão eficiente de endereços IP, no roteamento eficaz e na configuração de
 redes de computadores.
+
+# FAQ
+
+## 1. Qual a utilidade de usar a notação de máscara CIDR?
