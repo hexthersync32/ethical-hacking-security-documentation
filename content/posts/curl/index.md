@@ -3,7 +3,7 @@ title = "curl"
 date = "2019-01-25"
 author = "#cyber-security #principles #information #security"
 description = "URL transfer and website or server requests"
-weight = 1
+weight = 2
 +++
 
 ```bash

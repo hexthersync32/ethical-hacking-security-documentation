@@ -1,8 +1,8 @@
 +++
 title = "DNS"
 date = "2017-09-29"
-description = "Protocolo de tradução de nomes de domínio para endereços de IP."
-weight = 4
+description = "Protocol for translating domain names to IP addresses.."
+weight = 5
 +++
 
 # Definition

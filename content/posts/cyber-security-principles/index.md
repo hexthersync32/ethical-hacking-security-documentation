@@ -3,7 +3,7 @@ title = "Cyber Security Principles"
 date = "2019-01-25"
 author = "#cyber-security #principles #information #security"
 description = " "
-weight = 2
+weight = 3
 +++
 
 Information security is the set of practices, processes, and controls designed to protect data from unauthorized access, misuse, improper disclosure, alteration, destruction, or unavailability. 
