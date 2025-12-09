@@ -2,16 +2,17 @@
 <html lang="en">
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   
-    <title>DNS :: Hexthersync32 | Cybersecurity Docs</title>
+    <title> :: Hexthersync32 | Cybersecurity Docs</title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Protocol for translating domain names to IP addresses.." />
+<meta name="description" content="This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.
+" />
 <meta name="keywords" content="" />
 
   <meta name="robots" content="noodp" />
 
-<link rel="canonical" href="http://localhost:1313/posts/dns/" />
+<link rel="canonical" href="http://localhost:1313/pages/boilerplate/" />
 
 
 
@@ -72,9 +73,10 @@
 
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="DNS">
-<meta property="og:description" content="Protocol for translating domain names to IP addresses.." />
-<meta property="og:url" content="http://localhost:1313/posts/dns/" />
+<meta property="og:title" content="">
+<meta property="og:description" content="This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.
+" />
+<meta property="og:url" content="http://localhost:1313/pages/boilerplate/" />
 <meta property="og:site_name" content="Hexthersync32 | Cybersecurity Docs" />
 
   <meta property="og:image" content="http://localhost:1313/og-image.png">
@@ -82,8 +84,6 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="627">
 
-
-  <meta property="article:published_time" content="2017-09-29 00:00:00 &#43;0000 UTC" />
 
 
 
@@ -129,9 +129,9 @@
     
 <article class="post">
   <h1 class="post-title">
-    <a href="http://localhost:1313/posts/dns/">DNS</a>
+    <a href="http://localhost:1313/pages/boilerplate/"></a>
   </h1>
-  <div class="post-meta"><time class="post-date">2017-09-29</time></div>
+  <div class="post-meta"></div>
 
   
   
@@ -140,75 +140,10 @@
   
 
   <div class="post-content"><div>
-        <h1 id="definition">Definition<a href="#definition" class="hanchor" ariaLabel="Anchor">#</a> </h1>
-<p>DNS (Domais Name System) é um sistema hierárquico. Entre outras palavras, é um serviço (<code>porta 53</code>) que traduz nomes de domínio para endereços de IP e vice-versa. Esses tais <strong>nomes de domínio</strong> podem referir-se comumente a endereços de websites (URLs).</p>
-<p>Em <strong>segurança da informação</strong>, <em>resolução reversa</em> (ou <em>reverse DNS lookup</em>) é o processo de <strong>descobrir o nome de domínio associado a um endereço IP</strong> — o contrário da resolução DNS comum, que traduz domínio → IP.</p>
-<p>Aqui vai uma explicação clara:</p>
-<h3 id="o-que-é-a-resolução-reversa"><strong>O que é a resolução reversa</strong><a href="#o-que-é-a-resolução-reversa" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-<p>É uma consulta ao DNS para verificar qual domínio (ex.: <code>exemplo.com</code>) está registrado para um determinado endereço IP (ex.: <code>192.0.2.10</code>).
-Isso é feito acessando registros especiais chamados <strong>PTR (Pointer Records)</strong>.</p>
-<h3 id="por-que-isso-é-importante-em-segurança"><strong>Por que isso é importante em segurança</strong><a href="#por-que-isso-é-importante-em-segurança" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-<ol>
-<li>
-<p><strong>Verificação de legitimidade e identificação</strong>
-Ajuda a confirmar se um IP realmente pertence ao domínio que ele afirma representar — útil para validar servidores, identificar origem de tráfego e detectar disfarces.</p>
-</li>
-<li>
-<p><strong>Detecção de atividades suspeitas</strong>
-Em logs de firewall, IDS/IPS ou servidores, a resolução reversa auxilia a reconhecer se um IP está associado a hosts legítimos ou a fontes potencialmente maliciosas.</p>
-</li>
-<li>
-<p><strong>Autenticação e reputação em serviços críticos</strong>
-Protocolos como SMTP usam reverse DNS para verificar se um servidor de e-mail é confiável. Ausência ou inconsistência de PTR é frequentemente sinal de spam ou spoofing.</p>
-</li>
-</ol>
-<p>Se quiser, posso dar exemplos práticos ou mostrar como realizar uma resolução reversa usando comandos como <code>dig</code>, <code>nslookup</code> ou ferramentas online.</p>
-<p><img src="https://www.whatismyip.com/static/662cddb98cbb8537a6575bc1bb19c9bb/reverse-dns-lookup-diagram.webp" alt="Terminal Theme Preview"></p>
-<p>Exatamente — <strong>é isso mesmo</strong>.</p>
-<p>A <strong>resolução reversa</strong> é justamente o ato de <strong>descobrir qual domínio (ou hostname) está associado a um determinado endereço IP</strong>.</p>
-<p>Em termos simples:</p>
-<ul>
-<li><strong>Resolução normal:</strong> domínio → IP</li>
-<li><strong>Resolução reversa:</strong> IP → domínio</li>
-</ul>
-<p>Se quiser, posso explicar como essa resolução é feita tecnicamente (com registros PTR) ou mostrar exemplos práticos.</p>
-<p>![Terminal Theme Preview](<a href="https://images.ctfassets.net/t6n243uipzy1/24127.0.0.1">https://images.ctfassets.net/t6n243uipzy1/24127.0.0.1</a>	localhost
-127.0.1.1	LUCLAPTOP</p>
-<h1 id="the-following-lines-are-desirable-for-ipv6-capable-hosts">The following lines are desirable for IPv6 capable hosts<a href="#the-following-lines-are-desirable-for-ipv6-capable-hosts" class="hanchor" ariaLabel="Anchor">#</a> </h1>
-<p>::1     ip6-localhost ip6-loopback
-fe00::0 ip6-localnet
-ff00::0 ip6-mcastprefix
-ff02::1 ip6-allnodes
-ff02::2 ip6-allrouters
-liULRiJIvyTmU6GLBzJc/7e7b33154976dedaa93d022ac9b41b13/reverse_dns_lookup.png)</p>
-<p>Localizar um domínio a partir de um IP — por meio da <strong>resolução reversa (reverse DNS)</strong> — traz várias vantagens importantes para profissionais de <strong>segurança da informação</strong>. As principais são:</p>
-<h3 id="1-identificação-e-análise-de-origem-do-tráfego"><strong>1. Identificação e análise de origem do tráfego</strong><a href="#1-identificação-e-análise-de-origem-do-tráfego" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-<p>Saber a que domínio um IP pertence ajuda a:</p>
-<ul>
-<li>Reconhecer se o tráfego vem de uma organização legítima (Google, AWS, Microsoft etc.) ou de uma rede suspeita.</li>
-<li>Entender o perfil de quem está acessando, escaneando ou atacando um sistema.
-Isso torna mais fácil distinguir acessos benignos de potenciais ameaças.</li>
-</ul>
-<h3 id="2-detecção-de-comportamento-malicioso"><strong>2. Detecção de comportamento malicioso</strong><a href="#2-detecção-de-comportamento-malicioso" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-<p>Quando um IP aparece em logs de firewall, IDS/IPS ou servidores, a resolução reversa pode revelar se:</p>
-<ul>
-<li>O host pertence a um provedor associado a botnets.</li>
-<li>O domínio é recém-criado, genérico ou sem reputação.</li>
-<li>Há inconsistência entre o host declarado e o domínio real — sinal comum de spoofing ou atividade fraudulenta.</li>
-</ul>
-<h3 id="3-validação-e-confiança-em-serviços-críticos"><strong>3. Validação e confiança em serviços críticos</strong><a href="#3-validação-e-confiança-em-serviços-críticos" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-<p>Em muitos protocolos, especialmente e-mail (SMTP), a resolução reversa é usada como medida de segurança:</p>
-<ul>
-<li>Servidores só aceitam conexões de IPs cujo <strong>PTR (reverse)</strong> combina com o <strong>A record (forward)</strong>.</li>
-<li>Falta de reverse DNS é frequentemente tratada como indicador de spam, phishing ou servidores mal configurados.</li>
-</ul>
-<hr>
-<p>Em resumo:
-<strong>Localizar o domínio de um IP ajuda a verificar legitimidade, identificar anomalias e reduzir riscos</strong>, tornando a análise de incidentes e o monitoramento de redes muito mais eficazes.</p>
-<p>Se quiser, posso explicar como validar se um PTR é confiável ou como usar ferramentas como <code>nslookup</code>, <code>dig</code> e <code>host</code> para fazer essas consultas.</p>
-<p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.</p>
+        <p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.</p>
 <h2 id="headings">Headings<a href="#headings" class="hanchor" ariaLabel="Anchor">#</a> </h2>
-<p>The following HTML <code>&lt;h1&gt;</code>—<code>&lt;h6&gt;</code> elements represent six levels of section headings. <code>&lt;h1&gt;</code> is the highest section level while <code>&lt;h6&gt;</code> is the lowest.</p>
+<p>Classless Inter-Domain Routing
+The following HTML <code>&lt;h1&gt;</code>—<code>&lt;h6&gt;</code> elements represent six levels of section headings. <code>&lt;h1&gt;</code> is the highest section level while <code>&lt;h6&gt;</code> is the lowest.</p>
 <h1 id="h1">H1<a href="#h1" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <h2 id="h2">H2<a href="#h2" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <h3 id="h3">H3<a href="#h3" class="hanchor" ariaLabel="Anchor">#</a> </h3>
@@ -378,18 +313,17 @@ Isso torna mais fácil distinguir acessos benignos de potenciais ameaças.</li>
 <p>X<!-- raw HTML omitted -->n<!-- raw HTML omitted --> + Y<!-- raw HTML omitted -->n<!-- raw HTML omitted --> = Z<!-- raw HTML omitted -->n<!-- raw HTML omitted --></p>
 <p>Press <!-- raw HTML omitted -->CTRL<!-- raw HTML omitted -->+<!-- raw HTML omitted -->ALT<!-- raw HTML omitted -->+<!-- raw HTML omitted -->Delete<!-- raw HTML omitted --> to end the session.</p>
 <p>Most <!-- raw HTML omitted -->salamanders<!-- raw HTML omitted --> are nocturnal, and hunt for insects, worms, and other small creatures.</p>
-<h2></h2>
-<h1 id="faq">FAQ<a href="#faq" class="hanchor" ariaLabel="Anchor">#</a> </h1>
-<h2 id="1-do-ponto-de-vista-técnico-dns-é-realmente-obrigatório-para-o-tráfego-de-rede">1. Do ponto de vista técnico, DNS é realmente obrigatório para o tráfego de rede?<a href="#1-do-ponto-de-vista-técnico-dns-é-realmente-obrigatório-para-o-tráfego-de-rede" class="hanchor" ariaLabel="Anchor">#</a> </h2>
-<h2 id="2-por-que-a-maioria-dos-sistemas-operacionais-necessitam-da-configuração-de-dois-endereços-de-dns-primário-e-secundário">2. Por que a maioria dos sistemas operacionais necessitam da configuração de dois endereços de DNS (primário e secundário)?<a href="#2-por-que-a-maioria-dos-sistemas-operacionais-necessitam-da-configuração-de-dois-endereços-de-dns-primário-e-secundário" class="hanchor" ariaLabel="Anchor">#</a> </h2>
-<h2 id="3-um-máquina-pode-operar-somente-com-um-endereço-de-dns">3. Um máquina pode operar somente com um endereço de DNS?<a href="#3-um-máquina-pode-operar-somente-com-um-endereço-de-dns" class="hanchor" ariaLabel="Anchor">#</a> </h2>
-<h2 id="4-um-máquina-pode-operar-com-nenhum-endereço-de-dns">4. Um máquina pode operar com nenhum endereço de DNS?<a href="#4-um-máquina-pode-operar-com-nenhum-endereço-de-dns" class="hanchor" ariaLabel="Anchor">#</a> </h2>
-<h2 id="5-no-caso-de-um-computador-pessoal-é-possível-configurá-lo-para-utilizar-mais-de-dois-endereços-de-dns">5. No caso de um computador pessoal, é possível configurá-lo para utilizar mais de dois endereços de DNS?<a href="#5-no-caso-de-um-computador-pessoal-é-possível-configurá-lo-para-utilizar-mais-de-dois-endereços-de-dns" class="hanchor" ariaLabel="Anchor">#</a> </h2>
-<h2 id="6-e-no-caso-de-servidores-sejam-estes-físicos-ou-virtuais">6. E no caso de servidores (sejam estes físicos ou virtuais)?<a href="#6-e-no-caso-de-servidores-sejam-estes-físicos-ou-virtuais" class="hanchor" ariaLabel="Anchor">#</a> </h2>
-<h2 id="7-um-determinado-computador-está-operando-com-um-endereço-de-dns-8888-para-acessar-determinada-plataforma-em-um-determinado-momento-um-técnico-de-segurança-da-informação-alterou-o-dns-para-10703290-e-não-foi-possível-mais-acessar-esta-plataforma-por-que-isto-ocorre">7. Um determinado computador está operando com um endereço de DNS 8.8.8.8 para acessar determinada plataforma. Em um determinado momento, um técnico de segurança da informação alterou o DNS para 10.70.32.90 e não foi possível mais acessar esta plataforma. Por que isto ocorre?<a href="#7-um-determinado-computador-está-operando-com-um-endereço-de-dns-8888-para-acessar-determinada-plataforma-em-um-determinado-momento-um-técnico-de-segurança-da-informação-alterou-o-dns-para-10703290-e-não-foi-possível-mais-acessar-esta-plataforma-por-que-isto-ocorre" class="hanchor" ariaLabel="Anchor">#</a> </h2>
-<h2 id="8-o-dns-é-responsável-por-definir-todas-as-rotas-que-uma-máquina-poderá-ter-acesso">8. O DNS é responsável por definir todas as rotas que uma máquina poderá ter acesso?<a href="#8-o-dns-é-responsável-por-definir-todas-as-rotas-que-uma-máquina-poderá-ter-acesso" class="hanchor" ariaLabel="Anchor">#</a> </h2>
-<h2 id="9-qual-tecnologia-ou-protocolo-é-responsável-por-atribuir-dinaminacamente-um-endereço-de-dns-para-um-computador">9. Qual tecnologia ou protocolo é responsável por atribuir dinaminacamente um endereço de DNS para um computador?<a href="#9-qual-tecnologia-ou-protocolo-é-responsável-por-atribuir-dinaminacamente-um-endereço-de-dns-para-um-computador" class="hanchor" ariaLabel="Anchor">#</a> </h2>
-<h2 id="10-o-que-é-uma-zona-dns">10. O que é uma zona DNS?<a href="#10-o-que-é-uma-zona-dns" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum metus. Aenean rutrum ligula sodales ex auctor, sed tempus dui mollis. Curabitur ipsum dui, aliquet nec commodo at, tristique eget ante. <strong>Donec quis dolor nec nunc mollis interdum vel in purus</strong>. Sed vitae leo scelerisque, sollicitudin elit sed, congue ante. In augue nisl, vestibulum commodo est a, tristique porttitor est. Proin laoreet iaculis ornare. Nullam ut neque quam.</p>
+<blockquote>
+<p>Fusce pharetra suscipit orci nec tempor. Quisque vitae sem sit amet sem mollis consequat. Sed at imperdiet lorem. Vestibulum pharetra faucibus odio, ac feugiat tellus sollicitudin at. Pellentesque varius tristique mi imperdiet dapibus. Duis orci odio, sodales lacinia venenatis sit amet, feugiat et diam.</p>
+</blockquote>
+<p>Sed a leo id risus venenatis vulputate non quis nulla. Aenean nisl quam, lacinia pulvinar orci sit amet, eleifend eleifend dui. Nulla tempor ligula leo, eu vehicula quam condimentum a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla gravida tristique nunc sed semper. Morbi nec felis odio.</p>
+<ul>
+<li>Sed efficitur, lacus ac scelerisque pellentesque, lectus risus dignissim nisl, fermentum semper lectus diam eget lacus.</li>
+<li>Nunc ornare purus enim, id eleifend mauris vestibulum volutpat.</li>
+<li>Aenean facilisis ut ipsum condimentum ultrices.</li>
+<li>Fusce sed metus vulputate, lobortis purus et, finibus purus. Suspendisse quis posuere lorem. Vivamus vulputate nec risus in pulvinar.</li>
+</ul>
 <div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
