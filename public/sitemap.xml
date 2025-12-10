@@ -26,7 +26,13 @@
     <loc>http://localhost:1313/posts/footprinting/</loc>
     <lastmod>2019-01-25T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/posts/ddos/</loc>
+    <lastmod>2019-01-25T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/http/</loc>
+    <lastmod>2019-01-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/ip-address/</loc>
     <lastmod>2019-01-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/linux/</loc>
@@ -37,6 +43,9 @@
   </url><url>
     <loc>http://localhost:1313/posts/nslookup/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/osi-model/</loc>
+    <lastmod>2019-01-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/ping/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
@@ -52,6 +61,9 @@
   </url><url>
     <loc>http://localhost:1313/posts/spoofing/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/tcp-ip/</loc>
+    <lastmod>2019-01-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/tcp-udp/</loc>
     <lastmod>2019-01-25T00:00:00+00:00</lastmod>
