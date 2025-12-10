@@ -1,8 +1,9 @@
 +++
 title = "dig"
 date = "2019-03-11"
+author = "#utility #linux-utility #dns"
 description = "DNS lookup utility."
-weight = 4
+weight = 5
 +++
 
 O utilitário de texto `dig` extrai informações de DNS.

@@ -1,10 +1,9 @@
 +++
 title = "Footprinting"
 date = "2019-01-25"
-author = "#cyber-security #principles #information #security"
+author = " "
 description = " "
-cover = "https://upload.wikimedia.org/wikipedia/commons/1/10/Fingerprintforcriminologystubs.jpg"
-weight = 7
+weight = 8
 +++
 
 # 1. Techniques

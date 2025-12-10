@@ -140,7 +140,39 @@
   
 
   <div class="post-content"><div>
-        <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    curl google.com -I
+        <h1 id="1-introduction">1. Introduction<a href="#1-introduction" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>Designed to work without user interaction, curl is a tool for transferring data from or to a server. It supports these protocols:</p>
+<ul>
+<li><code>DICT</code> (Dictionary network | Port 2628)</li>
+<li><code>FILE</code></li>
+<li><code>FTP</code> (Data transfer | Port 20, 21)</li>
+<li><code>FTPS</code>,</li>
+<li><code>GOPHER</code>,</li>
+<li><code>GOPHERS</code>,</li>
+<li><code>HTTP</code>,</li>
+<li><code>HTTPS</code>,</li>
+<li><code>IMAP</code>,</li>
+<li><code>IMAPS</code>,</li>
+<li><code>LDAP</code>,</li>
+<li><code>LDAPS</code>,</li>
+<li><code>MQTT</code>,</li>
+<li><code>POP3</code>,</li>
+<li><code>POP3S</code>,</li>
+<li><code>RTMP</code>,</li>
+<li><code>RTMPS</code>,</li>
+<li><code>RTSP</code></li>
+<li><code>SCP</code>,</li>
+<li><code>SFTP</code>,</li>
+<li><code>SMB</code>,</li>
+<li><code>SMBS</code>,</li>
+<li><code>SMTP</code>,</li>
+<li><code>SMTPS</code>,</li>
+<li><code>TELNET</code></li>
+<li><code>TFTP</code></li>
+</ul>
+<p>curl  offers  a  busload  of  useful  tricks like proxy support, user authentication, FTP upload, HTTP post, SSL connections, cookies, file
+transfer resume and more. As you will see below, the number of features will make your head spin.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    curl google.com -I
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>HTTP/1.1 <span style="color:#ae81ff">301</span> Moved Permanently
 </span></span><span style="display:flex;"><span>Location: http://www.google.com/
 </span></span><span style="display:flex;"><span>Content-Type: text/html; charset<span style="color:#f92672">=</span>UTF-8

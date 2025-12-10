@@ -2,7 +2,7 @@
 title = "ping"
 date = "2019-03-11"
 description = "Send ICMP ECHO_REQUEST to network hosts."
-weight = 12
+weight = 15
 +++
 
 # 1. Example
@@ -28,3 +28,9 @@ PING scanme.nmap.org (45.33.32.156) 56(84) bytes of data.
 rtt min/avg/max/mdev = 236.117/271.645/315.311/25.221 ms
 
 ```
+
+# 1. Attacks with Ping Utilities
+
+## 1.1. Ping of Death
+
+## 1.2. Ping Flood

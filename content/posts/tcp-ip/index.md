@@ -1,9 +1,9 @@
 +++
-title = "HTTP"
+title = "TCP/IP Stack"
 date = "2019-01-25"
-author = "#protocol"
+author = "#cyber-security #principles #information #security"
 description = "Hypertext transfer protocol."
-weight = 9
+weight = 20
 +++
 
 # TCP/IP Layer: `Application`

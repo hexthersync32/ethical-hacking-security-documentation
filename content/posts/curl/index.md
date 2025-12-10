@@ -1,10 +1,45 @@
 +++
 title = "curl"
 date = "2019-01-25"
-author = "#cyber-security #principles #information #security"
+author = "#server-request #data-transfer"
 description = "URL transfer and website or server requests"
 weight = 2
 +++
+
+# 1. Introduction
+
+Designed to work without user interaction, curl is a tool for transferring data from or to a server. It supports these protocols: 
+
+- `DICT` (Dictionary network | Port 2628)
+- `FILE`
+- `FTP` (Data transfer | Port 20, 21)
+- `FTPS`, 
+- `GOPHER`, 
+- `GOPHERS`, 
+- `HTTP`, 
+- `HTTPS`,
+- `IMAP`, 
+- `IMAPS`, 
+- `LDAP`, 
+- `LDAPS`, 
+- `MQTT`, 
+- `POP3`, 
+- `POP3S`, 
+- `RTMP`, 
+- `RTMPS`,
+- `RTSP` 
+- `SCP`, 
+- `SFTP`, 
+- `SMB`, 
+- `SMBS`, 
+- `SMTP`, 
+- `SMTPS`, 
+- `TELNET` 
+- `TFTP`
+
+curl  offers  a  busload  of  useful  tricks like proxy support, user authentication, FTP upload, HTTP post, SSL connections, cookies, file
+transfer resume and more. As you will see below, the number of features will make your head spin.
+
 
 ```bash
     curl google.com -I

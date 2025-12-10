@@ -1,10 +1,9 @@
 +++
 title = "nmap"
 date = "2019-01-25"
-author = "#linux"
-#cover = "img/Tux.png"
+author = "#linux #scan #network-scanner"
 description = "Network exploration tool and security / port scanner."
-weight = 10
+weight = 12
 +++
 
 ![Terminal Theme Preview](http://scanme.nmap.org/images/sitelogo.png)
