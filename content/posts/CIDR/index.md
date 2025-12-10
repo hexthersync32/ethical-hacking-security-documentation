@@ -1,6 +1,7 @@
 +++
 title = "CIDR"
 date = "2019-03-11"
+author = "#cidr #mask #subnet #mask-address"
 description = "Classless Inter-Domain Routing"
 weight = 1
 cover = "https://networkproguide.com/wp-content/uploads/cidr-subnet-cheat-sheet-featured.png"
@@ -18,7 +19,9 @@ cover = "https://networkproguide.com/wp-content/uploads/cidr-subnet-cheat-sheet-
 | 128 | 2 | /25 | `255.255.255.128` |
 | 256 | 1 | /24 | `255.255.255.0` |
 
-A máscara de CIDR (Classless Inter-Domain Routing), também conhecida como notação CIDR ou máscara de sub-rede CIDR, é uma abordagem flexível para dividir e alocar endereços IP em redes de computadores. Ela substituiu o sistema de classes de endereços IP (A, B, C, D, E) usado anteriormente. A notação CIDR é expressa em um formato que combina um endereço de rede com uma contagem de bits que indica quantos bits são usados para representar a parte da rede e quantos bits são usados para representar a parte do host. Aqui estão algumas funcionalidades importantes da máscara de CIDR nos ambientes de redes:
+A máscara de CIDR (Classless Inter-Domain Routing), também conhecida como notação CIDR ou máscara de sub-rede CIDR, é uma abordagem flexível para dividir e alocar endereços IP em redes de computadores. Ela substituiu o sistema de classes de endereços IP (A, B, C, D, E) usado anteriormente. 
+
+A notação CIDR é expressa em um formato que combina um endereço de rede com uma contagem de bits que indica quantos bits são usados para representar a parte da rede e quantos bits são usados para representar a parte do host. Aqui estão algumas funcionalidades importantes da máscara de CIDR nos ambientes de redes:
 
 1.   Alocação eficiente de endereços IP: A máscara de CIDR permite uma alocação mais eficiente de endereços IP, pois não está vinculada às classes de endereços tradicionais. Isso significa que você pode criar sub-redes com tamanhos variados, adaptando-se às necessidades específicas de sua rede, evitando o desperdício de endereços IP.
 
@@ -36,9 +39,7 @@ A máscara de CIDR (Classless Inter-Domain Routing), também conhecida como nota
 
 8.   Conservação de endereços: A capacidade de criar sub-redes com tamanhos variados e precisos ajuda a conservar endereços IP, o que é essencial em um cenário de escassez de endereços IPv4.
 
-Em resumo, a máscara de CIDR desempenha um papel fundamental na
-gestão eficiente de endereços IP, no roteamento eficaz e na configuração de
-redes de computadores.
+A máscara de CIDR desempenha um papel fundamental na gestão eficiente de endereços IP, no roteamento eficaz e na configuração de redes de computadores.
 
 # FAQ
 
