@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+    <title>Three-Way Handshake (SYN/ACK) :: Hexthersync32 | Cybersecurity Docs</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Client for the `whois` directory service." />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="http://localhost:1313/posts/three-way-handshake/" />
+
+
+
+
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/buttons.min.86f6b4c106b6c6eb690ae5203d36b442c1f66f718ff4e8164fa86cf6c61ad641.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/code.min.d529ea4b2fb8d34328d7d31afc5466d5f7bc2f0bc9abdd98b69385335d7baee4.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/fonts.min.5bb7ed13e1d00d8ff39ea84af26737007eb5051b157b86fc24487c94f3dc8bbe.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/footer.min.eb8dfc2c6a7eafa36cd3ba92d63e69e849e2200e0002a228d137f236b09ecd75.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/gist.min.a751e8b0abe1ba8bc53ced52a38b19d8950fe78ca29454ea8c2595cf26aad5c0.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/header.min.75c7eb0e2872d95ff48109c6647d0223a38db52e2561dd87966eb5fc7c6bdac6.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/main.min.36833afd348409fc6c3d09d0897c5833d9d5bf1ff31f5e60ea3ee42ce2b1268c.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/menu.min.3c17467ebeb3d38663dce68f71f519901124fa5cbb4519b2fb0667a21e9aca39.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/pagination.min.bbb986dbce00a5ce5aca0504b7925fc1c581992a4bf57f163e5d69cc1db7d836.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/post.min.e6dddd258e64c83e05cec0cd49c05216742d42fc8ecbfbe6b67083412b609bd3.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/syntax.min.a0773cce9310cb6d8ed23e50f005448facf29a53001b57e038828daa466b25c0.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/terminal.min.50c1c942103c94ef5432d9afaa80aa682032f33887783e3118cfa9ac29b946be.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/terms.min.b81791663c3790e738e571cdbf802312390d30e4b1d8dc9d814a5b5454d0ac11.css">
+
+
+
+
+
+
+
+<link rel="shortcut icon" href="http://localhost:1313/favicon.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Three-Way Handshake (SYN/ACK)">
+<meta property="og:description" content="Client for the `whois` directory service." />
+<meta property="og:url" content="http://localhost:1313/posts/three-way-handshake/" />
+<meta property="og:site_name" content="Hexthersync32 | Cybersecurity Docs" />
+
+  <meta property="og:image" content="http://localhost:1313/og-image.png">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+  <meta property="article:published_time" content="2019-01-25 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+<div class="container">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="http://localhost:1313/">
+  <div class="logo">
+    Welcome!
+  </div>
+</a>
+<a href="https://lucaxgomex.github.io/">
+  <div class="logo">
+    Go Back
+  </div>
+</a>
+
+
+    </div>
+    
+    
+  </div>
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="http://localhost:1313/posts/three-way-handshake/">Three-Way Handshake (SYN/ACK)</a>
+  </h1>
+  <div class="post-meta"><time class="post-date">2019-01-25</time></div>
+
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <h1 id="1-overview">1. Overview<a href="#1-overview" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>Processo responsável pelo estabelecimento de conexão através do protocolo TCP. Para que isso se concretize, é importante que essa técnica atua com os seguintes passos:</p>
+<ul>
+<li>
+<p><code>SYN</code> = (Synchronize)</p>
+</li>
+<li>
+<p><code>ACK</code> = (Acknowledgement)</p>
+</li>
+</ul>
+<p>Os processos são os seguintes:</p>
+<ol>
+<li>O cliente envia um pacote com a flag <strong><em>SYN</em></strong> ativa junto de uma sequência randômica de números (ISN);</li>
+<li>O cliente entra em estado de <strong><em>SYN-SENT</em></strong>;</li>
+<li>O servidor responde com uma pacote com as flags <strong><em>SYN + ACK</em></strong> (ACK = Client ISN + 1) e providenciando seu próprio ISN;</li>
+<li>O servidor entra em estado de <strong><em>SYN-RCVD</em></strong>;</li>
+<li>O cliente responde com um pacote <strong><em>ACK</em></strong> (ACK = Server ISN + 1).</li>
+<li>Ambos os participantes entram em estado de <strong><em>ESTABLISHED</em></strong> e os dados podem ser transferidos.</li>
+</ol>
+<p>Administradores de rede, pentesters e engenheiros de segurança pode observar a three-way handshake por meio do Shell Linux.</p>
+<p>Comandos mais comuns:</p>
+<h2 id="11-tcpdump">1.1. Tcpdump<a href="#11-tcpdump" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>It can capture network traffic to display the SYN, SYN-ACK, and ACK packets in real-time.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>tcpdump
+</span></span></code></pre></div><hr>
+<h2 id="12-nestat">1.2. Nestat<a href="#12-nestat" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>It shows the various connection states (<code>SYN-SENT</code>, <code>SYN-RCVD</code>, <code>CLOSE_WAIT</code>, <code>TIME_WAIT</code> and <code>ESTABLISHED</code>) within the kernel&rsquo;s state machine. A more recent variation of this command is <code>ss</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nestat
+</span></span></code></pre></div><p>Resultado:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Active Internet connections <span style="color:#f92672">(</span>w/o servers<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+</span></span><span style="display:flex;"><span>tcp        <span style="color:#ae81ff">0</span>      <span style="color:#ae81ff">0</span> GLB01TIDP13274:54128    151.101.1.91:https      ESTABLISHED
+</span></span><span style="display:flex;"><span>tcp        <span style="color:#ae81ff">0</span>      <span style="color:#ae81ff">0</span> localhost:xtel          localhost:40702         TIME_WAIT  
+</span></span><span style="display:flex;"><span>tcp        <span style="color:#ae81ff">0</span>      <span style="color:#ae81ff">0</span> localhost:xtel          localhost:47702         TIME_WAIT  
+</span></span><span style="display:flex;"><span>tcp        <span style="color:#ae81ff">0</span>      <span style="color:#ae81ff">0</span> GLB01TIDP13274:52122    93.243.107.34.bc.:https ESTABLISHED
+</span></span><span style="display:flex;"><span>tcp        <span style="color:#ae81ff">0</span>      <span style="color:#ae81ff">0</span> localhost:53914         localhost:xtel          ESTABLISHED
+</span></span><span style="display:flex;"><span>tcp        <span style="color:#ae81ff">0</span>      <span style="color:#ae81ff">0</span> localhost:40686         localhost:xtel          ESTABLISHED
+</span></span><span style="display:flex;"><span>tcp        <span style="color:#ae81ff">0</span>      <span style="color:#ae81ff">0</span> GLB01TIDP13274:52116    93.243.107.34.bc.:https ESTABLISHED
+</span></span><span style="display:flex;"><span>tcp        <span style="color:#ae81ff">0</span>      <span style="color:#ae81ff">0</span> GLB01TIDP13274:39248    upload-lb.magru.w:https ESTABLISHED
+</span></span></code></pre></div><blockquote>
+<p>A aplicação <strong>Wireshark</strong> também permite a mesma visualização, sendo desta vez através de interface gráfica, capturando arquivos <code>.pcap</code> e visualizando o processo de handshake com detalhes.</p>
+</blockquote>
+<h1 id="faq">FAQ<a href="#faq" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<h2 id="1-por-que-o-comando-netstat-deve-ser-utilizado">1. Por que o comando <code>netstat</code> deve ser utilizado?<a href="#1-por-que-o-comando-netstat-deve-ser-utilizado" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<ul>
+<li>
+<p><strong>Monitor connection status</strong>: identify if connections are successfully moving to the <code>ESTABLISHED</code> state or if they are stuck int intermediate states;</p>
+</li>
+<li>
+<p><strong>Troubleshoot failures:</strong> if connections remain in <code>SYN_SENT</code> (client side) or <code>SYN_RCVD</code> (server side), it suggests a firewall might be blocking traffic, a service ins&rsquo;t listening, or there&rsquo;s a potential <strong>_SYN Flood Attack</strong>;</p>
+</li>
+<li>
+<p><strong>Detect security threads:</strong> a large number of connections in the <code>SYN_RCVD</code> state on a server can indicate a Denial of Service (<strong><em>DoS</em></strong>) attack.</p>
+</li>
+</ul>
+
+      </div></div>
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2025 Powered by <a href="https://gohugo.io">Hugo</a></span>
+    
+      <span>:: <a href="https://github.com/panr/hugo-theme-terminal" target="_blank">Theme</a> made by <a href="https://github.com/panr" target="_blank">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

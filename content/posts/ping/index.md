@@ -2,191 +2,79 @@
 title = "ping"
 date = "2019-03-11"
 description = "Send ICMP ECHO_REQUEST to network hosts."
-weight = 7
+weight = 15
 +++
 
-This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.
-<!--more-->
+# 1. Example
 
-## Headings
-
-The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
-
-# H1
-## H2
-### H3
-### H4
-#### H5
-##### H6
-
-## Paragraph
-
-Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
-
-Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
-
-## Images
-
-![Terminal Theme Preview](/img/terminal-theme.png)
-
-### Figure with a caption
-
-{{< figure src="/img/terminal-theme.png" alt="Terminal Theme Preview" position="center" caption="Terminal Theme Preview" captionPosition="center" >}}
-
-## Blockquotes
-
-The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a `footer` or `cite` element, and optionally with in-line changes such as annotations and abbreviations.
-
-### Blockquote without attribution
-
-> Tiam, ad mint andaepu dandae nostion secatur sequo quae.
-> **Note** that you can use *Markdown syntax* within a blockquote.
-
-### Blockquote with attribution
-
-> Don't communicate by sharing memory, share memory by communicating.<br>
-> — <cite>Rob Pike[^1]</cite>
-
-[^1]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.
-
-## Buttons and links
-
-<button>Button</button>
-<a href="">Link</a>
-<a href="" class="button inline">Link</a>
-
-## Tables
-
-Tables aren't part of the core Markdown spec, but Hugo supports supports them out-of-the-box.
-
-   Name | Age
---------|------
-    Bob | 27
-  Alice | 23
-
-### Inline Markdown within tables
-
-| Italics   | Bold     | Code   |
-| --------  | -------- | ------ |
-| *italics* | **bold** | `code` |
-
-## Forms
-
-<fieldset>
-  <input type="text" placeholder="Type something" /><br />
-  <input type="number" placeholder="Insert number" /><br />
-  <input type="text" value="Input value" /><br />
-  <select>
-    <option value="1">Option 1</option>
-    <option value="2">Option 2</option>
-    <option value="3">Option 3</option>
-  </select><br />
-  <textarea placeholder="Insert a comment..."></textarea><br />
-  <input type="checkbox" /> I understand<br />
-  <button type="submi">Submit</button>
-</fieldset>
-
-## Code Blocks
-
-### Code block with backticks
-
-```html
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Example HTML5 Document</title>
-</head>
-<body>
-  <p>Test</p>
-</body>
-</html>
+```bash
+ping scanme.nmap.org
 ```
 
-### Code block indented with four spaces
+Response:
 
-    <!doctype html>
-    <html lang="en">
-    <head>
-      <meta charset="utf-8">
-      <title>Example HTML5 Document</title>
-    </head>
-    <body>
-      <p>Test</p>
-    </body>
-    </html>
+```bash
+PING scanme.nmap.org (45.33.32.156) 56(84) bytes of data.
+64 bytes from scanme.nmap.org (45.33.32.156): icmp_seq=1 ttl=43 time=247 ms
+64 bytes from scanme.nmap.org (45.33.32.156): icmp_seq=2 ttl=43 time=269 ms
+64 bytes from scanme.nmap.org (45.33.32.156): icmp_seq=3 ttl=43 time=292 ms
+64 bytes from scanme.nmap.org (45.33.32.156): icmp_seq=4 ttl=43 time=315 ms
+64 bytes from scanme.nmap.org (45.33.32.156): icmp_seq=5 ttl=43 time=236 ms
+64 bytes from scanme.nmap.org (45.33.32.156): icmp_seq=6 ttl=43 time=259 ms
+64 bytes from scanme.nmap.org (45.33.32.156): icmp_seq=7 ttl=43 time=282 ms
+^C
+--- scanme.nmap.org ping statistics ---
+8 packets transmitted, 7 received, 12.5% packet loss, time 7007ms
+rtt min/avg/max/mdev = 236.117/271.645/315.311/25.221 ms
 
-### Code block with Hugo's internal highlight shortcode
+```
 
-{{< highlight html >}}
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Example HTML5 Document</title>
-</head>
-<body>
-  <p>Test</p>
-</body>
-</html>
-{{< /highlight >}}
+# 2. Set the quantity of pings
+```bash
+ping -c 4 8.8.8.8
+```
 
-### Code block with custom built-in `{{ < code > }}` shortcode
+Result:
 
-{{< code title="Hey, this is a code block title" language="css" >}}
-pre {
-  background: #1a1a1d;
-  padding: 20px;
-  border-radius: 8px;
-  font-size: 1rem;
-  overflow: auto;
+```bash
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=112 time=48.3 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=112 time=48.1 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=112 time=48.0 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=112 time=48.0 ms
 
-  @media (--phone) {
-    white-space: pre-wrap;
-    word-wrap: break-word;
-  }
+--- 8.8.8.8 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+rtt min/avg/max/mdev = 48.008/48.110/48.332/0.129 ms
+```
 
-  code {
-    background: none !important;
-    color: #ccc;
-    padding: 0;
-    font-size: inherit;
-  }
-}
-{{< /code >}}
+# 3. Packets size
+```bash
+ping -s 128 8.8.8.8 -c 4
+```
 
-## List Types
+Result:
+```bash
+PING 8.8.8.8 (8.8.8.8) 128(156) bytes of data.
+136 bytes from 8.8.8.8: icmp_seq=1 ttl=112 time=48.8 ms
+136 bytes from 8.8.8.8: icmp_seq=2 ttl=112 time=48.4 ms
+136 bytes from 8.8.8.8: icmp_seq=3 ttl=112 time=48.4 ms
+136 bytes from 8.8.8.8: icmp_seq=4 ttl=112 time=48.7 ms
 
-### Ordered List
+--- 8.8.8.8 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3005ms
+rtt min/avg/max/mdev = 48.403/48.570/48.802/0.171 ms
+```
 
-1. First item
-2. Second item
-3. Third item
+# 1. Attacks with Ping Utilitiy
 
-### Unordered List
+## 1.1. Ping of Death
 
-* List item
-* Another item
-* And another item
+## 1.2. Ping Flood / ICMP Flood
 
-### Nested list
+![Ping Flood Attack](https://www.akamai.com/site/en/images/article/2022/what-is-an-icmp-flood-attack-image.png)
 
-* Fruit
-  * Apple
-  * Orange
-  * Banana
-* Dairy
-  * Milk
-  * Cheese
+# FAQ
+## 1. Durante um processo de footprint de um alvo durante um processo de pentest, existe algum risco de se utilizar o comando `ping`?
 
-## Other Elements — abbr, sub, sup, kbd, mark
-
-<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
-
-H<sub>2</sub>O
-
-X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
-
-Press <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd> to end the session.
-
-Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
+## 2. O envio de pacotes ICMP para um alvo por meio do ping pode ser de algum modo monitorado?

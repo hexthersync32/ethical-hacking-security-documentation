@@ -1,11 +1,12 @@
 +++
 title = "whois"
 date = "2019-01-25"
+author = "#utility #linux-utility"
 description = "Client for the `whois` directory service."
-weight = 8
+weight = 24
 +++
 
-# Definition
+# 1. Definition
 
 It's a TCP/IP stack protocal which is used to loop up DNS and contact information about internet entities, such as domains, IP addresses and ASNs*.
 
