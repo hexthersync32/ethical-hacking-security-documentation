@@ -301,7 +301,12 @@
 </span></span><span style="display:flex;"><span>Read data files from: /usr/bin/../share/nmap
 </span></span><span style="display:flex;"><span>Nmap <span style="color:#66d9ef">done</span>: <span style="color:#ae81ff">1</span> IP address <span style="color:#f92672">(</span><span style="color:#ae81ff">1</span> host up<span style="color:#f92672">)</span> scanned in 0.11 seconds
 </span></span><span style="display:flex;"><span>           Raw packets sent: <span style="color:#ae81ff">5</span> <span style="color:#f92672">(</span>196B<span style="color:#f92672">)</span> | Rcvd: <span style="color:#ae81ff">2</span> <span style="color:#f92672">(</span>88B<span style="color:#f92672">)</span>
-</span></span></code></pre></div>
+</span></span></code></pre></div><h1 id="varredura-básica">Varredura básica<a href="#varredura-básica" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nmap -sS
+</span></span></code></pre></div><p>A flag acima significa half syn (meia conexão). O atacante não realiza a conexão completa no alvo (porta TCP).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nmap -sT
+</span></span></code></pre></div><p>Conexão completa.</p>
+
       </div></div>
 
   

@@ -207,3 +207,14 @@ Read data files from: /usr/bin/../share/nmap
 Nmap done: 1 IP address (1 host up) scanned in 0.11 seconds
            Raw packets sent: 5 (196B) | Rcvd: 2 (88B)
 ```
+
+# Varredura básica
+```bash
+nmap -sS
+```
+A flag acima significa half syn (meia conexão). O atacante não realiza a conexão completa no alvo (porta TCP).
+
+```bash
+nmap -sT
+```
+Conexão completa.   

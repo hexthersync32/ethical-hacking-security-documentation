@@ -19,7 +19,69 @@ A principal diferença entre o TCP e o UDP é que o TCP garante a entrega ordena
 
 ![Terminal Theme Preview](https://www.datocms-assets.com/41207/1627941441-header.jpg?q=60)
 
-# 3. SYNC/ACK
+# 3. Three-Way Handshake (SYNC/ACK)
+Processo responsável pelo estabelecimento de conexão através do protocolo TCP. Para que isso se concretize, é importante que essa técnica atua com os seguintes passos:
+
+- `SYN` = (Synchronize)
+
+- `ACK` = (Acknowledgement)
+
+Os processos são os seguintes:
+
+1. O cliente envia um pacote com a flag **_SYN_** ativa junto de uma sequência randômica de números (ISN);
+2. O cliente entra em estado de **_SYN-SENT_**;
+3. O servidor responde com uma pacote com as flags **_SYN + ACK_** (ACK = Client ISN + 1) e providenciando seu próprio ISN;
+4. O servidor entra em estado de **_SYN-RCVD_**;
+5. O cliente responde com um pacote **_ACK_** (ACK = Server ISN + 1).
+6. Ambos os participantes entram em estado de **_ESTABLISHED_** e os dados podem ser transferidos.
+
+Administradores de rede, pentesters e engenheiros de segurança pode observar a three-way handshake por meio do Shell Linux.
+
+Comandos mais comuns:
+
+## 3.1. Tcpdump
+
+It can capture network traffic to display the SYN, SYN-ACK, and ACK packets in real-time.
+
+```bash
+tcpdump
+```
+
+---
+
+## 3.2. Nestat
+
+It shows the various connection states (`SYN-SENT`, `SYN-RCVD`, `CLOSE_WAIT`, `TIME_WAIT` and `ESTABLISHED`) within the kernel's state machine. A more recent variation of this command is `ss`.
+
+```bash
+nestat
+```
+
+Resultado:
+
+```bash
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+tcp       64      0 LUCLAPTOP:36682         ec2-35-164-85-72.:https CLOSE_WAIT 
+tcp        0      0 localhost:xtel          localhost:34746         ESTABLISHED
+tcp        0      0 localhost:34522         localhost:xtel          ESTABLISHED
+tcp        0      0 localhost:59766         localhost:xtel          ESTABLISHED
+tcp        0      0 localhost:xtel          localhost:44612         ESTABLISHED
+tcp        0      0 LUCLAPTOP:49490         172.64.148.235:https    ESTABLISHED
+tcp        0      0 localhost:44612         localhost:xtel          ESTABLISHED
+tcp        0      0 LUCLAPTOP:51980         amyrose.canonical.:http TIME_WAIT  
+tcp        0      0 localhost:xtel          localhost:59766         ESTABLISHED
+tcp        0      0 localhost:xtel          localhost:34522         ESTABLISHED
+tcp        0      0 LUCLAPTOP:42546         104.208.16.90:https     ESTABLISHED
+tcp        0      0 localhost:34746         localhost:xtel          ESTABLISHED
+tcp        0      0 LUCLAPTOP:59006         relay-4a0880f8.ne:https ESTABLISHED
+udp        0      0 LUCLAPTOP:57243         bog02s19-in-f4.1e:https ESTABLISHED
+udp        0      0 LUCLAPTOP:bootpc        _gateway:bootps         ESTABLISHED
+udp        0      0 LUCLAPTOP:60399         bfbdff6d.virtua.c:https ESTABLISHED
+
+```
+
+> A aplicação **Wireshark** também permite a mesma visualização, sendo desta vez através de interface gráfica, capturando arquivos `.pcap` e visualizando o processo de handshake com detalhes.
 
 # FAQ
 

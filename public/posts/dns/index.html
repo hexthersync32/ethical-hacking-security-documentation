@@ -140,14 +140,15 @@
   
 
   <div class="post-content"><div>
-        <h1 id="definition">Definition<a href="#definition" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+        <h1 id="1-definition">1. Definition<a href="#1-definition" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <p>DNS (Domais Name System) é um sistema hierárquico. Entre outras palavras, é um serviço (<code>porta 53</code>) que traduz nomes de domínio para endereços de IP e vice-versa. Esses tais <strong>nomes de domínio</strong> podem referir-se comumente a endereços de websites (URLs).</p>
 <p>Em <strong>segurança da informação</strong>, <em>resolução reversa</em> (ou <em>reverse DNS lookup</em>) é o processo de <strong>descobrir o nome de domínio associado a um endereço IP</strong> — o contrário da resolução DNS comum, que traduz domínio → IP.</p>
 <p>Aqui vai uma explicação clara:</p>
-<h3 id="o-que-é-a-resolução-reversa"><strong>O que é a resolução reversa</strong><a href="#o-que-é-a-resolução-reversa" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<hr>
+<h1 id="2-resolução-reversa">2. Resolução reversa<a href="#2-resolução-reversa" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <p>É uma consulta ao DNS para verificar qual domínio (ex.: <code>exemplo.com</code>) está registrado para um determinado endereço IP (ex.: <code>192.0.2.10</code>).
 Isso é feito acessando registros especiais chamados <strong>PTR (Pointer Records)</strong>.</p>
-<h3 id="por-que-isso-é-importante-em-segurança"><strong>Por que isso é importante em segurança</strong><a href="#por-que-isso-é-importante-em-segurança" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<h2 id="21-por-que-isso-é-importante-em-segurança">2.1. Por que isso é importante em segurança<a href="#21-por-que-isso-é-importante-em-segurança" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <ol>
 <li>
 <p><strong>Verificação de legitimidade e identificação</strong>
@@ -189,6 +190,7 @@ liULRiJIvyTmU6GLBzJc/7e7b33154976dedaa93d022ac9b41b13/reverse_dns_lookup.png)</p
 <li>Entender o perfil de quem está acessando, escaneando ou atacando um sistema.
 Isso torna mais fácil distinguir acessos benignos de potenciais ameaças.</li>
 </ul>
+<hr>
 <h3 id="2-detecção-de-comportamento-malicioso"><strong>2. Detecção de comportamento malicioso</strong><a href="#2-detecção-de-comportamento-malicioso" class="hanchor" ariaLabel="Anchor">#</a> </h3>
 <p>Quando um IP aparece em logs de firewall, IDS/IPS ou servidores, a resolução reversa pode revelar se:</p>
 <ul>
@@ -196,6 +198,7 @@ Isso torna mais fácil distinguir acessos benignos de potenciais ameaças.</li>
 <li>O domínio é recém-criado, genérico ou sem reputação.</li>
 <li>Há inconsistência entre o host declarado e o domínio real — sinal comum de spoofing ou atividade fraudulenta.</li>
 </ul>
+<hr>
 <h3 id="3-validação-e-confiança-em-serviços-críticos"><strong>3. Validação e confiança em serviços críticos</strong><a href="#3-validação-e-confiança-em-serviços-críticos" class="hanchor" ariaLabel="Anchor">#</a> </h3>
 <p>Em muitos protocolos, especialmente e-mail (SMTP), a resolução reversa é usada como medida de segurança:</p>
 <ul>
@@ -206,178 +209,7 @@ Isso torna mais fácil distinguir acessos benignos de potenciais ameaças.</li>
 <p>Em resumo:
 <strong>Localizar o domínio de um IP ajuda a verificar legitimidade, identificar anomalias e reduzir riscos</strong>, tornando a análise de incidentes e o monitoramento de redes muito mais eficazes.</p>
 <p>Se quiser, posso explicar como validar se um PTR é confiável ou como usar ferramentas como <code>nslookup</code>, <code>dig</code> e <code>host</code> para fazer essas consultas.</p>
-<p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.</p>
-<h2 id="headings">Headings<a href="#headings" class="hanchor" ariaLabel="Anchor">#</a> </h2>
-<p>The following HTML <code>&lt;h1&gt;</code>—<code>&lt;h6&gt;</code> elements represent six levels of section headings. <code>&lt;h1&gt;</code> is the highest section level while <code>&lt;h6&gt;</code> is the lowest.</p>
-<h1 id="h1">H1<a href="#h1" class="hanchor" ariaLabel="Anchor">#</a> </h1>
-<h2 id="h2">H2<a href="#h2" class="hanchor" ariaLabel="Anchor">#</a> </h2>
-<h3 id="h3">H3<a href="#h3" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-<h3 id="h4">H4<a href="#h4" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-<h4 id="h5">H5<a href="#h5" class="hanchor" ariaLabel="Anchor">#</a> </h4>
-<h5 id="h6">H6<a href="#h6" class="hanchor" ariaLabel="Anchor">#</a> </h5>
-<h2 id="paragraph">Paragraph<a href="#paragraph" class="hanchor" ariaLabel="Anchor">#</a> </h2>
-<p>Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.</p>
-<p>Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.</p>
-<h2 id="images">Images<a href="#images" class="hanchor" ariaLabel="Anchor">#</a> </h2>
-<p><img src="/img/terminal-theme.png" alt="Terminal Theme Preview"></p>
-<h3 id="figure-with-a-caption">Figure with a caption<a href="#figure-with-a-caption" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-<figure><img src="/img/terminal-theme.png"
-    alt="Terminal Theme Preview"><figcaption>
-      <p>Terminal Theme Preview</p>
-    </figcaption>
-</figure>
-
-<h2 id="blockquotes">Blockquotes<a href="#blockquotes" class="hanchor" ariaLabel="Anchor">#</a> </h2>
-<p>The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a <code>footer</code> or <code>cite</code> element, and optionally with in-line changes such as annotations and abbreviations.</p>
-<h3 id="blockquote-without-attribution">Blockquote without attribution<a href="#blockquote-without-attribution" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-<blockquote>
-<p>Tiam, ad mint andaepu dandae nostion secatur sequo quae.
-<strong>Note</strong> that you can use <em>Markdown syntax</em> within a blockquote.</p>
-</blockquote>
-<h3 id="blockquote-with-attribution">Blockquote with attribution<a href="#blockquote-with-attribution" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-<blockquote>
-<p>Don&rsquo;t communicate by sharing memory, share memory by communicating.<!-- raw HTML omitted -->
-— <!-- raw HTML omitted -->Rob Pike<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup><!-- raw HTML omitted --></p>
-</blockquote>
-<h2 id="buttons-and-links">Buttons and links<a href="#buttons-and-links" class="hanchor" ariaLabel="Anchor">#</a> </h2>
-<p><!-- raw HTML omitted -->Button<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->Link<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->Link<!-- raw HTML omitted --></p>
-<h2 id="tables">Tables<a href="#tables" class="hanchor" ariaLabel="Anchor">#</a> </h2>
-<p>Tables aren&rsquo;t part of the core Markdown spec, but Hugo supports supports them out-of-the-box.</p>
-<table>
-  <thead>
-      <tr>
-          <th>Name</th>
-          <th>Age</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Bob</td>
-          <td>27</td>
-      </tr>
-      <tr>
-          <td>Alice</td>
-          <td>23</td>
-      </tr>
-  </tbody>
-</table>
-<h3 id="inline-markdown-within-tables">Inline Markdown within tables<a href="#inline-markdown-within-tables" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-<table>
-  <thead>
-      <tr>
-          <th>Italics</th>
-          <th>Bold</th>
-          <th>Code</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><em>italics</em></td>
-          <td><strong>bold</strong></td>
-          <td><code>code</code></td>
-      </tr>
-  </tbody>
-</table>
-<h2 id="forms">Forms<a href="#forms" class="hanchor" ariaLabel="Anchor">#</a> </h2>
-<!-- raw HTML omitted -->
-<h2 id="code-blocks">Code Blocks<a href="#code-blocks" class="hanchor" ariaLabel="Anchor">#</a> </h2>
-<h3 id="code-block-with-backticks">Code block with backticks<a href="#code-block-with-backticks" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!doctype html&gt;</span>
-</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;
-</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span>&gt;
-</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">title</span>&gt;Example HTML5 Document&lt;/<span style="color:#f92672">title</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">head</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;
-</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">p</span>&gt;Test&lt;/<span style="color:#f92672">p</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">body</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
-</span></span></code></pre></div><h3 id="code-block-indented-with-four-spaces">Code block indented with four spaces<a href="#code-block-indented-with-four-spaces" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-<pre><code>&lt;!doctype html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;utf-8&quot;&gt;
-  &lt;title&gt;Example HTML5 Document&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;p&gt;Test&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-<h3 id="code-block-with-hugos-internal-highlight-shortcode">Code block with Hugo&rsquo;s internal highlight shortcode<a href="#code-block-with-hugos-internal-highlight-shortcode" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!doctype html&gt;</span>
-</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;
-</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span>&gt;
-</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">title</span>&gt;Example HTML5 Document&lt;/<span style="color:#f92672">title</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">head</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;
-</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">p</span>&gt;Test&lt;/<span style="color:#f92672">p</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">body</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;</span></span></code></pre></div>
-<h3 id="code-block-with-custom-built-in---code---shortcode">Code block with custom built-in <code>{{ &lt; code &gt; }}</code> shortcode<a href="#code-block-with-custom-built-in---code---shortcode" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-
-
-
-<details class="collapsable-code" >
-    <summary title="Click to interact"><span class="collapsable-code__title">Hey, this is a code block title</span></summary>
-    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">pre</span> {
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">background</span>: <span style="color:#ae81ff">#1a1a1d</span>;
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">8</span><span style="color:#66d9ef">px</span>;
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">rem</span>;
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">overflow</span>: <span style="color:#66d9ef">auto</span>;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  <span style="color:#960050;background-color:#1e0010">@media</span> <span style="color:#960050;background-color:#1e0010">(--phone)</span> <span style="color:#960050;background-color:#1e0010">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">white-space</span>: <span style="color:#66d9ef">pre-wrap</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">word-wrap</span>: <span style="color:#66d9ef">break-word</span>;
-</span></span><span style="display:flex;"><span>  }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">code</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">background</span>: <span style="color:#66d9ef">none</span> <span style="color:#75715e">!important</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#ccc</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">0</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">font-size</span>: <span style="color:#66d9ef">inherit</span>;
-</span></span><span style="display:flex;"><span>  }
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">}</span></span></span></code></pre></div></details>
-
-<h2 id="list-types">List Types<a href="#list-types" class="hanchor" ariaLabel="Anchor">#</a> </h2>
-<h3 id="ordered-list">Ordered List<a href="#ordered-list" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-<ol>
-<li>First item</li>
-<li>Second item</li>
-<li>Third item</li>
-</ol>
-<h3 id="unordered-list">Unordered List<a href="#unordered-list" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-<ul>
-<li>List item</li>
-<li>Another item</li>
-<li>And another item</li>
-</ul>
-<h3 id="nested-list">Nested list<a href="#nested-list" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-<ul>
-<li>Fruit
-<ul>
-<li>Apple</li>
-<li>Orange</li>
-<li>Banana</li>
-</ul>
-</li>
-<li>Dairy
-<ul>
-<li>Milk</li>
-<li>Cheese</li>
-</ul>
-</li>
-</ul>
-<h2 id="other-elements--abbr-sub-sup-kbd-mark">Other Elements — abbr, sub, sup, kbd, mark<a href="#other-elements--abbr-sub-sup-kbd-mark" class="hanchor" ariaLabel="Anchor">#</a> </h2>
-<p><!-- raw HTML omitted -->GIF<!-- raw HTML omitted --> is a bitmap image format.</p>
-<p>H<!-- raw HTML omitted -->2<!-- raw HTML omitted -->O</p>
-<p>X<!-- raw HTML omitted -->n<!-- raw HTML omitted --> + Y<!-- raw HTML omitted -->n<!-- raw HTML omitted --> = Z<!-- raw HTML omitted -->n<!-- raw HTML omitted --></p>
-<p>Press <!-- raw HTML omitted -->CTRL<!-- raw HTML omitted -->+<!-- raw HTML omitted -->ALT<!-- raw HTML omitted -->+<!-- raw HTML omitted -->Delete<!-- raw HTML omitted --> to end the session.</p>
-<p>Most <!-- raw HTML omitted -->salamanders<!-- raw HTML omitted --> are nocturnal, and hunt for insects, worms, and other small creatures.</p>
+<hr>
 <h1 id="faq">FAQ<a href="#faq" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <h2 id="1-do-ponto-de-vista-técnico-dns-é-realmente-obrigatório-para-o-tráfego-de-rede">1. Do ponto de vista técnico, DNS é realmente obrigatório para o tráfego de rede?<a href="#1-do-ponto-de-vista-técnico-dns-é-realmente-obrigatório-para-o-tráfego-de-rede" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <h2 id="2-por-que-a-maioria-dos-sistemas-operacionais-necessitam-da-configuração-de-dois-endereços-de-dns-primário-e-secundário">2. Por que a maioria dos sistemas operacionais necessitam da configuração de dois endereços de DNS (primário e secundário)?<a href="#2-por-que-a-maioria-dos-sistemas-operacionais-necessitam-da-configuração-de-dois-endereços-de-dns-primário-e-secundário" class="hanchor" ariaLabel="Anchor">#</a> </h2>
@@ -394,14 +226,7 @@ Isso torna mais fácil distinguir acessos benignos de potenciais ameaças.</li>
 <h2 id="13-o-que-significa-a-expressão-resolver-dns">13. O que significa a expressão &ldquo;resolver DNS&rdquo;?<a href="#13-o-que-significa-a-expressão-resolver-dns" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <h2 id="14-o-que-é-um-servidor-dns">14. O que é um servidor DNS?<a href="#14-o-que-é-um-servidor-dns" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <h2 id="15-servidor-dns-é-uma-máquina-física-propriamente-dita-um-roteador-o-que-é">15. Servidor DNS é uma máquina física propriamente dita? Um roteador? O que é?<a href="#15-servidor-dns-é-uma-máquina-física-propriamente-dita-um-roteador-o-que-é" class="hanchor" ariaLabel="Anchor">#</a> </h2>
-<div class="footnotes" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn:1">
-<p>The above quote is excerpted from Rob Pike&rsquo;s <a href="https://www.youtube.com/watch?v=PAAkCSZUG1c">talk</a> during Gopherfest, November 18, 2015.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-</ol>
-</div>
+
       </div></div>
 
   

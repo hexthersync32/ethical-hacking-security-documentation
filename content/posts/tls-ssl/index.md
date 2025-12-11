@@ -1,5 +1,5 @@
 +++
-title = "HTTP/HTTPS"
+title = "TLS/SSL"
 date = "2019-01-25"
 author = "#protocol"
 description = "Hypertext transfer protocol."
@@ -9,8 +9,6 @@ weight = 9
 # TCP/IP Layer: `Application`
 
 # Port: `80`
-
----
 
 # 1. Introduction
 

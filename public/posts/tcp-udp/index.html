@@ -147,7 +147,56 @@
 <h1 id="2-differencies-summary">2. Differencies summary<a href="#2-differencies-summary" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <p>A principal diferença entre o TCP e o UDP é que o TCP garante a entrega ordenada e sem erros dos dados, enquanto o UDP é mais simples e rápido, mas sem garantir a entrega ou a ordem dos pacotes. Portanto, TCP é usado em situações que exigem precisão, e UDP em contextos onde a agilidade é mais relevante.</p>
 <p><img src="https://www.datocms-assets.com/41207/1627941441-header.jpg?q=60" alt="Terminal Theme Preview"></p>
-<h1 id="3-syncack">3. SYNC/ACK<a href="#3-syncack" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<h1 id="3-three-way-handshake-syncack">3. Three-Way Handshake (SYNC/ACK)<a href="#3-three-way-handshake-syncack" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>Processo responsável pelo estabelecimento de conexão através do protocolo TCP. Para que isso se concretize, é importante que essa técnica atua com os seguintes passos:</p>
+<ul>
+<li>
+<p><code>SYN</code> = (Synchronize)</p>
+</li>
+<li>
+<p><code>ACK</code> = (Acknowledgement)</p>
+</li>
+</ul>
+<p>Os processos são os seguintes:</p>
+<ol>
+<li>O cliente envia um pacote com a flag <strong><em>SYN</em></strong> ativa junto de uma sequência randômica de números (ISN);</li>
+<li>O cliente entra em estado de <strong><em>SYN-SENT</em></strong>;</li>
+<li>O servidor responde com uma pacote com as flags <strong><em>SYN + ACK</em></strong> (ACK = Client ISN + 1) e providenciando seu próprio ISN;</li>
+<li>O servidor entra em estado de <strong><em>SYN-RCVD</em></strong>;</li>
+<li>O cliente responde com um pacote <strong><em>ACK</em></strong> (ACK = Server ISN + 1).</li>
+<li>Ambos os participantes entram em estado de <strong><em>ESTABLISHED</em></strong> e os dados podem ser transferidos.</li>
+</ol>
+<p>Administradores de rede, pentesters e engenheiros de segurança pode observar a three-way handshake por meio do Shell Linux.</p>
+<p>Comandos mais comuns:</p>
+<h2 id="31-tcpdump">3.1. Tcpdump<a href="#31-tcpdump" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>It can capture network traffic to display the SYN, SYN-ACK, and ACK packets in real-time.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>tcpdump
+</span></span></code></pre></div><hr>
+<h2 id="32-nestat">3.2. Nestat<a href="#32-nestat" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>It shows the various connection states (<code>SYN-SENT</code>, <code>SYN-RCVD</code>, <code>CLOSE_WAIT</code>, <code>TIME_WAIT</code> and <code>ESTABLISHED</code>) within the kernel&rsquo;s state machine. A more recent variation of this command is <code>ss</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nestat
+</span></span></code></pre></div><p>Resultado:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Active Internet connections <span style="color:#f92672">(</span>w/o servers<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+</span></span><span style="display:flex;"><span>tcp       <span style="color:#ae81ff">64</span>      <span style="color:#ae81ff">0</span> LUCLAPTOP:36682         ec2-35-164-85-72.:https CLOSE_WAIT 
+</span></span><span style="display:flex;"><span>tcp        <span style="color:#ae81ff">0</span>      <span style="color:#ae81ff">0</span> localhost:xtel          localhost:34746         ESTABLISHED
+</span></span><span style="display:flex;"><span>tcp        <span style="color:#ae81ff">0</span>      <span style="color:#ae81ff">0</span> localhost:34522         localhost:xtel          ESTABLISHED
+</span></span><span style="display:flex;"><span>tcp        <span style="color:#ae81ff">0</span>      <span style="color:#ae81ff">0</span> localhost:59766         localhost:xtel          ESTABLISHED
+</span></span><span style="display:flex;"><span>tcp        <span style="color:#ae81ff">0</span>      <span style="color:#ae81ff">0</span> localhost:xtel          localhost:44612         ESTABLISHED
+</span></span><span style="display:flex;"><span>tcp        <span style="color:#ae81ff">0</span>      <span style="color:#ae81ff">0</span> LUCLAPTOP:49490         172.64.148.235:https    ESTABLISHED
+</span></span><span style="display:flex;"><span>tcp        <span style="color:#ae81ff">0</span>      <span style="color:#ae81ff">0</span> localhost:44612         localhost:xtel          ESTABLISHED
+</span></span><span style="display:flex;"><span>tcp        <span style="color:#ae81ff">0</span>      <span style="color:#ae81ff">0</span> LUCLAPTOP:51980         amyrose.canonical.:http TIME_WAIT  
+</span></span><span style="display:flex;"><span>tcp        <span style="color:#ae81ff">0</span>      <span style="color:#ae81ff">0</span> localhost:xtel          localhost:59766         ESTABLISHED
+</span></span><span style="display:flex;"><span>tcp        <span style="color:#ae81ff">0</span>      <span style="color:#ae81ff">0</span> localhost:xtel          localhost:34522         ESTABLISHED
+</span></span><span style="display:flex;"><span>tcp        <span style="color:#ae81ff">0</span>      <span style="color:#ae81ff">0</span> LUCLAPTOP:42546         104.208.16.90:https     ESTABLISHED
+</span></span><span style="display:flex;"><span>tcp        <span style="color:#ae81ff">0</span>      <span style="color:#ae81ff">0</span> localhost:34746         localhost:xtel          ESTABLISHED
+</span></span><span style="display:flex;"><span>tcp        <span style="color:#ae81ff">0</span>      <span style="color:#ae81ff">0</span> LUCLAPTOP:59006         relay-4a0880f8.ne:https ESTABLISHED
+</span></span><span style="display:flex;"><span>udp        <span style="color:#ae81ff">0</span>      <span style="color:#ae81ff">0</span> LUCLAPTOP:57243         bog02s19-in-f4.1e:https ESTABLISHED
+</span></span><span style="display:flex;"><span>udp        <span style="color:#ae81ff">0</span>      <span style="color:#ae81ff">0</span> LUCLAPTOP:bootpc        _gateway:bootps         ESTABLISHED
+</span></span><span style="display:flex;"><span>udp        <span style="color:#ae81ff">0</span>      <span style="color:#ae81ff">0</span> LUCLAPTOP:60399         bfbdff6d.virtua.c:https ESTABLISHED
+</span></span></code></pre></div><blockquote>
+<p>A aplicação <strong>Wireshark</strong> também permite a mesma visualização, sendo desta vez através de interface gráfica, capturando arquivos <code>.pcap</code> e visualizando o processo de handshake com detalhes.</p>
+</blockquote>
 <h1 id="faq">FAQ<a href="#faq" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <h2 id="1-por-que-os-protocolos-tcpudp-são-tão-relevantes-para-a-rede-de-computadores">1. Por que os protocolos TCP/UDP são tão relevantes para a rede de computadores?<a href="#1-por-que-os-protocolos-tcpudp-são-tão-relevantes-para-a-rede-de-computadores" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <p>Os protocolos TCP e UDP são essenciais para a comunicação eficiente em redes de computadores, pois eles definem como os dados são transmitidos entre dispositivos. O TCP oferece uma transmissão confiável, garantindo que os dados cheguem ao destino sem erros e na ordem correta, o que é fundamental para serviços como navegação na web, transferências de arquivos e e-mails. Já o UDP, ao ser mais leve e rápido, é crucial para aplicações que exigem baixa latência, como videoconferências e jogos online, onde a velocidade é mais importante que a perfeição na entrega dos dados.</p>
