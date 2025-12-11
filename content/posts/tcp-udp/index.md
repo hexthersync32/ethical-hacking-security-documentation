@@ -19,7 +19,7 @@ A principal diferença entre o TCP e o UDP é que o TCP garante a entrega ordena
 
 ![Terminal Theme Preview](https://www.datocms-assets.com/41207/1627941441-header.jpg?q=60)
 
-# 3. Three-Way Handshake (SYNC/ACK)
+# 3. Three-Way Handshake (SYN/ACK)
 Processo responsável pelo estabelecimento de conexão através do protocolo TCP. Para que isso se concretize, é importante que essa técnica atua com os seguintes passos:
 
 - `SYN` = (Synchronize)

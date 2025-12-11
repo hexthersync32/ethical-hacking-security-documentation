@@ -111,3 +111,5 @@ O hardware (como placas de rede, roteadores e switches) é projetado para facili
 As funções mais complexas de protocolos de rede (como TCP ou HTTP) dependem de software, enquanto o hardware facilita a transmissão física dos dados e o roteamento eficiente.
 
 Portanto, embora os protocolos de rede sejam "software-centric" no sentido de que são conjuntos de regras implementados em programas, o hardware de rede está sempre presente e é essencial para garantir que os dados possam ser transmitidos de maneira rápida e eficiente entre os dispositivos na rede.
+
+### 4. Qual a diferença entre serviço e protocolo no contexto de redes de computadores?

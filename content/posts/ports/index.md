@@ -2,7 +2,6 @@
 title = "Ports"
 date = "2019-01-25"
 author = "#port #ports #port-scanning #network-port"
-#cover = "img/Tux.png"
 description = " "
 weight = 16
 +++

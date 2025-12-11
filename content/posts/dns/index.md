@@ -12,8 +12,6 @@ DNS (Domais Name System) é um sistema hierárquico. Entre outras palavras, é u
 
 Em **segurança da informação**, *resolução reversa* (ou *reverse DNS lookup*) é o processo de **descobrir o nome de domínio associado a um endereço IP** — o contrário da resolução DNS comum, que traduz domínio → IP.
 
-Aqui vai uma explicação clara:
-
 ---
 
 # 2. Resolução reversa
