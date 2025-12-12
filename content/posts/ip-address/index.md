@@ -3,7 +3,7 @@ title = "IP Address"
 date = "2019-01-25"
 author = "#protocol"
 description = "Internet Protocol."
-weight = 10
+weight = 11
 +++
 
 # 1. Public IP

@@ -2,7 +2,7 @@
 title = "ping"
 date = "2019-03-11"
 description = "Send ICMP ECHO_REQUEST to network hosts."
-weight = 15
+weight = 16
 +++
 
 # 1. Example

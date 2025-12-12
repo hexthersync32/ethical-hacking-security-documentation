@@ -3,7 +3,7 @@ title = "Domain Name"
 date = "2019-01-25"
 author = "#tld #domain-name #domain"
 description = "Hypertext transfer protocol."
-weight = 7
+weight = 8
 +++
 
 ![Terminal Theme Preview](https://thewebsiteexchange.us/wp-content/uploads/2024/11/What-Is-a-Domain-Name.png)

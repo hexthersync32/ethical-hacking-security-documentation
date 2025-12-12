@@ -3,7 +3,7 @@ title = "Network Devices"
 date = "2019-01-25"
 author = "#devices #network-devices"
 description = "Hypertext transfer protocol."
-weight = 9
+weight = 5
 +++
 
 # 1. Hub / Ethernet hub
@@ -12,11 +12,13 @@ weight = 9
 
 # 3. Router
 
+{{< figure src="https://salescdn.net/1i3LNslVTxOHm8pcrft6pUZ0TH0=/adaptive-fit-in/500x0/prod/store/13040/medias/products/roteador-wireless-tp-link-ac750-archer-c20-dual-band---84247-cf6b64b7-1490-4762-8e5a-e90e7ebe73d9.webp" alt="TP-Link AC750 Archer C20" position="center" caption="TP-Link AC750 Archer C20" captionPosition="center" >}}
+
+Este equipamento possui a função de realizar o encaminhados de enderços IP aos equipamentos conectados a ele.
+
 # 4. Modem
 
-
 Equipamento necessário para que haja internet disponibilizada dentro de uma rede, seja ela uma rede doméstica ou corporativa.
-
 
 # 5. Bridge
 
@@ -33,3 +35,5 @@ Equipamento necessário para que haja internet disponibilizada dentro de uma red
 # 10. ONU
 
 # 11. Repetidor
+
+# 12. Gateway

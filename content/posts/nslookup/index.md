@@ -3,7 +3,7 @@ title = "nslookup"
 date = "2019-03-11"
 author = "#dns #domain-system #utility"
 description = "Query Internet name servers interactively."
-weight = 13
+weight = 14
 +++
 
 O utilitário de texto `nslookup`, nativo em todos os sistemas operacionais, é utilizados para consulta de zona reversa de DNS.

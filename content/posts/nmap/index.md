@@ -3,7 +3,7 @@ title = "nmap"
 date = "2019-01-25"
 author = "#linux #scan #network-scanner"
 description = "Network exploration tool and security / port scanner."
-weight = 12
+weight = 13
 +++
 
 ![Terminal Theme Preview](http://scanme.nmap.org/images/sitelogo.png)

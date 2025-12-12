@@ -3,7 +3,7 @@ title = "DNS"
 date = "2017-09-29"
 author = "#dns #protocol"
 description = "Protocol for translating domain names to IP addresses."
-weight = 6
+weight = 7
 +++
 
 # 1. Definition
