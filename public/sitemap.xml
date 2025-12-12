@@ -32,9 +32,6 @@
     <loc>http://localhost:1313/posts/http/</loc>
     <lastmod>2019-01-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/tls-ssl/</loc>
-    <lastmod>2019-01-25T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/ip-address/</loc>
     <lastmod>2019-01-25T00:00:00+00:00</lastmod>
   </url><url>
@@ -69,6 +66,12 @@
     <lastmod>2019-01-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/tcp-udp/</loc>
+    <lastmod>2019-01-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/three-way-handshake/</loc>
+    <lastmod>2019-01-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/tls-ssl/</loc>
     <lastmod>2019-01-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/whois/</loc>

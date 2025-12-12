@@ -10,11 +10,11 @@ weight = 6
 
 DNS (Domais Name System) é um sistema hierárquico. Entre outras palavras, é um serviço (`porta 53`) que traduz nomes de domínio para endereços de IP e vice-versa. Esses tais __nomes de domínio__ podem referir-se comumente a endereços de websites (URLs).
 
-Em **segurança da informação**, *resolução reversa* (ou *reverse DNS lookup*) é o processo de **descobrir o nome de domínio associado a um endereço IP** — o contrário da resolução DNS comum, que traduz domínio → IP.
-
 ---
 
 # 2. Resolução reversa
+
+Em **segurança da informação**, *resolução reversa* (ou *reverse DNS lookup*) é o processo de **descobrir o nome de domínio associado a um endereço IP** — o contrário da resolução DNS comum, que traduz domínio → IP.
 
 É uma consulta ao DNS para verificar qual domínio (ex.: `exemplo.com`) está registrado para um determinado endereço IP (ex.: `192.0.2.10`).
 Isso é feito acessando registros especiais chamados **PTR (Pointer Records)**.
@@ -45,17 +45,6 @@ Em termos simples:
 
 Se quiser, posso explicar como essa resolução é feita tecnicamente (com registros PTR) ou mostrar exemplos práticos.
 
-
-![Terminal Theme Preview](https://images.ctfassets.net/t6n243uipzy1/24127.0.0.1	localhost
-127.0.1.1	LUCLAPTOP
-
-# The following lines are desirable for IPv6 capable hosts
-::1     ip6-localhost ip6-loopback
-fe00::0 ip6-localnet
-ff00::0 ip6-mcastprefix
-ff02::1 ip6-allnodes
-ff02::2 ip6-allrouters
-liULRiJIvyTmU6GLBzJc/7e7b33154976dedaa93d022ac9b41b13/reverse_dns_lookup.png)
 
 Localizar um domínio a partir de um IP — por meio da **resolução reversa (reverse DNS)** — traz várias vantagens importantes para profissionais de **segurança da informação**. As principais são:
 
@@ -95,6 +84,26 @@ Se quiser, posso explicar como validar se um PTR é confiável ou como usar ferr
 
 ---
 
+# Registros DNS
+
+1. *A:* IPv4
+
+2. *AAAA:* IPv6
+
+3. *CNAME:* Canonical Name
+
+4. *MX:* Mail Exchange
+
+5. *NS:* Name Server
+
+6. *TXT:* Text
+
+7. *SRV:* Service
+
+8. *PTR:* Pointer
+
+---
+
 # FAQ
 ## 1. Do ponto de vista técnico, DNS é realmente obrigatório para o tráfego de rede?
 
@@ -126,3 +135,4 @@ Se quiser, posso explicar como validar se um PTR é confiável ou como usar ferr
 
 ## 15. Servidor DNS é uma máquina física propriamente dita? Um roteador? O que é?
 
+## 16. Independente de minha m´qauina estar conectada em uma rede cabeada ou sem fio, existe algum utilitário via Linux que revela qual servidor DNS estou utilizando ou qual por servidor DNS os pacotes gerados em minha máquina passam até chegar ao destino?

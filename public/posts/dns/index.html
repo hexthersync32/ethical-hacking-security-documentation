@@ -142,9 +142,9 @@
   <div class="post-content"><div>
         <h1 id="1-definition">1. Definition<a href="#1-definition" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <p>DNS (Domais Name System) é um sistema hierárquico. Entre outras palavras, é um serviço (<code>porta 53</code>) que traduz nomes de domínio para endereços de IP e vice-versa. Esses tais <strong>nomes de domínio</strong> podem referir-se comumente a endereços de websites (URLs).</p>
-<p>Em <strong>segurança da informação</strong>, <em>resolução reversa</em> (ou <em>reverse DNS lookup</em>) é o processo de <strong>descobrir o nome de domínio associado a um endereço IP</strong> — o contrário da resolução DNS comum, que traduz domínio → IP.</p>
 <hr>
 <h1 id="2-resolução-reversa">2. Resolução reversa<a href="#2-resolução-reversa" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>Em <strong>segurança da informação</strong>, <em>resolução reversa</em> (ou <em>reverse DNS lookup</em>) é o processo de <strong>descobrir o nome de domínio associado a um endereço IP</strong> — o contrário da resolução DNS comum, que traduz domínio → IP.</p>
 <p>É uma consulta ao DNS para verificar qual domínio (ex.: <code>exemplo.com</code>) está registrado para um determinado endereço IP (ex.: <code>192.0.2.10</code>).
 Isso é feito acessando registros especiais chamados <strong>PTR (Pointer Records)</strong>.</p>
 <h2 id="21-por-que-isso-é-importante-em-segurança">2.1. Por que isso é importante em segurança<a href="#21-por-que-isso-é-importante-em-segurança" class="hanchor" ariaLabel="Anchor">#</a> </h2>
@@ -172,15 +172,6 @@ Protocolos como SMTP usam reverse DNS para verificar se um servidor de e-mail é
 <li><strong>Resolução reversa:</strong> IP → domínio</li>
 </ul>
 <p>Se quiser, posso explicar como essa resolução é feita tecnicamente (com registros PTR) ou mostrar exemplos práticos.</p>
-<p>![Terminal Theme Preview](<a href="https://images.ctfassets.net/t6n243uipzy1/24127.0.0.1">https://images.ctfassets.net/t6n243uipzy1/24127.0.0.1</a>	localhost
-127.0.1.1	LUCLAPTOP</p>
-<h1 id="the-following-lines-are-desirable-for-ipv6-capable-hosts">The following lines are desirable for IPv6 capable hosts<a href="#the-following-lines-are-desirable-for-ipv6-capable-hosts" class="hanchor" ariaLabel="Anchor">#</a> </h1>
-<p>::1     ip6-localhost ip6-loopback
-fe00::0 ip6-localnet
-ff00::0 ip6-mcastprefix
-ff02::1 ip6-allnodes
-ff02::2 ip6-allrouters
-liULRiJIvyTmU6GLBzJc/7e7b33154976dedaa93d022ac9b41b13/reverse_dns_lookup.png)</p>
 <p>Localizar um domínio a partir de um IP — por meio da <strong>resolução reversa (reverse DNS)</strong> — traz várias vantagens importantes para profissionais de <strong>segurança da informação</strong>. As principais são:</p>
 <h3 id="1-identificação-e-análise-de-origem-do-tráfego"><strong>1. Identificação e análise de origem do tráfego</strong><a href="#1-identificação-e-análise-de-origem-do-tráfego" class="hanchor" ariaLabel="Anchor">#</a> </h3>
 <p>Saber a que domínio um IP pertence ajuda a:</p>
@@ -209,6 +200,34 @@ Isso torna mais fácil distinguir acessos benignos de potenciais ameaças.</li>
 <strong>Localizar o domínio de um IP ajuda a verificar legitimidade, identificar anomalias e reduzir riscos</strong>, tornando a análise de incidentes e o monitoramento de redes muito mais eficazes.</p>
 <p>Se quiser, posso explicar como validar se um PTR é confiável ou como usar ferramentas como <code>nslookup</code>, <code>dig</code> e <code>host</code> para fazer essas consultas.</p>
 <hr>
+<h1 id="registros-dns">Registros DNS<a href="#registros-dns" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<ol>
+<li>
+<p><em>A:</em> IPv4</p>
+</li>
+<li>
+<p><em>AAAA:</em> IPv6</p>
+</li>
+<li>
+<p><em>CNAME:</em> Canonical Name</p>
+</li>
+<li>
+<p><em>MX:</em> Mail Exchange</p>
+</li>
+<li>
+<p><em>NS:</em> Name Server</p>
+</li>
+<li>
+<p><em>TXT:</em> Text</p>
+</li>
+<li>
+<p><em>SRV:</em> Service</p>
+</li>
+<li>
+<p><em>PTR:</em> Pointer</p>
+</li>
+</ol>
+<hr>
 <h1 id="faq">FAQ<a href="#faq" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <h2 id="1-do-ponto-de-vista-técnico-dns-é-realmente-obrigatório-para-o-tráfego-de-rede">1. Do ponto de vista técnico, DNS é realmente obrigatório para o tráfego de rede?<a href="#1-do-ponto-de-vista-técnico-dns-é-realmente-obrigatório-para-o-tráfego-de-rede" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <h2 id="2-por-que-a-maioria-dos-sistemas-operacionais-necessitam-da-configuração-de-dois-endereços-de-dns-primário-e-secundário">2. Por que a maioria dos sistemas operacionais necessitam da configuração de dois endereços de DNS (primário e secundário)?<a href="#2-por-que-a-maioria-dos-sistemas-operacionais-necessitam-da-configuração-de-dois-endereços-de-dns-primário-e-secundário" class="hanchor" ariaLabel="Anchor">#</a> </h2>
@@ -225,6 +244,7 @@ Isso torna mais fácil distinguir acessos benignos de potenciais ameaças.</li>
 <h2 id="13-o-que-significa-a-expressão-resolver-dns">13. O que significa a expressão &ldquo;resolver DNS&rdquo;?<a href="#13-o-que-significa-a-expressão-resolver-dns" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <h2 id="14-o-que-é-um-servidor-dns">14. O que é um servidor DNS?<a href="#14-o-que-é-um-servidor-dns" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <h2 id="15-servidor-dns-é-uma-máquina-física-propriamente-dita-um-roteador-o-que-é">15. Servidor DNS é uma máquina física propriamente dita? Um roteador? O que é?<a href="#15-servidor-dns-é-uma-máquina-física-propriamente-dita-um-roteador-o-que-é" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h2 id="16-independente-de-minha-mqauina-estar-conectada-em-uma-rede-cabeada-ou-sem-fio-existe-algum-utilitário-via-linux-que-revela-qual-servidor-dns-estou-utilizando-ou-qual-por-servidor-dns-os-pacotes-gerados-em-minha-máquina-passam-até-chegar-ao-destino">16. Independente de minha m´qauina estar conectada em uma rede cabeada ou sem fio, existe algum utilitário via Linux que revela qual servidor DNS estou utilizando ou qual por servidor DNS os pacotes gerados em minha máquina passam até chegar ao destino?<a href="#16-independente-de-minha-mqauina-estar-conectada-em-uma-rede-cabeada-ou-sem-fio-existe-algum-utilitário-via-linux-que-revela-qual-servidor-dns-estou-utilizando-ou-qual-por-servidor-dns-os-pacotes-gerados-em-minha-máquina-passam-até-chegar-ao-destino" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 
       </div></div>
 

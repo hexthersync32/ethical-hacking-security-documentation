@@ -86,3 +86,7 @@ This state suggests that the firewall is allowing packets through but isn't givi
 ## 2. Uma porta de rede é um componente físico de uma máquina?
 
 ## 3. Qual o significado de porta lógica?
+
+## 4. O que significa um serviço no contexto de redes de computadores?
+
+## 5. Qual a diferença entre processos e serviços de uma máquina?
