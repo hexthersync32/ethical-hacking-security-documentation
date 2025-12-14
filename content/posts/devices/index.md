@@ -22,7 +22,7 @@ Equipamento necessário para que haja internet disponibilizada dentro de uma red
 
 # 5. Bridge
 
-# 6. Concentrador
+# 6. Concentrador / Hub
 
 # 7. Server
 
@@ -37,3 +37,8 @@ Equipamento necessário para que haja internet disponibilizada dentro de uma red
 # 11. Repetidor
 
 # 12. Gateway
+
+---
+
+# FAQ
+## 1. Independentemente se for em uma rede LAN ou uma WAN corporativo, existe um modem de internet responsável conexão com o ISPs. Por sua vez, este aparelho se conecta a um roteador de internet que, seja por meio de um meio sem fio ou por meio de um cabo UTP, é responsável pela transmissão do sinal digital para os computadores na rede. Neste caso, qual dos dois aparelhos está fazendo o papel de um gateway?

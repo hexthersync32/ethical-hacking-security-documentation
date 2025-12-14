@@ -37,6 +37,13 @@
       <description>&lt;p&gt;An attacker sends SYN packets but never completes the handshake, exhausting the server resources.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Network Devices</title>
+      <link>http://localhost:1313/posts/devices/</link>
+      <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/devices/</guid>
+      <description>&lt;h1 id=&#34;1-hub--ethernet-hub&#34;&gt;1. Hub / Ethernet hub&lt;/h1&gt;&#xA;&lt;h1 id=&#34;2-switch&#34;&gt;2. Switch&lt;/h1&gt;&#xA;&lt;h1 id=&#34;3-router&#34;&gt;3. Router&lt;/h1&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;https://salescdn.net/1i3LNslVTxOHm8pcrft6pUZ0TH0=/adaptive-fit-in/500x0/prod/store/13040/medias/products/roteador-wireless-tp-link-ac750-archer-c20-dual-band---84247-cf6b64b7-1490-4762-8e5a-e90e7ebe73d9.webp&#34;&#xA;    alt=&#34;TP-Link AC750 Archer C20&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;p&gt;TP-Link AC750 Archer C20&lt;/p&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Este equipamento possui a função de realizar o encaminhados de enderços IP aos equipamentos conectados a ele.&lt;/p&gt;&#xA;&lt;h1 id=&#34;4-modem&#34;&gt;4. Modem&lt;/h1&gt;&#xA;&lt;p&gt;Equipamento necessário para que haja internet disponibilizada dentro de uma rede, seja ela uma rede doméstica ou corporativa.&lt;/p&gt;&#xA;&lt;h1 id=&#34;5-bridge&#34;&gt;5. Bridge&lt;/h1&gt;&#xA;&lt;h1 id=&#34;6-concentrador&#34;&gt;6. Concentrador&lt;/h1&gt;&#xA;&lt;h1 id=&#34;7-server&#34;&gt;7. Server&lt;/h1&gt;&#xA;&lt;h1 id=&#34;8-firewall&#34;&gt;8. Firewall&lt;/h1&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;https://m.media-amazon.com/images/I/61YoNT4HPZL._AC_UF1000,1000_QL80_.jpg&#34;&#xA;    alt=&#34;Fortinet 40F&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;p&gt;Fortinet 40F&lt;/p&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;h1 id=&#34;9-access-point&#34;&gt;9. Access Point&lt;/h1&gt;&#xA;&lt;h1 id=&#34;10-onu&#34;&gt;10. ONU&lt;/h1&gt;&#xA;&lt;h1 id=&#34;11-repetidor&#34;&gt;11. Repetidor&lt;/h1&gt;&#xA;&lt;h1 id=&#34;12-gateway&#34;&gt;12. Gateway&lt;/h1&gt;</description>
+    </item>
+    <item>
       <title>dig</title>
       <link>http://localhost:1313/posts/dig/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
@@ -48,7 +55,7 @@
       <link>http://localhost:1313/posts/dns/</link>
       <pubDate>Fri, 29 Sep 2017 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/dns/</guid>
-      <description>&lt;h1 id=&#34;1-definition&#34;&gt;1. Definition&lt;/h1&gt;&#xA;&lt;p&gt;DNS (Domais Name System) é um sistema hierárquico. Entre outras palavras, é um serviço (&lt;code&gt;porta 53&lt;/code&gt;) que traduz nomes de domínio para endereços de IP e vice-versa. Esses tais &lt;strong&gt;nomes de domínio&lt;/strong&gt; podem referir-se comumente a endereços de websites (URLs).&lt;/p&gt;&#xA;&lt;p&gt;Em &lt;strong&gt;segurança da informação&lt;/strong&gt;, &lt;em&gt;resolução reversa&lt;/em&gt; (ou &lt;em&gt;reverse DNS lookup&lt;/em&gt;) é o processo de &lt;strong&gt;descobrir o nome de domínio associado a um endereço IP&lt;/strong&gt; — o contrário da resolução DNS comum, que traduz domínio → IP.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;1-definition&#34;&gt;1. Definition&lt;/h1&gt;&#xA;&lt;p&gt;DNS (Domais Name System) é um sistema hierárquico. Entre outras palavras, é um serviço (&lt;code&gt;porta 53&lt;/code&gt;) que traduz nomes de domínio para endereços de IP e vice-versa. Esses tais &lt;strong&gt;nomes de domínio&lt;/strong&gt; podem referir-se comumente a endereços de websites (URLs).&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;2-resolução-reversa&#34;&gt;2. Resolução reversa&lt;/h1&gt;&#xA;&lt;p&gt;Em &lt;strong&gt;segurança da informação&lt;/strong&gt;, &lt;em&gt;resolução reversa&lt;/em&gt; (ou &lt;em&gt;reverse DNS lookup&lt;/em&gt;) é o processo de &lt;strong&gt;descobrir o nome de domínio associado a um endereço IP&lt;/strong&gt; — o contrário da resolução DNS comum, que traduz domínio → IP.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Domain Name</title>
