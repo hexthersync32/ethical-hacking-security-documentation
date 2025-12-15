@@ -3,7 +3,7 @@ title = "Sockets"
 date = "2019-01-25"
 author = "#cyber-security #principles #information #security"
 description = "Hypertext transfer protocol."
-weight = 19
+weight = 20
 +++
 
 # FAQ

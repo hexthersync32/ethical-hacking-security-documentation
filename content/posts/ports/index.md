@@ -3,7 +3,7 @@ title = "Ports"
 date = "2019-01-25"
 author = "#port #ports #port-scanning #network-port"
 description = " "
-weight = 17
+weight = 18
 +++
 
 <!--https://cheatsheets.zip/go (Cheatseat) -->

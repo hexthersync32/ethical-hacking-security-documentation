@@ -2,7 +2,7 @@
 title = "Three-Way Handshake (SYN/ACK)"
 date = "2019-01-25"
 description = "Client for the `whois` directory service."
-weight = 23
+weight = 24
 +++
 
 # 1. Overview
