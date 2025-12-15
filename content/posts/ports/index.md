@@ -8,6 +8,13 @@ weight = 18
 
 <!--https://cheatsheets.zip/go (Cheatseat) -->
 
+> Para qual aplicação dentro do host este dado deve ir?
+
+|   **PROTOCOL**      |  **LAYER**    | **WHY IT USES PORTS?**    |
+| ---------------- | ------------  | ------------ |
+| TCP |   Transport   | Multiplexar aplicações e controlar sessões  |
+| UDP | Transport | Entregar dados a aplicações sem controle de conexão |
+
 ![Terminal Theme Preview](https://i0.wp.com/powercampus.de/wp-content/uploads/2021/08/PVM_PI_SRIOV_Internal_Ethernet_Switch.jpg?fit=750%2C327&ssl=1)
 
 # 1. Network ports classification
@@ -79,14 +86,67 @@ This state suggests that the firewall is allowing packets through but isn't givi
 
 ## 2.6. Closed | Filtered
 
+---
+
+# 3. Protocolos que não usam com portas:
+
+Os protocolos que não atuam diretamente com o uso de portas atuam fora da camada de transporte. Em outras palavras, eles não entregam dados a aplicações de usuários. Existem outras funções relevantes, como
+
+- Controle de rede;
+- Transporte de sinalização;
+- Descobrimento de endereços;
+- Mantenimento de rotas; etc.
+
+Exemplo segundo o modelo OSI:
+
+|   **PROTOCOL**      |  **LAYER**    | **HOW ITS IDENTIFIES THE SERVICE?**    |
+| ---------------- | ------------  | ------------ |
+| IP |   Network   | Endereço IP |
+| ICMP |   Network   | Tipo e código da mensagem |
+| ARP |   Data Link   | MAC Address |
+| Ethernet |   Data Link   | EtherType |
+| OSPF |   Network   | Número de protocolo IP |
+
+---
 
 # FAQ
 ## 1. Portas são utilizadas em quais camadas do modelo TCP/IP e OSI?
 
-## 2. Uma porta de rede é um componente físico de uma máquina?
+De acordo com o modelo TCP/IP, a função das portas é a identificação de qual ****aplicação****/****processo**** está operando em um host de modo que este receba os dados de outra máquina.
 
-## 3. Qual o significado de porta lógica?
+Os principais protocolos pertencentes a este modelo são **TCP** e **IP**.
 
-## 4. O que significa um serviço no contexto de redes de computadores?
+Abaixo está a explicação sobre a camada na qual as portas operam:
 
-## 5. Qual a diferença entre processos e serviços de uma máquina?
+|   **MODEL**      |  **LAYER**    | **NAME**    |
+| ---------------- | ------------  | ------------ |
+| TCP/IP |   4   | Transport  |
+| OSI | 4 | Transport |
+
+## 2. Os números de portas são um conceito exclusivo somente através do modelo TCP/IP?
+
+Não, os números de portas não pertencem exclusivamente ao **modelo TCP/IP**, mas sim aos protocolos da Camada de Transporte, principalmente TCP e UDP.
+
+### Modelo OSI:
+Define a lógica de multiplexação e demultiplexação de aplicações. O modelo explica o que deve ser feito, e não como, isto é, o conceito de portas se encaixa na **Camada 4** do modelo, mas ele não define números específicos.
+
+### Modelo TCP/IP:
+É responsável pela implementação das portas por meio do TCP e UDP, onde os números de portas são efetivamente definidos, padronizados e usados.
+
+### Ponto-chave:
+- As portas são um mecanismo implementados pelos protocolos TCP e UDP;
+- O modelo TCP/IP descreve apenas onde esses protocolos se encaixam;
+- O conceito de porta existe independentemente do modelo;
+- A lógica é da camada de transporte.
+
+## 3. Uma porta de rede é um componente físico de uma máquina?
+
+## 4. Qual o significado de porta lógica?
+
+## 5. O que significa um serviço no contexto de redes de computadores?
+
+## 6. Qual a diferença entre processos e serviços de uma máquina?
+
+## 7. Como a IANA padroniza as portas?
+
+## 8. O que significa multiplexação de aplicações?

@@ -51,6 +51,8 @@ Os protocolos de rede estão distribuídos em camadas no modelo OSI (Open System
 
 > DNS (Domain Name System): Protocolo que traduz nomes de domínio em endereços IP.
 
+---
+
 # FAQ
 ### 1. Os protocolos de rede trabalham de modo independente?
 
@@ -112,4 +114,6 @@ As funções mais complexas de protocolos de rede (como TCP ou HTTP) dependem de
 
 Portanto, embora os protocolos de rede sejam "software-centric" no sentido de que são conjuntos de regras implementados em programas, o hardware de rede está sempre presente e é essencial para garantir que os dados possam ser transmitidos de maneira rápida e eficiente entre os dispositivos na rede.
 
-### 4. Qual a diferença entre serviço e protocolo no contexto de redes de computadores?
+### 5. Qual a diferença entre serviço e protocolo no contexto de redes de computadores?
+
+## 6. Protocolos são conceitos exclusivos do modelo TCP/IP?

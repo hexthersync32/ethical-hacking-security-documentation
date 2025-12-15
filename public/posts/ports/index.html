@@ -140,7 +140,31 @@
   
 
   <div class="post-content"><div>
-        <p><img src="https://i0.wp.com/powercampus.de/wp-content/uploads/2021/08/PVM_PI_SRIOV_Internal_Ethernet_Switch.jpg?fit=750%2C327&amp;ssl=1" alt="Terminal Theme Preview"></p>
+        <blockquote>
+<p>Para qual aplicação dentro do host este dado deve ir?</p>
+</blockquote>
+<table>
+  <thead>
+      <tr>
+          <th><strong>PROTOCOL</strong></th>
+          <th><strong>LAYER</strong></th>
+          <th><strong>WHY IT USES PORTS?</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>TCP</td>
+          <td>Transport</td>
+          <td>Multiplexar aplicações e controlar sessões</td>
+      </tr>
+      <tr>
+          <td>UDP</td>
+          <td>Transport</td>
+          <td>Entregar dados a aplicações sem controle de conexão</td>
+      </tr>
+  </tbody>
+</table>
+<p><img src="https://i0.wp.com/powercampus.de/wp-content/uploads/2021/08/PVM_PI_SRIOV_Internal_Ethernet_Switch.jpg?fit=750%2C327&amp;ssl=1" alt="Terminal Theme Preview"></p>
 <h1 id="1-network-ports-classification">1. Network ports classification<a href="#1-network-ports-classification" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <table>
   <thead>
@@ -210,12 +234,98 @@
 <p>This state suggests that the firewall is allowing packets through but isn&rsquo;t giving enough information about the actual port status.</p>
 <h2 id="25-open--filtered">2.5. Open | Filtered<a href="#25-open--filtered" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <h2 id="26-closed--filtered">2.6. Closed | Filtered<a href="#26-closed--filtered" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<hr>
+<h1 id="3-protocolos-que-não-usam-com-portas">3. Protocolos que não usam com portas:<a href="#3-protocolos-que-não-usam-com-portas" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>Os protocolos que não atuam diretamente com o uso de portas atuam fora da camada de transporte. Em outras palavras, eles não entregam dados a aplicações de usuários. Existem outras funções relevantes, como</p>
+<ul>
+<li>Controle de rede;</li>
+<li>Transporte de sinalização;</li>
+<li>Descobrimento de endereços;</li>
+<li>Mantenimento de rotas; etc.</li>
+</ul>
+<p>Exemplo segundo o modelo OSI:</p>
+<table>
+  <thead>
+      <tr>
+          <th><strong>PROTOCOL</strong></th>
+          <th><strong>LAYER</strong></th>
+          <th><strong>HOW ITS IDENTIFIES THE SERVICE?</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>IP</td>
+          <td>Network</td>
+          <td>Endereço IP</td>
+      </tr>
+      <tr>
+          <td>ICMP</td>
+          <td>Network</td>
+          <td>Tipo e código da mensagem</td>
+      </tr>
+      <tr>
+          <td>ARP</td>
+          <td>Data Link</td>
+          <td>MAC Address</td>
+      </tr>
+      <tr>
+          <td>Ethernet</td>
+          <td>Data Link</td>
+          <td>EtherType</td>
+      </tr>
+      <tr>
+          <td>OSPF</td>
+          <td>Network</td>
+          <td>Número de protocolo IP</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
 <h1 id="faq">FAQ<a href="#faq" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <h2 id="1-portas-são-utilizadas-em-quais-camadas-do-modelo-tcpip-e-osi">1. Portas são utilizadas em quais camadas do modelo TCP/IP e OSI?<a href="#1-portas-são-utilizadas-em-quais-camadas-do-modelo-tcpip-e-osi" class="hanchor" ariaLabel="Anchor">#</a> </h2>
-<h2 id="2-uma-porta-de-rede-é-um-componente-físico-de-uma-máquina">2. Uma porta de rede é um componente físico de uma máquina?<a href="#2-uma-porta-de-rede-é-um-componente-físico-de-uma-máquina" class="hanchor" ariaLabel="Anchor">#</a> </h2>
-<h2 id="3-qual-o-significado-de-porta-lógica">3. Qual o significado de porta lógica?<a href="#3-qual-o-significado-de-porta-lógica" class="hanchor" ariaLabel="Anchor">#</a> </h2>
-<h2 id="4-o-que-significa-um-serviço-no-contexto-de-redes-de-computadores">4. O que significa um serviço no contexto de redes de computadores?<a href="#4-o-que-significa-um-serviço-no-contexto-de-redes-de-computadores" class="hanchor" ariaLabel="Anchor">#</a> </h2>
-<h2 id="5-qual-a-diferença-entre-processos-e-serviços-de-uma-máquina">5. Qual a diferença entre processos e serviços de uma máquina?<a href="#5-qual-a-diferença-entre-processos-e-serviços-de-uma-máquina" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>De acordo com o modelo TCP/IP, a função das portas é a identificação de qual <strong><strong>aplicação</strong></strong>/<strong><strong>processo</strong></strong> está operando em um host de modo que este receba os dados de outra máquina.</p>
+<p>Os principais protocolos pertencentes a este modelo são <strong>TCP</strong> e <strong>IP</strong>.</p>
+<p>Abaixo está a explicação sobre a camada na qual as portas operam:</p>
+<table>
+  <thead>
+      <tr>
+          <th><strong>MODEL</strong></th>
+          <th><strong>LAYER</strong></th>
+          <th><strong>NAME</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>TCP/IP</td>
+          <td>4</td>
+          <td>Transport</td>
+      </tr>
+      <tr>
+          <td>OSI</td>
+          <td>4</td>
+          <td>Transport</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="2-os-números-de-portas-são-um-conceito-exclusivo-somente-através-do-modelo-tcpip">2. Os números de portas são um conceito exclusivo somente através do modelo TCP/IP?<a href="#2-os-números-de-portas-são-um-conceito-exclusivo-somente-através-do-modelo-tcpip" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>Não, os números de portas não pertencem exclusivamente ao <strong>modelo TCP/IP</strong>, mas sim aos protocolos da Camada de Transporte, principalmente TCP e UDP.</p>
+<h3 id="modelo-osi">Modelo OSI:<a href="#modelo-osi" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>Define a lógica de multiplexação e demultiplexação de aplicações. O modelo explica o que deve ser feito, e não como, isto é, o conceito de portas se encaixa na <strong>Camada 4</strong> do modelo, mas ele não define números específicos.</p>
+<h3 id="modelo-tcpip">Modelo TCP/IP:<a href="#modelo-tcpip" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>É responsável pela implementação das portas por meio do TCP e UDP, onde os números de portas são efetivamente definidos, padronizados e usados.</p>
+<h3 id="ponto-chave">Ponto-chave:<a href="#ponto-chave" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ul>
+<li>As portas são um mecanismo implementados pelos protocolos TCP e UDP;</li>
+<li>O modelo TCP/IP descreve apenas onde esses protocolos se encaixam;</li>
+<li>O conceito de porta existe independentemente do modelo;</li>
+<li>A lógica é da camada de transporte.</li>
+</ul>
+<h2 id="3-uma-porta-de-rede-é-um-componente-físico-de-uma-máquina">3. Uma porta de rede é um componente físico de uma máquina?<a href="#3-uma-porta-de-rede-é-um-componente-físico-de-uma-máquina" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h2 id="4-qual-o-significado-de-porta-lógica">4. Qual o significado de porta lógica?<a href="#4-qual-o-significado-de-porta-lógica" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h2 id="5-o-que-significa-um-serviço-no-contexto-de-redes-de-computadores">5. O que significa um serviço no contexto de redes de computadores?<a href="#5-o-que-significa-um-serviço-no-contexto-de-redes-de-computadores" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h2 id="6-qual-a-diferença-entre-processos-e-serviços-de-uma-máquina">6. Qual a diferença entre processos e serviços de uma máquina?<a href="#6-qual-a-diferença-entre-processos-e-serviços-de-uma-máquina" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h2 id="7-como-a-iana-padroniza-as-portas">7. Como a IANA padroniza as portas?<a href="#7-como-a-iana-padroniza-as-portas" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h2 id="8-o-que-significa-multiplexação-de-aplicações">8. O que significa multiplexação de aplicações?<a href="#8-o-que-significa-multiplexação-de-aplicações" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 
       </div></div>
 
