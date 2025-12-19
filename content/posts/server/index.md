@@ -3,7 +3,7 @@ title = "Server"
 date = "2019-01-25"
 author = "#devices #network-devices"
 description = "All the kinds of decives that are used on a computer network."
-weight = 5
+weight = 21
 +++
 
 # 1. Introduction

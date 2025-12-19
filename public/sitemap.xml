@@ -38,6 +38,9 @@
     <loc>http://localhost:1313/posts/footprinting/</loc>
     <lastmod>2019-01-25T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/posts/enum/</loc>
+    <lastmod>2019-01-25T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/http/</loc>
     <lastmod>2019-01-25T00:00:00+00:00</lastmod>
   </url><url>

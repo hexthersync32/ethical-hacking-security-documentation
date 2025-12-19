@@ -2,7 +2,7 @@
 title = "TCP and UDP"
 date = "2019-01-25"
 description = "Client for the `whois` directory service."
-weight = 23
+weight = 25
 +++
 
 # 1. Definition

@@ -3,7 +3,7 @@ title = "Footprinting"
 date = "2019-01-25"
 author = " "
 description = " "
-weight = 10
+weight = 11
 +++
 
 # 1. Techniques
