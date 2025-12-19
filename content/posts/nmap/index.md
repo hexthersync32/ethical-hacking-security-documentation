@@ -3,28 +3,41 @@ title = "nmap"
 date = "2019-01-25"
 author = "#linux #scan #network-scanner"
 description = "Network exploration tool and security / port scanner."
+cover = "http://scanme.nmap.org/images/sitelogo.png"
 weight = 15
 +++
 
-![Terminal Theme Preview](http://scanme.nmap.org/images/sitelogo.png)
+# 1. Introduction:
 
-# 1. Introduction
+Nmap ("Network Mapper") é um dos principais utilitários do arsenal de ferramentas para pentest. 
 
-Um dos principais utilitários do arsenal de ferramentas para pentest.
+It is a free and open source utility for network discovery and security auditing. 
+
+Many systems and network administrators also find it useful for tasks such as network inventory, managing service upgrade schedules, and monitoring host or service uptime.
+
+![Terminal Theme Preview](https://www.blumira.com/hs-fs/hubfs/Imported_Blog_Media/image2-1-Mar-12-2024-03-01-45-0211-PM.png?quality=low&width=450&height=247&name=image2-1-Mar-12-2024-03-01-45-0211-PM.png)
+
+---
+
+# 2. Main funcitions:
 
 - Descoberta de hosts ativos dentro de uma determinada faixa de rede;
 
 - Descobertas das portas desses mesmos hosts e identificação de serviços atreladaos a elas;
 
-- Utilização de scripts NSE (Nmap Scripting Engine)
+- Utilização de scripts NSE (Nmap Scripting Engine);
 
-- Identificação de portas de portas TCP e UDP
+- Identificação de portas de portas TCP e UDP;
 
-- Identificação do sistema operacional
+- Identificação do sistema operacional;
 
-- Uso tanto tanto por meio do Shell quanto interface gráfica (Zenmap GUI)
+- Nmap runs on all major computer operating systems, and official binary packages are available for Linux, Windows, and Mac OS X;
 
-# 2. Structure
+- Uso tanto tanto por meio do Shell quanto interface gráfica (Zenmap GUI).
+
+---
+
+# 3. Structure
 
 ```bash
 nmap [Scan Type(s)] [Options] {target specification}
@@ -32,11 +45,17 @@ nmap [Scan Type(s)] [Options] {target specification}
 
 > Obs.: Por padrão, Nmap irá realizar a filtragem somente de portas TCP.
 
-# 3. First try
-## 3.1. Domain scanning:
+---
+
+# 4. Use
+
+## 4.1. Domain scanning:
+
 ```bash
 nmap scanme.nmap.org
 ```
+
+Response:
 
 ```bash
 Starting Nmap 7.98 ( https://nmap.org ) at 2025-12-07 20:54 -0300
@@ -58,10 +77,12 @@ PORT      STATE    SERVICE
 Nmap done: 1 IP address (1 host up) scanned in 17.14 seconds
 ```
 
-## 3.2. Network scanning:
+## 4.2. Device scanning:
+
 ```bash
 nmap -v 192.168.1.1
 ```
+
 Response:
 
 ```bash
@@ -95,9 +116,21 @@ PORT     STATE    SERVICE
 
 Read data files from: /usr/bin/../share/nmap
 Nmap done: 1 IP address (1 host up) scanned in 1.42 seconds
-
 ```
+
+## 4.3. Network scanning:
+
+```bash
+nmap -v 10.10.141.0/24
+```
+
+Response:
+
+```bash
+```
+
 ## 3.2. Get list of IPs addresses:
+
 ```bash
 nmap -sn -n 192.168.1.1/24 | grep 192 | cut -d ' ' -f 5 > ips.txt
 ```
@@ -218,3 +251,29 @@ A flag acima significa half syn (meia conexão). O atacante não realiza a conex
 nmap -sT
 ```
 Conexão completa.   
+
+## Output File
+
+```bash
+
+nmap -sS 10.11.1.0/24 -iL host.txt
+
+```
+
+--- 
+
+# FAQ
+
+## 1. Quais os riscos de utilizar o Nmap?
+
+## 2. Como pentester, como é possível que a verredura de rede seja identificada dentro de uma rede?
+
+## 3. Como descobrir os endereços de IP inativos em uma rede pelo Nmap?
+
+To know all the down hosts on the network devices range, use this:
+
+```bash
+
+nmap -n -sn -v 10.10.37.0/24 -oG - | awk '/Down$/{print $2}'
+
+```

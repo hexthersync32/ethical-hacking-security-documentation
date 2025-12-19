@@ -77,7 +77,9 @@
 <meta property="og:url" content="http://localhost:1313/posts/nmap/" />
 <meta property="og:site_name" content="Hexthersync32 | Cybersecurity Docs" />
 
-  <meta property="og:image" content="http://localhost:1313/og-image.png">
+  
+  
+  <meta property="og:image" content="http://scanme.nmap.org/images/sitelogo.png">
 
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="627">
@@ -135,14 +137,22 @@
 
   
   
+  <img src="http://scanme.nmap.org/images/sitelogo.png"
+    class="post-cover"
+    alt="nmap"
+    title="Cover Image" />
 
 
   
 
   <div class="post-content"><div>
-        <p><img src="http://scanme.nmap.org/images/sitelogo.png" alt="Terminal Theme Preview"></p>
-<h1 id="1-introduction">1. Introduction<a href="#1-introduction" class="hanchor" ariaLabel="Anchor">#</a> </h1>
-<p>Um dos principais utilitários do arsenal de ferramentas para pentest.</p>
+        <h1 id="1-introduction">1. Introduction:<a href="#1-introduction" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>Nmap (&ldquo;Network Mapper&rdquo;) é um dos principais utilitários do arsenal de ferramentas para pentest.</p>
+<p>It is a free and open source utility for network discovery and security auditing.</p>
+<p>Many systems and network administrators also find it useful for tasks such as network inventory, managing service upgrade schedules, and monitoring host or service uptime.</p>
+<p><img src="https://www.blumira.com/hs-fs/hubfs/Imported_Blog_Media/image2-1-Mar-12-2024-03-01-45-0211-PM.png?quality=low&amp;width=450&amp;height=247&amp;name=image2-1-Mar-12-2024-03-01-45-0211-PM.png" alt="Terminal Theme Preview"></p>
+<hr>
+<h1 id="2-main-funcitions">2. Main funcitions:<a href="#2-main-funcitions" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <ul>
 <li>
 <p>Descoberta de hosts ativos dentro de uma determinada faixa de rede;</p>
@@ -151,27 +161,33 @@
 <p>Descobertas das portas desses mesmos hosts e identificação de serviços atreladaos a elas;</p>
 </li>
 <li>
-<p>Utilização de scripts NSE (Nmap Scripting Engine)</p>
+<p>Utilização de scripts NSE (Nmap Scripting Engine);</p>
 </li>
 <li>
-<p>Identificação de portas de portas TCP e UDP</p>
+<p>Identificação de portas de portas TCP e UDP;</p>
 </li>
 <li>
-<p>Identificação do sistema operacional</p>
+<p>Identificação do sistema operacional;</p>
 </li>
 <li>
-<p>Uso tanto tanto por meio do Shell quanto interface gráfica (Zenmap GUI)</p>
+<p>Nmap runs on all major computer operating systems, and official binary packages are available for Linux, Windows, and Mac OS X;</p>
+</li>
+<li>
+<p>Uso tanto tanto por meio do Shell quanto interface gráfica (Zenmap GUI).</p>
 </li>
 </ul>
-<h1 id="2-structure">2. Structure<a href="#2-structure" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<hr>
+<h1 id="3-structure">3. Structure<a href="#3-structure" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nmap <span style="color:#f92672">[</span>Scan Type<span style="color:#f92672">(</span>s<span style="color:#f92672">)]</span> <span style="color:#f92672">[</span>Options<span style="color:#f92672">]</span> <span style="color:#f92672">{</span>target specification<span style="color:#f92672">}</span>
 </span></span></code></pre></div><blockquote>
 <p>Obs.: Por padrão, Nmap irá realizar a filtragem somente de portas TCP.</p>
 </blockquote>
-<h1 id="3-first-try">3. First try<a href="#3-first-try" class="hanchor" ariaLabel="Anchor">#</a> </h1>
-<h2 id="31-domain-scanning">3.1. Domain scanning:<a href="#31-domain-scanning" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<hr>
+<h1 id="4-use">4. Use<a href="#4-use" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<h2 id="41-domain-scanning">4.1. Domain scanning:<a href="#41-domain-scanning" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nmap scanme.nmap.org
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Starting Nmap 7.98 <span style="color:#f92672">(</span> https://nmap.org <span style="color:#f92672">)</span> at 2025-12-07 20:54 -0300
+</span></span></code></pre></div><p>Response:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Starting Nmap 7.98 <span style="color:#f92672">(</span> https://nmap.org <span style="color:#f92672">)</span> at 2025-12-07 20:54 -0300
 </span></span><span style="display:flex;"><span>Nmap scan report <span style="color:#66d9ef">for</span> scanme.nmap.org <span style="color:#f92672">(</span>45.33.32.156<span style="color:#f92672">)</span>
 </span></span><span style="display:flex;"><span>Host is up <span style="color:#f92672">(</span>0.20s latency<span style="color:#f92672">)</span>.
 </span></span><span style="display:flex;"><span>Other addresses <span style="color:#66d9ef">for</span> scanme.nmap.org <span style="color:#f92672">(</span>not scanned<span style="color:#f92672">)</span>: 2600:3c01::f03c:91ff:fe18:bb2f
@@ -188,7 +204,7 @@
 </span></span><span style="display:flex;"><span>31337/tcp open     Elite
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>Nmap <span style="color:#66d9ef">done</span>: <span style="color:#ae81ff">1</span> IP address <span style="color:#f92672">(</span><span style="color:#ae81ff">1</span> host up<span style="color:#f92672">)</span> scanned in 17.14 seconds
-</span></span></code></pre></div><h2 id="32-network-scanning">3.2. Network scanning:<a href="#32-network-scanning" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+</span></span></code></pre></div><h2 id="42-device-scanning">4.2. Device scanning:<a href="#42-device-scanning" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nmap -v 192.168.1.1
 </span></span></code></pre></div><p>Response:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>
@@ -221,7 +237,10 @@
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>Read data files from: /usr/bin/../share/nmap
 </span></span><span style="display:flex;"><span>Nmap <span style="color:#66d9ef">done</span>: <span style="color:#ae81ff">1</span> IP address <span style="color:#f92672">(</span><span style="color:#ae81ff">1</span> host up<span style="color:#f92672">)</span> scanned in 1.42 seconds
-</span></span></code></pre></div><h2 id="32-get-list-of-ips-addresses">3.2. Get list of IPs addresses:<a href="#32-get-list-of-ips-addresses" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+</span></span></code></pre></div><h2 id="43-network-scanning">4.3. Network scanning:<a href="#43-network-scanning" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nmap -v 10.10.141.0/24
+</span></span></code></pre></div><p>Response:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"></code></pre></div><h2 id="32-get-list-of-ips-addresses">3.2. Get list of IPs addresses:<a href="#32-get-list-of-ips-addresses" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nmap -sn -n 192.168.1.1/24 | grep <span style="color:#ae81ff">192</span> | cut -d <span style="color:#e6db74">&#39; &#39;</span> -f <span style="color:#ae81ff">5</span> &gt; ips.txt
 </span></span></code></pre></div><h1 id="4-most-commom-uses">4. Most commom uses<a href="#4-most-commom-uses" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <p>Para averiguar todos os dispositivos disponíveis numa rede (<strong>Ping Scan</strong>):</p>
@@ -306,7 +325,18 @@
 </span></span></code></pre></div><p>A flag acima significa half syn (meia conexão). O atacante não realiza a conexão completa no alvo (porta TCP).</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nmap -sT
 </span></span></code></pre></div><p>Conexão completa.</p>
-
+<h2 id="output-file">Output File<a href="#output-file" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>nmap -sS 10.11.1.0/24 -iL host.txt
+</span></span></code></pre></div><hr>
+<h1 id="faq">FAQ<a href="#faq" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<h2 id="1-quais-os-riscos-de-utilizar-o-nmap">1. Quais os riscos de utilizar o Nmap?<a href="#1-quais-os-riscos-de-utilizar-o-nmap" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h2 id="2-como-pentester-como-é-possível-que-a-verredura-de-rede-seja-identificada-dentro-de-uma-rede">2. Como pentester, como é possível que a verredura de rede seja identificada dentro de uma rede?<a href="#2-como-pentester-como-é-possível-que-a-verredura-de-rede-seja-identificada-dentro-de-uma-rede" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h2 id="3-como-descobrir-os-endereços-de-ip-inativos-em-uma-rede-pelo-nmap">3. Como descobrir os endereços de IP inativos em uma rede pelo Nmap?<a href="#3-como-descobrir-os-endereços-de-ip-inativos-em-uma-rede-pelo-nmap" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>To know all the down hosts on the network devices range, use this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>nmap -n -sn -v 10.10.37.0/24 -oG - | awk <span style="color:#e6db74">&#39;/Down$/{print $2}&#39;</span>
+</span></span></code></pre></div>
       </div></div>
 
   
