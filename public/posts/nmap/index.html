@@ -183,8 +183,36 @@
 <p>Obs.: Por padrão, Nmap irá realizar a filtragem somente de portas TCP.</p>
 </blockquote>
 <hr>
-<h1 id="4-use">4. Use<a href="#4-use" class="hanchor" ariaLabel="Anchor">#</a> </h1>
-<h2 id="41-domain-scanning">4.1. Domain scanning:<a href="#41-domain-scanning" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h1 id="4-arguments">4. Arguments<a href="#4-arguments" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<table>
+  <thead>
+      <tr>
+          <th><strong>OPTION</strong></th>
+          <th><strong>DESCRIPTION</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>-A</td>
+          <td>Enable OS and version detection, script scanning, and traceroute.</td>
+      </tr>
+      <tr>
+          <td>-sn</td>
+          <td>It does not return port numbers</td>
+      </tr>
+      <tr>
+          <td>-oN</td>
+          <td>Output scan to file</td>
+      </tr>
+      <tr>
+          <td>-v</td>
+          <td>Verbose (it lists everywhere the scan is doing in real time)</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h1 id="5-use">5. Use<a href="#5-use" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<h2 id="51-domain-scanning">5.1. Domain scanning:<a href="#51-domain-scanning" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nmap scanme.nmap.org
 </span></span></code></pre></div><p>Response:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Starting Nmap 7.98 <span style="color:#f92672">(</span> https://nmap.org <span style="color:#f92672">)</span> at 2025-12-07 20:54 -0300
@@ -204,7 +232,7 @@
 </span></span><span style="display:flex;"><span>31337/tcp open     Elite
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>Nmap <span style="color:#66d9ef">done</span>: <span style="color:#ae81ff">1</span> IP address <span style="color:#f92672">(</span><span style="color:#ae81ff">1</span> host up<span style="color:#f92672">)</span> scanned in 17.14 seconds
-</span></span></code></pre></div><h2 id="42-device-scanning">4.2. Device scanning:<a href="#42-device-scanning" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+</span></span></code></pre></div><h2 id="52-device-scanning">5.2. Device scanning:<a href="#52-device-scanning" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nmap -v 192.168.1.1
 </span></span></code></pre></div><p>Response:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>
@@ -237,15 +265,15 @@
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>Read data files from: /usr/bin/../share/nmap
 </span></span><span style="display:flex;"><span>Nmap <span style="color:#66d9ef">done</span>: <span style="color:#ae81ff">1</span> IP address <span style="color:#f92672">(</span><span style="color:#ae81ff">1</span> host up<span style="color:#f92672">)</span> scanned in 1.42 seconds
-</span></span></code></pre></div><h2 id="43-network-scanning">4.3. Network scanning:<a href="#43-network-scanning" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+</span></span></code></pre></div><h2 id="53-network-scanning">5.3. Network scanning:<a href="#53-network-scanning" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nmap -v 10.10.141.0/24
 </span></span></code></pre></div><p>Response:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"></code></pre></div><h2 id="32-get-list-of-ips-addresses">3.2. Get list of IPs addresses:<a href="#32-get-list-of-ips-addresses" class="hanchor" ariaLabel="Anchor">#</a> </h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nmap -sn -n 192.168.1.1/24 | grep <span style="color:#ae81ff">192</span> | cut -d <span style="color:#e6db74">&#39; &#39;</span> -f <span style="color:#ae81ff">5</span> &gt; ips.txt
-</span></span></code></pre></div><h1 id="4-most-commom-uses">4. Most commom uses<a href="#4-most-commom-uses" class="hanchor" ariaLabel="Anchor">#</a> </h1>
-<p>Para averiguar todos os dispositivos disponíveis numa rede (<strong>Ping Scan</strong>):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"></code></pre></div><h2 id="54-get-list-of-ips-addresses">5.4. Get list of IPs addresses:<a href="#54-get-list-of-ips-addresses" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<blockquote>
+<p>This method is known better as <code>Ping Scan</code></p>
+</blockquote>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    nmap -sn 192.168.0.0/24
-</span></span></code></pre></div><p>Ou:</p>
+</span></span></code></pre></div><p>Or:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    nmap -sn 192.168.0.0-255
 </span></span></code></pre></div><p>Responde:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Starting Nmap 7.98 <span style="color:#f92672">(</span> https://nmap.org <span style="color:#f92672">)</span> at 2025-12-07 21:38 -0300
@@ -274,30 +302,12 @@
 </span></span><span style="display:flex;"><span>Host is up.
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>Nmap <span style="color:#66d9ef">done</span>: <span style="color:#ae81ff">256</span> IP addresses <span style="color:#f92672">(</span><span style="color:#ae81ff">6</span> hosts up<span style="color:#f92672">)</span> scanned in 2.93 seconds
-</span></span></code></pre></div><p>List all DNS script for Nmap:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    ls -al /usr/share/nmap/scripts/
-</span></span></code></pre></div><p>List DNS script for Nmap:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    ls -al /usr/share/nmap/scripts/ | grep -e <span style="color:#e6db74">&#34;dns-&#34;</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>broadcast-dns-service-discovery.nse
-</span></span><span style="display:flex;"><span>dns-blacklist.nse
-</span></span><span style="display:flex;"><span>dns-brute.nse
-</span></span><span style="display:flex;"><span>dns-cache-snoop.nse
-</span></span><span style="display:flex;"><span>dns-check-zone.nse
-</span></span><span style="display:flex;"><span>dns-client-subnet-scan.nse
-</span></span><span style="display:flex;"><span>dns-fuzz.nse
-</span></span><span style="display:flex;"><span>dns-ip6-arpa-scan.nse
-</span></span><span style="display:flex;"><span>dns-nsec3-enum.nse
-</span></span><span style="display:flex;"><span>dns-nsec-enum.nse
-</span></span><span style="display:flex;"><span>dns-nsid.nse
-</span></span><span style="display:flex;"><span>dns-random-srcport.nse
-</span></span><span style="display:flex;"><span>dns-random-txid.nse
-</span></span><span style="display:flex;"><span>dns-recursion.nse
-</span></span><span style="display:flex;"><span>dns-service-discovery.nse
-</span></span><span style="display:flex;"><span>dns-srv-enum.nse
-</span></span><span style="display:flex;"><span>dns-update.nse
-</span></span><span style="display:flex;"><span>dns-zeustracker.nse
-</span></span><span style="display:flex;"><span>dns-zone-transfer.nse
-</span></span></code></pre></div><h3 id="selecionar-porta-específica">Selecionar porta específica<a href="#selecionar-porta-específica" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">```</span>bash
+</span></span><span style="display:flex;"><span>nmap -sn -n 192.168.1.1/24 | grep <span style="color:#ae81ff">192</span> | cut -d <span style="color:#e6db74">&#39; &#39;</span> -f <span style="color:#ae81ff">5</span> &gt; ips.txt
+</span></span></code></pre></div><h2 id="55-locate-port">5.5. Locate port<a href="#55-locate-port" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h3 id="selecionar-porta-específica">Selecionar porta específica<a href="#selecionar-porta-específica" class="hanchor" ariaLabel="Anchor">#</a> </h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nmap -p <span style="color:#ae81ff">80</span> scanme.nmap.org -v
 </span></span></code></pre></div><p>Resultado:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Starting Nmap 7.80 <span style="color:#f92672">(</span> https://nmap.org <span style="color:#f92672">)</span> at 2025-12-09 08:59 -03
@@ -320,23 +330,50 @@
 </span></span><span style="display:flex;"><span>Read data files from: /usr/bin/../share/nmap
 </span></span><span style="display:flex;"><span>Nmap <span style="color:#66d9ef">done</span>: <span style="color:#ae81ff">1</span> IP address <span style="color:#f92672">(</span><span style="color:#ae81ff">1</span> host up<span style="color:#f92672">)</span> scanned in 0.11 seconds
 </span></span><span style="display:flex;"><span>           Raw packets sent: <span style="color:#ae81ff">5</span> <span style="color:#f92672">(</span>196B<span style="color:#f92672">)</span> | Rcvd: <span style="color:#ae81ff">2</span> <span style="color:#f92672">(</span>88B<span style="color:#f92672">)</span>
-</span></span></code></pre></div><h1 id="varredura-básica">Varredura básica<a href="#varredura-básica" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+</span></span></code></pre></div><h2 id="56-down-hosts">5.6. Down hosts:<a href="#56-down-hosts" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>To know all the down hosts on the network devices range, use this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>nmap -n -sn -v 10.10.37.0/24 -oG - | awk <span style="color:#e6db74">&#39;/Down$/{print $2}&#39;</span>
+</span></span></code></pre></div><h2 id="57-output-file">5.7. Output File<a href="#57-output-file" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>nmap -sS 10.11.1.0/24 -iL host.txt
+</span></span></code></pre></div><hr>
+<h1 id="6-nmap-scriptting">6. Nmap Scriptting:<a href="#6-nmap-scriptting" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>List all DNS script for Nmap:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    ls -al /usr/share/nmap/scripts/
+</span></span></code></pre></div><p>List DNS script for Nmap:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    ls -al /usr/share/nmap/scripts/ | grep -e <span style="color:#e6db74">&#34;dns-&#34;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>broadcast-dns-service-discovery.nse
+</span></span><span style="display:flex;"><span>dns-blacklist.nse
+</span></span><span style="display:flex;"><span>dns-brute.nse
+</span></span><span style="display:flex;"><span>dns-cache-snoop.nse
+</span></span><span style="display:flex;"><span>dns-check-zone.nse
+</span></span><span style="display:flex;"><span>dns-client-subnet-scan.nse
+</span></span><span style="display:flex;"><span>dns-fuzz.nse
+</span></span><span style="display:flex;"><span>dns-ip6-arpa-scan.nse
+</span></span><span style="display:flex;"><span>dns-nsec3-enum.nse
+</span></span><span style="display:flex;"><span>dns-nsec-enum.nse
+</span></span><span style="display:flex;"><span>dns-nsid.nse
+</span></span><span style="display:flex;"><span>dns-random-srcport.nse
+</span></span><span style="display:flex;"><span>dns-random-txid.nse
+</span></span><span style="display:flex;"><span>dns-recursion.nse
+</span></span><span style="display:flex;"><span>dns-service-discovery.nse
+</span></span><span style="display:flex;"><span>dns-srv-enum.nse
+</span></span><span style="display:flex;"><span>dns-update.nse
+</span></span><span style="display:flex;"><span>dns-zeustracker.nse
+</span></span><span style="display:flex;"><span>dns-zone-transfer.nse
+</span></span></code></pre></div><hr>
+<h1 id="7-varredura-básica">7. Varredura básica<a href="#7-varredura-básica" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nmap -sS
 </span></span></code></pre></div><p>A flag acima significa half syn (meia conexão). O atacante não realiza a conexão completa no alvo (porta TCP).</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nmap -sT
 </span></span></code></pre></div><p>Conexão completa.</p>
-<h2 id="output-file">Output File<a href="#output-file" class="hanchor" ariaLabel="Anchor">#</a> </h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>nmap -sS 10.11.1.0/24 -iL host.txt
-</span></span></code></pre></div><hr>
+<hr>
 <h1 id="faq">FAQ<a href="#faq" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <h2 id="1-quais-os-riscos-de-utilizar-o-nmap">1. Quais os riscos de utilizar o Nmap?<a href="#1-quais-os-riscos-de-utilizar-o-nmap" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <h2 id="2-como-pentester-como-é-possível-que-a-verredura-de-rede-seja-identificada-dentro-de-uma-rede">2. Como pentester, como é possível que a verredura de rede seja identificada dentro de uma rede?<a href="#2-como-pentester-como-é-possível-que-a-verredura-de-rede-seja-identificada-dentro-de-uma-rede" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <h2 id="3-como-descobrir-os-endereços-de-ip-inativos-em-uma-rede-pelo-nmap">3. Como descobrir os endereços de IP inativos em uma rede pelo Nmap?<a href="#3-como-descobrir-os-endereços-de-ip-inativos-em-uma-rede-pelo-nmap" class="hanchor" ariaLabel="Anchor">#</a> </h2>
-<p>To know all the down hosts on the network devices range, use this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>nmap -n -sn -v 10.10.37.0/24 -oG - | awk <span style="color:#e6db74">&#39;/Down$/{print $2}&#39;</span>
-</span></span></code></pre></div>
+
       </div></div>
 
   

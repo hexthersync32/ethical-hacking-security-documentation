@@ -5,3 +5,5 @@ author = "#protocol"
 description = "Hypertext transfer protocol."
 weight = 9
 +++
+
+Recolhimento de informações sobre serviços utilizados por um alvo.

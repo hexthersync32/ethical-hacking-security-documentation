@@ -6,47 +6,46 @@ description = "Protocol for translating domain names to IP addresses."
 weight = 7
 +++
 
-# 1. Definition
+![DNS](https://www.indusface.com/wp-content/uploads/2024/10/DNS-lookup-process-.png)
 
-DNS (Domais Name System) é um sistema hierárquico. Entre outras palavras, é um serviço (`porta 53`) que traduz nomes de domínio para endereços de IP e vice-versa. Esses tais __nomes de domínio__ podem referir-se comumente a endereços de websites (URLs).
+# 1. Definition:
+
+DNS (Domais Name System) é um sistema hierárquico. Entre outras palavras, é um serviço (`porta 53`) que traduz nomes de domínio para endereços de IP e vice-versa. 
+
+Esses tais __nomes de domínio__ podem referir-se comumente a endereços de websites (URLs).
 
 ---
 
-# 2. Resolução reversa
+# 2. Reverse lookup
 
 Em **segurança da informação**, *resolução reversa* (ou *reverse DNS lookup*) é o processo de **descobrir o nome de domínio associado a um endereço IP** — o contrário da resolução DNS comum, que traduz domínio → IP.
 
 É uma consulta ao DNS para verificar qual domínio (ex.: `exemplo.com`) está registrado para um determinado endereço IP (ex.: `192.0.2.10`).
+
 Isso é feito acessando registros especiais chamados **PTR (Pointer Records)**.
 
-## 2.1. Por que isso é importante em segurança
-
-1. **Verificação de legitimidade e identificação**
-   Ajuda a confirmar se um IP realmente pertence ao domínio que ele afirma representar — útil para validar servidores, identificar origem de tráfego e detectar disfarces.
-
-2. **Detecção de atividades suspeitas**
-   Em logs de firewall, IDS/IPS ou servidores, a resolução reversa auxilia a reconhecer se um IP está associado a hosts legítimos ou a fontes potencialmente maliciosas.
-
-3. **Autenticação e reputação em serviços críticos**
-   Protocolos como SMTP usam reverse DNS para verificar se um servidor de e-mail é confiável. Ausência ou inconsistência de PTR é frequentemente sinal de spam ou spoofing.
-
-Se quiser, posso dar exemplos práticos ou mostrar como realizar uma resolução reversa usando comandos como `dig`, `nslookup` ou ferramentas online.
-
 ![Terminal Theme Preview](https://www.whatismyip.com/static/662cddb98cbb8537a6575bc1bb19c9bb/reverse-dns-lookup-diagram.webp)
-
-Exatamente — **é isso mesmo**.
 
 A **resolução reversa** é justamente o ato de **descobrir qual domínio (ou hostname) está associado a um determinado endereço IP**.
 
 Em termos simples:
 
-* **Resolução normal:** domínio → IP
-* **Resolução reversa:** IP → domínio
+|   **Resolução normal**      |  **Resolução reversa** |
+| ---------------- | ------------  |
+| domínio → IP |   IP → domínio   |
 
-Se quiser, posso explicar como essa resolução é feita tecnicamente (com registros PTR) ou mostrar exemplos práticos.
+## 2. 1. Por que isso é importante em segurança?
 
+1. **Verificação de legitimidade e identificação:**
+   Ajuda a confirmar se um IP realmente pertence ao domínio que ele afirma representar — útil para validar servidores, identificar origem de tráfego e detectar disfarces.
 
-Localizar um domínio a partir de um IP — por meio da **resolução reversa (reverse DNS)** — traz várias vantagens importantes para profissionais de **segurança da informação**. As principais são:
+2. **Detecção de atividades suspeitas:**
+   Em logs de firewall, IDS/IPS ou servidores, a resolução reversa auxilia a reconhecer se um IP está associado a hosts legítimos ou a fontes potencialmente maliciosas.
+
+3. **Autenticação e reputação em serviços críticos:**
+   Protocolos como SMTP usam reverse DNS para verificar se um servidor de e-mail é confiável. Ausência ou inconsistência de PTR é frequentemente sinal de spam ou spoofing.
+
+## 2.2. Vantagens de localizar um domínio a partir de um IP:
 
 ### **1. Identificação e análise de origem do tráfego**
 
@@ -79,8 +78,6 @@ Em muitos protocolos, especialmente e-mail (SMTP), a resolução reversa é usad
 
 Em resumo:
 **Localizar o domínio de um IP ajuda a verificar legitimidade, identificar anomalias e reduzir riscos**, tornando a análise de incidentes e o monitoramento de redes muito mais eficazes.
-
-Se quiser, posso explicar como validar se um PTR é confiável ou como usar ferramentas como `nslookup`, `dig` e `host` para fazer essas consultas.
 
 ---
 
@@ -172,3 +169,5 @@ Isso é importante porque, sem DNS, muitos serviços “somem” instantaneament
 ## 16. O que são registros DNS?
 
 ## 17. Qual a função de um registro DNS?
+
+## 18. Por que um endereço de DNS é tão crucial durante um pentest?

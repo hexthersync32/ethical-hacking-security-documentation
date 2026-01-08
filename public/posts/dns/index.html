@@ -140,39 +140,48 @@
   
 
   <div class="post-content"><div>
-        <h1 id="1-definition">1. Definition<a href="#1-definition" class="hanchor" ariaLabel="Anchor">#</a> </h1>
-<p>DNS (Domais Name System) é um sistema hierárquico. Entre outras palavras, é um serviço (<code>porta 53</code>) que traduz nomes de domínio para endereços de IP e vice-versa. Esses tais <strong>nomes de domínio</strong> podem referir-se comumente a endereços de websites (URLs).</p>
+        <p><img src="https://www.indusface.com/wp-content/uploads/2024/10/DNS-lookup-process-.png" alt="DNS"></p>
+<h1 id="1-definition">1. Definition:<a href="#1-definition" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>DNS (Domais Name System) é um sistema hierárquico. Entre outras palavras, é um serviço (<code>porta 53</code>) que traduz nomes de domínio para endereços de IP e vice-versa.</p>
+<p>Esses tais <strong>nomes de domínio</strong> podem referir-se comumente a endereços de websites (URLs).</p>
 <hr>
 <h1 id="2-resolução-reversa">2. Resolução reversa<a href="#2-resolução-reversa" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <p>Em <strong>segurança da informação</strong>, <em>resolução reversa</em> (ou <em>reverse DNS lookup</em>) é o processo de <strong>descobrir o nome de domínio associado a um endereço IP</strong> — o contrário da resolução DNS comum, que traduz domínio → IP.</p>
-<p>É uma consulta ao DNS para verificar qual domínio (ex.: <code>exemplo.com</code>) está registrado para um determinado endereço IP (ex.: <code>192.0.2.10</code>).
-Isso é feito acessando registros especiais chamados <strong>PTR (Pointer Records)</strong>.</p>
-<h2 id="21-por-que-isso-é-importante-em-segurança">2.1. Por que isso é importante em segurança<a href="#21-por-que-isso-é-importante-em-segurança" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>É uma consulta ao DNS para verificar qual domínio (ex.: <code>exemplo.com</code>) está registrado para um determinado endereço IP (ex.: <code>192.0.2.10</code>).</p>
+<p>Isso é feito acessando registros especiais chamados <strong>PTR (Pointer Records)</strong>.</p>
+<p><img src="https://www.whatismyip.com/static/662cddb98cbb8537a6575bc1bb19c9bb/reverse-dns-lookup-diagram.webp" alt="Terminal Theme Preview"></p>
+<p>A <strong>resolução reversa</strong> é justamente o ato de <strong>descobrir qual domínio (ou hostname) está associado a um determinado endereço IP</strong>.</p>
+<p>Em termos simples:</p>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Resolução normal</strong></th>
+          <th><strong>Resolução reversa</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>domínio → IP</td>
+          <td>IP → domínio</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="2-1-por-que-isso-é-importante-em-segurança">2. 1. Por que isso é importante em segurança?<a href="#2-1-por-que-isso-é-importante-em-segurança" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <ol>
 <li>
-<p><strong>Verificação de legitimidade e identificação</strong>
+<p><strong>Verificação de legitimidade e identificação:</strong>
 Ajuda a confirmar se um IP realmente pertence ao domínio que ele afirma representar — útil para validar servidores, identificar origem de tráfego e detectar disfarces.</p>
 </li>
 <li>
-<p><strong>Detecção de atividades suspeitas</strong>
+<p><strong>Detecção de atividades suspeitas:</strong>
 Em logs de firewall, IDS/IPS ou servidores, a resolução reversa auxilia a reconhecer se um IP está associado a hosts legítimos ou a fontes potencialmente maliciosas.</p>
 </li>
 <li>
-<p><strong>Autenticação e reputação em serviços críticos</strong>
+<p><strong>Autenticação e reputação em serviços críticos:</strong>
 Protocolos como SMTP usam reverse DNS para verificar se um servidor de e-mail é confiável. Ausência ou inconsistência de PTR é frequentemente sinal de spam ou spoofing.</p>
 </li>
 </ol>
-<p>Se quiser, posso dar exemplos práticos ou mostrar como realizar uma resolução reversa usando comandos como <code>dig</code>, <code>nslookup</code> ou ferramentas online.</p>
-<p><img src="https://www.whatismyip.com/static/662cddb98cbb8537a6575bc1bb19c9bb/reverse-dns-lookup-diagram.webp" alt="Terminal Theme Preview"></p>
-<p>Exatamente — <strong>é isso mesmo</strong>.</p>
-<p>A <strong>resolução reversa</strong> é justamente o ato de <strong>descobrir qual domínio (ou hostname) está associado a um determinado endereço IP</strong>.</p>
-<p>Em termos simples:</p>
-<ul>
-<li><strong>Resolução normal:</strong> domínio → IP</li>
-<li><strong>Resolução reversa:</strong> IP → domínio</li>
-</ul>
-<p>Se quiser, posso explicar como essa resolução é feita tecnicamente (com registros PTR) ou mostrar exemplos práticos.</p>
-<p>Localizar um domínio a partir de um IP — por meio da <strong>resolução reversa (reverse DNS)</strong> — traz várias vantagens importantes para profissionais de <strong>segurança da informação</strong>. As principais são:</p>
+<h2 id="22-vantagens-de-localizar-um-domínio-a-partir-de-um-ip">2.2. Vantagens de localizar um domínio a partir de um IP:<a href="#22-vantagens-de-localizar-um-domínio-a-partir-de-um-ip" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <h3 id="1-identificação-e-análise-de-origem-do-tráfego"><strong>1. Identificação e análise de origem do tráfego</strong><a href="#1-identificação-e-análise-de-origem-do-tráfego" class="hanchor" ariaLabel="Anchor">#</a> </h3>
 <p>Saber a que domínio um IP pertence ajuda a:</p>
 <ul>
@@ -198,7 +207,6 @@ Isso torna mais fácil distinguir acessos benignos de potenciais ameaças.</li>
 <hr>
 <p>Em resumo:
 <strong>Localizar o domínio de um IP ajuda a verificar legitimidade, identificar anomalias e reduzir riscos</strong>, tornando a análise de incidentes e o monitoramento de redes muito mais eficazes.</p>
-<p>Se quiser, posso explicar como validar se um PTR é confiável ou como usar ferramentas como <code>nslookup</code>, <code>dig</code> e <code>host</code> para fazer essas consultas.</p>
 <hr>
 <h1 id="registros-dns">Registros DNS<a href="#registros-dns" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <ol>
@@ -269,6 +277,7 @@ Funciona, mas é impraticável em larga escala.</p>
 <h2 id="16-independente-de-minha-mqauina-estar-conectada-em-uma-rede-cabeada-ou-sem-fio-existe-algum-utilitário-via-linux-que-revela-qual-servidor-dns-estou-utilizando-ou-qual-por-servidor-dns-os-pacotes-gerados-em-minha-máquina-passam-até-chegar-ao-destino">16. Independente de minha m´qauina estar conectada em uma rede cabeada ou sem fio, existe algum utilitário via Linux que revela qual servidor DNS estou utilizando ou qual por servidor DNS os pacotes gerados em minha máquina passam até chegar ao destino?<a href="#16-independente-de-minha-mqauina-estar-conectada-em-uma-rede-cabeada-ou-sem-fio-existe-algum-utilitário-via-linux-que-revela-qual-servidor-dns-estou-utilizando-ou-qual-por-servidor-dns-os-pacotes-gerados-em-minha-máquina-passam-até-chegar-ao-destino" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <h2 id="16-o-que-são-registros-dns">16. O que são registros DNS?<a href="#16-o-que-são-registros-dns" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <h2 id="17-qual-a-função-de-um-registro-dns">17. Qual a função de um registro DNS?<a href="#17-qual-a-função-de-um-registro-dns" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h2 id="18-por-que-um-endereço-de-dns-é-tão-crucial-durante-um-pentest">18. Por que um endereço de DNS é tão crucial durante um pentest?<a href="#18-por-que-um-endereço-de-dns-é-tão-crucial-durante-um-pentest" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 
       </div></div>
 

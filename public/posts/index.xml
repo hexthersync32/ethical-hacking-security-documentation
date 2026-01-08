@@ -44,13 +44,6 @@
       <description>&lt;h1 id=&#34;1-hub--ethernet-hub&#34;&gt;1. Hub / Ethernet hub&lt;/h1&gt;&#xA;&lt;p&gt;É responsável por conectar todos os dispositivos de redes juntos em uma rede interna.&lt;/p&gt;&#xA;&lt;p&gt;Hardware básico que conecta vários computadores ou dispositivos em uma rede local (LAN).&lt;/p&gt;&#xA;&lt;p&gt;É um dispositivo de rede simples que conecta diversos dispositivos em uma rede local (LAN), retransmitindo os sinais recebidos para todas as portas conectadas.&lt;/p&gt;&#xA;&lt;h3 id=&#34;pontos-positivos&#34;&gt;Pontos positivos:&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Custo baixo: É um dos equipamentos mais baratos.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Simplicidade: Fácil de usar e configurar, ideal para redes pequenas.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Server</title>
-      <link>http://localhost:1313/posts/server/</link>
-      <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/server/</guid>
-      <description>&lt;h1 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h1&gt;&#xA;&lt;p&gt;O servidor é um equipamento de rede projetado para fornecer serviços, recursos ou dados para outros dispositivos em uma rede, como computadores, impressoras e outros servidores.&lt;/p&gt;&#xA;&lt;p&gt;Ele pode desempenhar várias funções, como armazenamento de dados, hospedagem de sites, controle de autenticação de usuários e gerenciamento de aplicativos.&lt;/p&gt;&#xA;&lt;p&gt;Os servidores podem ser físicos (hardware dedicado) ou virtuais (em máquinas virtuais), e a função que desempenham depende do tipo de serviço que estão oferecendo, como servidores de arquivos, servidores de e-mail, servidores web, entre outros.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>dig</title>
       <link>http://localhost:1313/posts/dig/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
@@ -72,6 +65,13 @@
       <description>&lt;p&gt;&lt;img src=&#34;https://thewebsiteexchange.us/wp-content/uploads/2024/11/What-Is-a-Domain-Name.png&#34; alt=&#34;Terminal Theme Preview&#34;&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;faq&#34;&gt;FAQ&lt;/h1&gt;&#xA;&lt;h2 id=&#34;1-por-que-algumas-urls-de-alguns-websites-devem-ser-inseridas-em-um-navegador-juntamente-com-o-número-da-porta-para-que-o-usuário-tenha-acesso&#34;&gt;1. Por que algumas URLs de alguns websites devem ser inseridas em um navegador juntamente com o número da porta para que o usuário tenha acesso?&lt;/h2&gt;</description>
     </item>
     <item>
+      <title>Enumeration</title>
+      <link>http://localhost:1313/posts/enum/</link>
+      <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/enum/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Ethernet</title>
       <link>http://localhost:1313/posts/ethernet/</link>
       <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
@@ -84,13 +84,6 @@
       <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/footprinting/</guid>
       <description>&lt;h1 id=&#34;1-techniques&#34;&gt;1. Techniques&lt;/h1&gt;&#xA;&lt;h2 id=&#34;11-dns-enumeration&#34;&gt;1.1. DNS enumeration&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;nslookup&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;dig&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;host&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;dnsenum&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;dnsrecon&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;12-network-scanning&#34;&gt;1.2. Network scanning&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Nmap&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Nessus&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Metasploit&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;13-os-fingerprinting&#34;&gt;1.3. OS fingerprinting&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Nmap&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;p0f&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;xprobe2&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;14-application-fingerprinting&#34;&gt;1.4. Application fingerprinting&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Nikto&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Wappalyzer&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;WhatWeb&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;15-user-enumeration&#34;&gt;1.5. User enumeration&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Hydra&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Medusa&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;John the Ripper&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;16-social-engineering&#34;&gt;1.6. Social engineering&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Phishing&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Vishing&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Baiting&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Quid pro quo&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Typosquatting&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Enumeration</title>
-      <link>http://localhost:1313/posts/enum/</link>
-      <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/enum/</guid>
-      <description></description>
     </item>
     <item>
       <title>HTTP/HTTPS</title>
@@ -118,7 +111,7 @@
       <link>http://localhost:1313/posts/nmap/</link>
       <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/nmap/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://scanme.nmap.org/images/sitelogo.png&#34; alt=&#34;Terminal Theme Preview&#34;&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h1&gt;&#xA;&lt;p&gt;Um dos principais utilitários do arsenal de ferramentas para pentest.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Descoberta de hosts ativos dentro de uma determinada faixa de rede;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Descobertas das portas desses mesmos hosts e identificação de serviços atreladaos a elas;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Utilização de scripts NSE (Nmap Scripting Engine)&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Identificação de portas de portas TCP e UDP&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Identificação do sistema operacional&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Uso tanto tanto por meio do Shell quanto interface gráfica (Zenmap GUI)&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;1-introduction&#34;&gt;1. Introduction:&lt;/h1&gt;&#xA;&lt;p&gt;Nmap (&amp;ldquo;Network Mapper&amp;rdquo;) é um dos principais utilitários do arsenal de ferramentas para pentest.&lt;/p&gt;&#xA;&lt;p&gt;It is a free and open source utility for network discovery and security auditing.&lt;/p&gt;&#xA;&lt;p&gt;Many systems and network administrators also find it useful for tasks such as network inventory, managing service upgrade schedules, and monitoring host or service uptime.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://www.blumira.com/hs-fs/hubfs/Imported_Blog_Media/image2-1-Mar-12-2024-03-01-45-0211-PM.png?quality=low&amp;amp;width=450&amp;amp;height=247&amp;amp;name=image2-1-Mar-12-2024-03-01-45-0211-PM.png&#34; alt=&#34;Terminal Theme Preview&#34;&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;2-main-funcitions&#34;&gt;2. Main funcitions:&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Descoberta de hosts ativos dentro de uma determinada faixa de rede;&lt;/p&gt;</description>
     </item>
     <item>
       <title>nslookup</title>
@@ -154,6 +147,13 @@
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/protocols/</guid>
       <description>&lt;h1 id=&#34;definition&#34;&gt;Definition&lt;/h1&gt;&#xA;&lt;p&gt;No campo das redes de computadores, um protocolo é um conjunto de regras e convenções que definem como a comunicação deve ocorrer entre os dispositivos de uma rede. Ele especifica como os dados devem ser formatados, enviados, recebidos e interpretados por diferentes sistemas.&lt;/p&gt;&#xA;&lt;p&gt;Em outras palavras, um protocolo garante que os dispositivos (como computadores, roteadores, switches, etc.) consigam se &amp;ldquo;entender&amp;rdquo; e trocar informações de maneira eficiente e sem erros.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Server</title>
+      <link>http://localhost:1313/posts/server/</link>
+      <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/server/</guid>
+      <description>&lt;h1 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h1&gt;&#xA;&lt;p&gt;O servidor é um equipamento de rede projetado para fornecer serviços, recursos ou dados para outros dispositivos em uma rede, como computadores, impressoras e outros servidores.&lt;/p&gt;&#xA;&lt;p&gt;Ele pode desempenhar várias funções, como armazenamento de dados, hospedagem de sites, controle de autenticação de usuários e gerenciamento de aplicativos.&lt;/p&gt;&#xA;&lt;p&gt;Os servidores podem ser físicos (hardware dedicado) ou virtuais (em máquinas virtuais), e a função que desempenham depende do tipo de serviço que estão oferecendo, como servidores de arquivos, servidores de e-mail, servidores web, entre outros.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Sockets</title>

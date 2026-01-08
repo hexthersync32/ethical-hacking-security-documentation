@@ -47,9 +47,20 @@ nmap [Scan Type(s)] [Options] {target specification}
 
 ---
 
-# 4. Use
+# 4. Arguments
 
-## 4.1. Domain scanning:
+| **OPTION**   | **DESCRIPTION** |
+| --------    | --------     |
+| -A | Enable OS and version detection, script scanning, and traceroute. |
+| -sn | It does not return port numbers |
+| -oN | Output scan to file |
+| -v | Verbose (it lists everywhere the scan is doing in real time) |
+
+---
+
+# 5. Use
+
+## 5.1. Domain scanning:
 
 ```bash
 nmap scanme.nmap.org
@@ -77,7 +88,7 @@ PORT      STATE    SERVICE
 Nmap done: 1 IP address (1 host up) scanned in 17.14 seconds
 ```
 
-## 4.2. Device scanning:
+## 5.2. Device scanning:
 
 ```bash
 nmap -v 192.168.1.1
@@ -118,7 +129,7 @@ Read data files from: /usr/bin/../share/nmap
 Nmap done: 1 IP address (1 host up) scanned in 1.42 seconds
 ```
 
-## 4.3. Network scanning:
+## 5.3. Network scanning:
 
 ```bash
 nmap -v 10.10.141.0/24
@@ -129,21 +140,15 @@ Response:
 ```bash
 ```
 
-## 3.2. Get list of IPs addresses:
+## 5.4. Get list of IPs addresses:
 
-```bash
-nmap -sn -n 192.168.1.1/24 | grep 192 | cut -d ' ' -f 5 > ips.txt
-```
-
-# 4. Most commom uses
-
-Para averiguar todos os dispositivos disponíveis numa rede (**Ping Scan**):
+> This method is known better as `Ping Scan`
 
 ```bash
     nmap -sn 192.168.0.0/24
 ```
 
-Ou:
+Or:
 
 ```bash
     nmap -sn 192.168.0.0-255
@@ -177,9 +182,67 @@ Nmap scan report for 192.168.1.119
 Host is up.
 
 Nmap done: 256 IP addresses (6 hosts up) scanned in 2.93 seconds
+
+
+```bash
+nmap -sn -n 192.168.1.1/24 | grep 192 | cut -d ' ' -f 5 > ips.txt
 ```
 
+## 5.5. Locate port
+
+### Selecionar porta específica
+```bash
+nmap -p 80 scanme.nmap.org -v
+```
+
+Resultado:
+```bash
+Starting Nmap 7.80 ( https://nmap.org ) at 2025-12-09 08:59 -03
+Initiating Ping Scan at 08:59
+Scanning scanme.nmap.org (45.33.32.156) [4 ports]
+Completed Ping Scan at 08:59, 0.01s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 08:59
+Completed Parallel DNS resolution of 1 host. at 08:59, 0.00s elapsed
+Initiating SYN Stealth Scan at 08:59
+Scanning scanme.nmap.org (45.33.32.156) [1 port]
+Discovered open port 80/tcp on 45.33.32.156
+Completed SYN Stealth Scan at 08:59, 0.01s elapsed (1 total ports)
+Nmap scan report for scanme.nmap.org (45.33.32.156)
+Host is up (0.00068s latency).
+Other addresses for scanme.nmap.org (not scanned): 2600:3c01::f03c:91ff:fe18:bb2f
+
+PORT   STATE SERVICE
+80/tcp open  http
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.11 seconds
+           Raw packets sent: 5 (196B) | Rcvd: 2 (88B)
+```
+
+## 5.6. Down hosts:
+
+To know all the down hosts on the network devices range, use this:
+
+```bash
+
+nmap -n -sn -v 10.10.37.0/24 -oG - | awk '/Down$/{print $2}'
+
+```
+
+## 5.7. Output File
+
+```bash
+
+nmap -sS 10.11.1.0/24 -iL host.txt
+
+```
+
+---
+
+# 6. Nmap Scriptting:
+
 List all DNS script for Nmap:
+
 ```bash
     ls -al /usr/share/nmap/scripts/
 ```
@@ -212,36 +275,10 @@ dns-zeustracker.nse
 dns-zone-transfer.nse
 ```
 
-### Selecionar porta específica
-```bash
-nmap -p 80 scanme.nmap.org -v
-```
+---
 
-Resultado:
-```bash
-Starting Nmap 7.80 ( https://nmap.org ) at 2025-12-09 08:59 -03
-Initiating Ping Scan at 08:59
-Scanning scanme.nmap.org (45.33.32.156) [4 ports]
-Completed Ping Scan at 08:59, 0.01s elapsed (1 total hosts)
-Initiating Parallel DNS resolution of 1 host. at 08:59
-Completed Parallel DNS resolution of 1 host. at 08:59, 0.00s elapsed
-Initiating SYN Stealth Scan at 08:59
-Scanning scanme.nmap.org (45.33.32.156) [1 port]
-Discovered open port 80/tcp on 45.33.32.156
-Completed SYN Stealth Scan at 08:59, 0.01s elapsed (1 total ports)
-Nmap scan report for scanme.nmap.org (45.33.32.156)
-Host is up (0.00068s latency).
-Other addresses for scanme.nmap.org (not scanned): 2600:3c01::f03c:91ff:fe18:bb2f
+# 7. Varredura básica
 
-PORT   STATE SERVICE
-80/tcp open  http
-
-Read data files from: /usr/bin/../share/nmap
-Nmap done: 1 IP address (1 host up) scanned in 0.11 seconds
-           Raw packets sent: 5 (196B) | Rcvd: 2 (88B)
-```
-
-# Varredura básica
 ```bash
 nmap -sS
 ```
@@ -252,14 +289,6 @@ nmap -sT
 ```
 Conexão completa.   
 
-## Output File
-
-```bash
-
-nmap -sS 10.11.1.0/24 -iL host.txt
-
-```
-
 --- 
 
 # FAQ
@@ -269,11 +298,3 @@ nmap -sS 10.11.1.0/24 -iL host.txt
 ## 2. Como pentester, como é possível que a verredura de rede seja identificada dentro de uma rede?
 
 ## 3. Como descobrir os endereços de IP inativos em uma rede pelo Nmap?
-
-To know all the down hosts on the network devices range, use this:
-
-```bash
-
-nmap -n -sn -v 10.10.37.0/24 -oG - | awk '/Down$/{print $2}'
-
-```

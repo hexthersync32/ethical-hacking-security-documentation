@@ -17,9 +17,6 @@
     <loc>http://localhost:1313/posts/devices/</loc>
     <lastmod>2019-01-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/server/</loc>
-    <lastmod>2019-01-25T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/dig/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
@@ -32,13 +29,13 @@
     <loc>http://localhost:1313/posts/domain-name/</loc>
     <lastmod>2019-01-25T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/posts/enum/</loc>
+    <lastmod>2019-01-25T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/ethernet/</loc>
     <lastmod>2019-01-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/footprinting/</loc>
-    <lastmod>2019-01-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/enum/</loc>
     <lastmod>2019-01-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/http/</loc>
@@ -67,6 +64,9 @@
   </url><url>
     <loc>http://localhost:1313/posts/protocols/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/server/</loc>
+    <lastmod>2019-01-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/sockets/</loc>
     <lastmod>2019-01-25T00:00:00+00:00</lastmod>

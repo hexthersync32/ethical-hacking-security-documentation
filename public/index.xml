@@ -62,7 +62,7 @@
       <link>http://localhost:1313/posts/dns/</link>
       <pubDate>Fri, 29 Sep 2017 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/dns/</guid>
-      <description>&lt;h1 id=&#34;1-definition&#34;&gt;1. Definition&lt;/h1&gt;&#xA;&lt;p&gt;DNS (Domais Name System) é um sistema hierárquico. Entre outras palavras, é um serviço (&lt;code&gt;porta 53&lt;/code&gt;) que traduz nomes de domínio para endereços de IP e vice-versa. Esses tais &lt;strong&gt;nomes de domínio&lt;/strong&gt; podem referir-se comumente a endereços de websites (URLs).&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;2-resolução-reversa&#34;&gt;2. Resolução reversa&lt;/h1&gt;&#xA;&lt;p&gt;Em &lt;strong&gt;segurança da informação&lt;/strong&gt;, &lt;em&gt;resolução reversa&lt;/em&gt; (ou &lt;em&gt;reverse DNS lookup&lt;/em&gt;) é o processo de &lt;strong&gt;descobrir o nome de domínio associado a um endereço IP&lt;/strong&gt; — o contrário da resolução DNS comum, que traduz domínio → IP.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://www.indusface.com/wp-content/uploads/2024/10/DNS-lookup-process-.png&#34; alt=&#34;DNS&#34;&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;1-definition&#34;&gt;1. Definition:&lt;/h1&gt;&#xA;&lt;p&gt;DNS (Domais Name System) é um sistema hierárquico. Entre outras palavras, é um serviço (&lt;code&gt;porta 53&lt;/code&gt;) que traduz nomes de domínio para endereços de IP e vice-versa.&lt;/p&gt;&#xA;&lt;p&gt;Esses tais &lt;strong&gt;nomes de domínio&lt;/strong&gt; podem referir-se comumente a endereços de websites (URLs).&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;2-resolução-reversa&#34;&gt;2. Resolução reversa&lt;/h1&gt;&#xA;&lt;p&gt;Em &lt;strong&gt;segurança da informação&lt;/strong&gt;, &lt;em&gt;resolução reversa&lt;/em&gt; (ou &lt;em&gt;reverse DNS lookup&lt;/em&gt;) é o processo de &lt;strong&gt;descobrir o nome de domínio associado a um endereço IP&lt;/strong&gt; — o contrário da resolução DNS comum, que traduz domínio → IP.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Domain Name</title>
@@ -76,7 +76,7 @@
       <link>http://localhost:1313/posts/enum/</link>
       <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/enum/</guid>
-      <description></description>
+      <description>&lt;p&gt;Recolhimento de informações sobre serviços utilizados por um alvo.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ethernet</title>
@@ -91,6 +91,13 @@
       <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/footprinting/</guid>
       <description>&lt;h1 id=&#34;1-techniques&#34;&gt;1. Techniques&lt;/h1&gt;&#xA;&lt;h2 id=&#34;11-dns-enumeration&#34;&gt;1.1. DNS enumeration&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;nslookup&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;dig&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;host&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;dnsenum&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;dnsrecon&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;12-network-scanning&#34;&gt;1.2. Network scanning&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Nmap&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Nessus&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Metasploit&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;13-os-fingerprinting&#34;&gt;1.3. OS fingerprinting&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Nmap&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;p0f&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;xprobe2&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;14-application-fingerprinting&#34;&gt;1.4. Application fingerprinting&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Nikto&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Wappalyzer&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;WhatWeb&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;15-user-enumeration&#34;&gt;1.5. User enumeration&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Hydra&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Medusa&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;John the Ripper&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;16-social-engineering&#34;&gt;1.6. Social engineering&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Phishing&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Vishing&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Baiting&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Quid pro quo&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Typosquatting&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Ethical Hacking</title>
+      <link>http://localhost:1313/posts/ethical-hacking/</link>
+      <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/ethical-hacking/</guid>
+      <description>&lt;h1 id=&#34;1-overview&#34;&gt;1. Overview:&lt;/h1&gt;&#xA;&lt;p&gt;Profissional indispensável para identificar vulnerabilidade de sistemas de software ou infraestruturas.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;2-penetration-test&#34;&gt;2. Penetration Test:&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;É principal ferramente de um hacker ético;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Consiste em utilizar técnicas de hackers em testes de stress da segurança de redes e sistemas;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Invadir para proteger posteriormente;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Abordado pelo CEH (Certified Ethical Hacking);&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Uma real necessidade na atualidade.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;3-kinds-of-pentest&#34;&gt;3. Kinds of Pentest:&lt;/h1&gt;&#xA;&lt;h2 id=&#34;31-black-box&#34;&gt;3.1. Black Box&lt;/h2&gt;&#xA;&lt;p&gt;Implementação mais cara, já que exige muito mais trabalho do profissional que a realiza.&lt;/p&gt;</description>
     </item>
     <item>
       <title>HTTP/HTTPS</title>
