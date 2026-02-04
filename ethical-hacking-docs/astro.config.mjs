@@ -13,8 +13,8 @@ export default defineConfig({
 					label: 'Computer Architecture',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Server', slug: 'computer-architecture/example' },
-						{ label: 'Ports', slug: 'computer-architecture/example02' },
+						{ label: 'Server', slug: 'computer-architecture/01' },
+						{ label: 'Ports', slug: 'computer-architecture/02' },
 					],
 				},
 				{
@@ -81,6 +81,28 @@ export default defineConfig({
 						{ label: 'Dig', slug: 'utilities/01' },
 						{ label: 'Curl', slug: 'utilities/02' },
 						{ label: 'Nmap', slug: 'utilities/03' },
+						{ label: 'Nslookup', slug: 'utilities/04' },
+						{ label: 'Ping', slug: 'utilities/05' },
+						{ label: 'Whois', slug: 'utilities/06' },
+					],
+				},
+				{
+					label: 'Attacks',
+					items: [
+						{ label: 'Dos/DDoS', slug: 'attacks/01' },
+						{ label: 'Spoofing', slug: 'attacks/02' },
+					],
+				},
+				{
+					label: 'Malicious Software',
+					items: [
+						{ label: 'Total Virus', slug: 'malware/01' },
+					],
+				},
+				{
+					label: 'Infection Prevention',
+					items: [
+						{ label: 'Total Virus', slug: 'infection-prevention/01' },
 					],
 				},
 				{
