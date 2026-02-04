@@ -40,6 +40,47 @@ export default defineConfig({
 						// Each item here is one entry in the navigation menu.
 						{ label: 'OSI Model', slug: 'networking/01' },
 						{ label: 'CIDR', slug: 'networking/02' },
+						{ label: 'Domain Name', slug: 'networking/03' },
+						{ label: 'Devices', slug: 'networking/04' },
+						{ label: 'Sockets', slug: 'networking/05' },
+					],
+				},
+				{
+					label: 'TCP/IP',
+					items: [
+						// Each item here is one entry in the navigation menu.
+						{ label: 'TCP/IP', slug: 'tcp-ip/01' },
+						{ label: 'TCP/UDP', slug: 'tcp-ip/02' },
+						{ label: 'Three-Way Handshake', slug: 'tcp-ip/03' },
+					],
+				},
+				{
+					label: 'Physical Protocols',
+					items: [
+						// Each item here is one entry in the navigation menu.
+						{ label: 'Ethernet', slug: 'physical-protocols/01' },
+					],
+				},
+				{
+					label: 'Network Protocols',
+					items: [
+						// Each item here is one entry in the navigation menu.
+						{ label: 'DNS', slug: 'network-protocols/01' },
+						{ label: 'HTTP', slug: 'network-protocols/02' },
+					],
+				},
+				{
+					label: 'Operating Systems',
+					items: [
+						{ label: 'GNU/Linux', slug: 'operating-systems/01' },
+					],
+				},
+				{
+					label: 'Utilities',
+					items: [
+						{ label: 'Dig', slug: 'utilities/01' },
+						{ label: 'Curl', slug: 'utilities/02' },
+						{ label: 'Nmap', slug: 'utilities/03' },
 					],
 				},
 				{
