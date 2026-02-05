@@ -55,6 +55,22 @@ export default defineConfig({
 					],
 				},
 				{
+					label: 'Devices',
+					items: [
+						{ label: 'Hub', slug: 'devices/01' },
+						{ label: 'Switch', slug: 'devices/02' },
+						{ label: 'Router', slug: 'devices/03' },
+						{ label: 'Modem', slug: 'devices/04' },
+						{ label: 'Bridge', slug: 'devices/05' },
+						{ label: 'Firewall', slug: 'devices/06' },
+						{ label: 'Access Point', slug: 'devices/07' },
+						{ label: 'ONU', slug: 'devices/08' },
+						{ label: 'ONT', slug: 'devices/09' },
+						{ label: 'Repeater', slug: 'devices/10' },
+						{ label: 'Gateway', slug: 'devices/11' },
+					],
+				},
+				{
 					label: 'Physical Protocols',
 					items: [
 						// Each item here is one entry in the navigation menu.
