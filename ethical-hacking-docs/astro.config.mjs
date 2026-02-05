@@ -7,7 +7,17 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: '@hexthersync32',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			customCss: [
+				// Relative path to your custom CSS file
+				'./src/styles/index.css',
+			],
+			social: [
+				{ 
+					icon: 'github', 
+					label: 'GitHub', 
+					href: 'https://github.com/lucaxgomex' 
+				}
+			],
 			sidebar: [
 				{
 					label: 'Computer Architecture',
