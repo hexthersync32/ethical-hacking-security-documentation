@@ -1,0 +1,7 @@
+Plataforma de chamados Cortex: Palo Alto Network
+- Acesso remoto da máquina sem que o colaborador saiba
+- Atualização do Cortex
+
+PwC (time de Security Operations Center | SOC)(escalonamento e categorização de chamados pelo Cortex | log bruto) -> VerdanaDesk (recebimento dos logs ou task) ou plataforma do Cortex (é possível acessar a máquina remotamente) 
+-> Fila de chamados da matriz 
+-> 

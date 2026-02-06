@@ -22,9 +22,10 @@ export default defineConfig({
 				{
 					label: 'Computer Architecture',
 					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Server', slug: 'computer-architecture/01' },
+						{ label: 'Components', slug: 'computer-architecture/01' },
+						{ label: 'Machine Language', slug: 'computer-architecture/02' },
 						{ label: 'Ports', slug: 'computer-architecture/02' },
+						{ label: 'Server', slug: 'computer-architecture/03' },
 					],
 				},
 				{
@@ -113,6 +114,20 @@ export default defineConfig({
 					],
 				},
 				{
+					label: 'Technical Support Tools',
+					items: [
+						{ label: 'WinDirStat', slug: 'technical-support/01' },
+						{ label: 'Rundeck', slug: 'technical-support/02' },
+						{ label: 'Octadesk', slug: 'technical-support/03' },
+						{ label: 'CPU-Z', slug: 'technical-support/04' },
+						{ label: 'OCCT', slug: 'technical-support/05' },
+						{ label: 'Cinebench', slug: 'technical-support/06' },
+						{ label: 'Hiren\'s BootCD', slug: 'technical-support/07' },
+						{ label: 'Lazersoft', slug: 'technical-support/07' },
+						{ label: 'Have I Been Pwned?', slug: 'technical-support/07' },
+					],
+				},
+				{
 					label: 'Attacks',
 					items: [
 						{ label: 'Dos/DDoS', slug: 'attacks/01' },
@@ -130,10 +145,6 @@ export default defineConfig({
 					items: [
 						{ label: 'Total Virus', slug: 'infection-prevention/01' },
 					],
-				},
-				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
 				},
 			],
 		}),
