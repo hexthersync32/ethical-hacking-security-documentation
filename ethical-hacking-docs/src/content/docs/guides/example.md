@@ -50,6 +50,28 @@ Principais Aspectos do MITRE (Cibersegurança/Corporação):
 
 Sistema de defensor
 
+## How to prevent malwares on your computer?
+
+https://www.youtube.com/watch?v=8u7fV4zrYBQ 
+
+https://youtu.be/OSVWjuoQdm8
+
+https://youtu.be/5aKd2wb19Ow
+
+https://youtu.be/fblmUZI_7ng
+
+https://youtu.be/s_mnbxlIB04
+
+https://youtu.be/FhRm79oFDsM
+
+https://youtu.be/B8ayJPq26iU
+
+https://youtu.be/dGHo1TeDi88
+
+https://youtu.be/01J-8w4Awsk
+
+---
+
 ## FAQ
 
 ### 1. O que é XDR?
