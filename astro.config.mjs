@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import VitePWA from '@vite-pwa/astro';
 
 // https://astro.build/config
 export default defineConfig({
@@ -193,6 +194,13 @@ export default defineConfig({
 					label: 'Online Reconnaissance',
 					items: [
 						{ label: 'Google Admin Toolbox', slug: 'online-reconnaissance/01' },
+						{ label: 'DNSlytics', slug: 'online-reconnaissance/02' },
+					],
+				},
+				{
+					label: 'Tracking',
+					items: [
+						{ label: 'Grabify', slug: 'tracking/01' },
 					],
 				},
 				{
@@ -234,6 +242,12 @@ export default defineConfig({
 					],
 				},
 				{
+					label: 'Social Engineering',
+					items: [
+						{ label: 'Overview', slug: 'social-engineering/01' },
+					],
+				},
+				{
 					label: 'Attacks',
 					items: [
 						{ label: 'Dos/DDoS', slug: 'attacks/01' },
@@ -260,5 +274,32 @@ export default defineConfig({
 				},
 			],
 		}),
+		VitePWA({
+			registerType: 'autoUpdate',
+			workbox: {
+				globPatterns: ['**/*.{js,css,html,png,svg,ico}']
+			},
+			manifest: {
+				name: 'Ethical Hacking and Pentest Docs',
+				short_name: '',
+				description: 'Documentation for Security Professionals',
+				theme_color: '#000000',
+				background_color: '#ffffff',
+				display: 'fullscreen',
+				start_url: '/',
+				icons: [
+					{
+						src: '/pwa-192x192.png',
+						sizes: '192x192',
+						type: 'image/png'
+					},
+					{
+						src: '/pwa-512x512.png',
+						sizes: '512x512',
+						type: 'image/png'
+					}
+				]
+			},
+		})
 	],
 });
