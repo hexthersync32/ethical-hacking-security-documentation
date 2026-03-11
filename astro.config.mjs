@@ -172,8 +172,8 @@ export default defineConfig({
 					label: 'GNU/Linux',
 					items: [
 						{ 
-							label: 'The Von Neuman Architecture', 
-							slug: 'computer-architecture/01' 
+							label: 'Main Concepts', 
+							slug: 'gnu-linux/01' 
 						},
 					],
 				},
