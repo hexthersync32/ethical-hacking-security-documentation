@@ -72,7 +72,6 @@ export default defineConfig({
 				{
 					label: 'Cyber Security Principles',
 					items: [
-						// Each item here is one entry in the navigation menu.
 						{ label: 'Cyber Security Principles', slug: 'security-basics/01' },
 						{ label: 'Enumeration', slug: 'security-basics/02' },
 						{ label: 'Ethical Hacking', slug: 'security-basics/03' },
@@ -80,19 +79,12 @@ export default defineConfig({
 					],
 				},
 				{
-					label: 'Protocols',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Protocols', slug: 'protocols/01' },
-					],
-				},
-				{
 					label: 'Networking',
 					items: [
-						// Each item here is one entry in the navigation menu.
 						{ label: 'OSI Model', slug: 'networking/01' },
-						{ label: 'CIDR', slug: 'networking/02' },
-						{ label: 'Domain Name', slug: 'networking/03' },
+						{ label: 'Protocols', slug: 'networking/02' },
+						{ label: 'CIDR', slug: 'networking/03' },
+						{ label: 'Domain Name', slug: 'networking/04' },
 						{ label: 'Sockets', slug: 'networking/05' },
 					],
 				},
@@ -119,6 +111,12 @@ export default defineConfig({
 						{ label: 'ONT', slug: 'devices/09' },
 						{ label: 'Repeater', slug: 'devices/10' },
 						{ label: 'Gateway', slug: 'devices/11' },
+					],
+				},
+				{
+					label: 'Cables',
+					items: [
+						{ label: 'Hub', slug: 'cables/01' },
 					],
 				},
 				{
