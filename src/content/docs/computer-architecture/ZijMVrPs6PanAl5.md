@@ -1,6 +1,6 @@
 ---
 title: The Von Neumann Architecture
-description: A guide in my new Starlight docs site.
+slug: computer-architecture/ZijMVrPs6PanAl5
 ---
 
 ## 1. What's A Architecture?

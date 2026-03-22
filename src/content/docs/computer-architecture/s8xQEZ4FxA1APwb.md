@@ -1,5 +1,6 @@
 ---
 title: Ports
+slug: computer-architecture/s8xQEZ4FxA1APwb
 description: A guide in my new Starlight docs site.
 ---
 

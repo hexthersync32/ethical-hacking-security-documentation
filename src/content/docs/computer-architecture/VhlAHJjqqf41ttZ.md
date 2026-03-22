@@ -1,6 +1,6 @@
 ---
 title: Machine Language
-description: A guide in my new Starlight docs site.
+slug: computer-architecture/VhlAHJjqqf41ttZ
 ---
 
 ## How Does a Code Run?
