@@ -1,0 +1,37 @@
+Windows hash generators are tools (built-in like PowerShell's Get-FileHash, command-line utilities like CertUtil, or third-party apps from the Microsoft Store) that create unique digital fingerprints (hashes like MD5, SHA-256) for files or text to verify data integrity, authenticity, and detect tampering, essential for security and software validation. You can generate hashes for files or strings using these tools for various cryptographic needs.
+
+------------------------------------------
+
+Application Information:
+Source process ID: 10264
+Source process name: StoreDesktopExtension.exe
+Source application location: C:\Program Files\WindowsApps\Microsoft.WindowsStore_22512.1401.5.0_x64__8wekyb3d8bbwe\StoreDesktopExtension.exe
+Source process command line: "C:\Program Files\WindowsApps\Microsoft.WindowsStore_22512.1401.5.0_x64__8wekyb3d8bbwe\StoreDesktopExtension.exe" -Embedding
+Source application version: 
+Source application publisher: 
+Source application signers: 
+Source process user name: vitoria.silva
+
+
+Prevention Information:
+Prevention date: segunda-feira, 26 de janeiro de 2026
+Prevention time: 14:48:51
+OS version: 10.0.19045
+Component: Local Analysis
+Cortex XDR code: C0400055
+Prevention description: Suspicious executable detected
+Verdict: 2
+Quarantined: False
+Post-Detected: False
+Hash: 6b39c3583b0496f0be88a2c0ab5773f7f2bfef4f82e53f7f3126ee9ca2bf33ca
+Additional information 1: C:\Program Files\WindowsApps\Microsoft.WindowsStore_22512.1401.5.0_x64__8wekyb3d8bbwe\StoreDesktopExtension.exe
+Additional information 2: 6B39C3583B0496F0BE88A2C0AB5773F7F2BFEF4F82E53F7F3126EE9CA2BF33CA
+Additional information 3: 6B39C3583B0496F0BE88A2C0AB5773F7F2BFEF4F82E53F7F3126EE9CA2BF33CA
+Additional information 4: 2
+Additional information 5: 3B9A1753A8189B5EC1650000060200000E000006000600220060D124006A1401
+
+
+------------------------------------------
+
+
+A3E37CD38E51383F9DDE04B12D424522D0C30C6896CA803FB47CF54238CDDA25

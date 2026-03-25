@@ -1,0 +1,23 @@
+## 2.1. Por que isso é importante em segurança
+
+1. **Verificação de legitimidade e identificação**
+   Ajuda a confirmar se um IP realmente pertence ao domínio que ele afirma representar — útil para validar servidores, identificar origem de tráfego e detectar disfarces.
+
+2. **Detecção de atividades suspeitas**
+   Em logs de firewall, IDS/IPS ou servidores, a resolução reversa auxilia a reconhecer se um IP está associado a hosts legítimos ou a fontes potencialmente maliciosas.
+
+3. **Autenticação e reputação em serviços críticos**
+   Protocolos como SMTP usam reverse DNS para verificar se um servidor de e-mail é confiável. Ausência ou inconsistência de PTR é frequentemente sinal de spam ou spoofing.
+
+Se quiser, posso dar exemplos práticos ou mostrar como realizar uma resolução reversa usando comandos como `dig`, `nslookup` ou ferramentas online.
+
+--------------------
+
+Se quiser, posso explicar como essa resolução é feita tecnicamente (com registros PTR) ou mostrar exemplos práticos.
+
+--------------------
+
+Se quiser, posso explicar como validar se um PTR é confiável ou como usar ferramentas como `nslookup`, `dig` e `host` para fazer essas consultas.
+
+
+
