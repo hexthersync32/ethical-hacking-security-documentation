@@ -1,28 +1,18 @@
 # Cybersecurity Methods Documentation
 
-Hi, there! 
-
-Welcome to this project. I am dedicating a large part of my time to the field of Digital Security and have created this repository to record all my progress. In addition, I also constantly document every topic that I find relevant to ethical hacking and pentesting.
-
-I hope you enjoy what I am documenting.
-
-### Screenshot of the project:
-
-![Main project](https://snipboard.io/A0lKgi.jpg)
-
-# Starlight Starter Kit: Basics
-
 [![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
 
-```
-npm create astro@latest -- --template starlight
-```
+A collection of documents created in [Astro](https://docs.astro.build/en/getting-started/) regarding information security processes and penetration testing techniques.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+![Main project](https://snipboard.io/hvyPAL.jpg)
 
-## 🚀 Project Structure
+This application does not have an official name. It is a list of computer networking technologies that will be useful for the vulnerability discovery process for an ethical hacker. As an example, it covers everything from the general functioning of a computer architecture to port scanning and anonymization methods, such as the use of ProxyChains and the Onion network via Tor.
 
-Inside of your Astro + Starlight project, you'll see the following folders and files:
+All information in this text was drawn from courses, training programs, and professional experience.
+
+## Project Structure
+
+Inside of this Astro + Starlight project, it'll be possible to see the following folders and files:
 
 ```
 .
@@ -43,7 +33,19 @@ Images can be added to `src/assets/` and embedded in Markdown with a relative li
 
 Static assets, like favicons, can be placed in the `public/` directory.
 
-## 🧞 Commands
+## Want to contribute?
+
+Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), and go forward to clone this entire repository:
+
+```bash
+git clone -b new/astro-template https://github.com/hexthersync32/ethical-hacking-security-documentation.git
+```
+
+```bash
+cd ethical-hacking-security-documentation/
+```
+
+### Commands
 
 All commands are run from the root of the project, from a terminal:
 
@@ -56,6 +58,21 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
 
-Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
+## ⚠️  Watch Out!
+
+### Ethical and Legal Disclaimer
+
+This project is provided strictly for educational, research, and ethical cybersecurity purposes only. It is intended to help students, security professionals, and developers better understand input‑logging mechanisms in controlled and fully authorized environments.
+
+Unauthorized or malicious use of hacking or any similar techniques is illegal, unethical, and may result in severe consequences, including:
+
+- Violation of privacy laws;
+
+- Criminal prosecution;
+
+- Civil liability;
+
+- Permanent damage to professional reputation.
+
+By knowing this project, you agree to operate it only with explicit permission from the system owner and in compliance with all applicable local, state, federal, and international laws. Misuse of this InfoSec informations is solely the responsibility of the user.
